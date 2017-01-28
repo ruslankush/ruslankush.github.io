@@ -121,7 +121,7 @@ body {
         font-weight: 400; }
 
 .scyllaAbout {
-  padding: 60px 0; }
+  padding: 120px 0; }
   .scyllaAbout h2 {
     font-weight: 500;
     font-size: 40px;
@@ -170,7 +170,7 @@ body {
     color: #00726f; }
 
 .scyllaWork {
-  padding: 60px 0; }
+  padding: 120px 0; }
   .scyllaWork h2 {
     font-weight: 500;
     font-size: 40px;
@@ -208,3 +208,82 @@ body {
       opacity: 0;
       -webkit-transition: opacity .5s linear;
       transition: opacity .5s linear; }
+
+.scyllaServices {
+  padding: 120px 0; }
+  .scyllaServices h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .scyllaServices__block {
+    margin-top: 20px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 7px;
+            border-radius: 7px;
+    padding: 20px 30px;
+    -webkit-box-shadow: 2px 2px 2px 2px #ccc;
+            box-shadow: 2px 2px 2px 2px #ccc;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+    .scyllaServices__block:hover {
+      border-color: #00726f;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .scyllaServices__block_head {
+      text-align: center; }
+      .scyllaServices__block_head h3 {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase; }
+    .scyllaServices__block_body h5 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 20px; }
+    .scyllaServices__block_body p {
+      font-weight: 300;
+      line-height: 20px; }
+
+.scyllaStep {
+  padding: 120px 0; }
+  .scyllaStep h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .scyllaStep h4 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  .scyllaStep__info {
+    margin-top: 70px; }
+    .scyllaStep__info p {
+      font-size: 20px; }
+  .scyllaStep__block_desc {
+    margin-top: 15px; }
+  .scyllaStep__block .description {
+    text-align: center; }
+    .scyllaStep__block .description .circle {
+      height: 100px;
+      width: 100px;
+      -webkit-border-radius: 100%;
+              border-radius: 100%;
+      border: 5px solid #00726f;
+      line-height: 90px;
+      margin: auto; }
+      .scyllaStep__block .description .circle span {
+        font-size: 85px;
+        color: #00726f; }
+  .scyllaStep__block .item {
+    text-align: center; }
+    .scyllaStep__block .item p {
+      padding: 15px 20px;
+      font-size: 18px; }
+
+footer {
+  padding: 120px 0;
+  background: #222; }
+  footer p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700; }
