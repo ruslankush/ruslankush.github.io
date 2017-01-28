@@ -1,0 +1,289 @@
+body {
+  font-family: 'Exo 2', sans-serif; }
+
+.section {
+  overflow: hidden;
+  position: relative; }
+
+.primary-banner {
+  width: 100%; }
+  .primary-banner h1 {
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase; }
+  .primary-banner p {
+    color: #fff;
+    font-size: 16px; }
+
+.background {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  .background .layer {
+    background-image: url(../img/scylla-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 4; }
+
+.primary-banner-center-box {
+  display: table;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  position: relative; }
+  .primary-banner-center-box > .container-fluid {
+    display: table-row; }
+    .primary-banner-center-box > .container-fluid > .row {
+      display: table-cell;
+      vertical-align: middle; }
+
+.top-nav-line {
+  position: absolute;
+  height: 87px;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 102; }
+  .top-nav-line.fixed {
+    position: fixed;
+    background-color: rgba(0, 114, 111, 0.5); }
+  .top-nav-line #menu-open {
+    background: transparent;
+    margin: 20px 20px 0 0;
+    border-bottom: 0 none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 80px;
+    z-index: 101; }
+    .top-nav-line #menu-open .text {
+      color: #00726f;
+      float: right;
+      font-weight: 600;
+      line-height: 16px;
+      padding: 25px 0 0;
+      text-transform: uppercase;
+      font-size: 14px;
+      width: 100%; }
+    .top-nav-line #menu-open .icon-bar {
+      -webkit-border-radius: 0;
+              border-radius: 0;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      display: block;
+      height: 3px;
+      margin: 3px auto 4px;
+      width: 30px;
+      background: #00726f; }
+
+.logo-mini {
+  padding: 0;
+  margin: 20px 0 0 20px; }
+  .logo-mini a {
+    display: block;
+    height: 40px;
+    overflow: hidden; }
+    .logo-mini a img {
+      width: 40px; }
+
+.menu-right {
+  position: fixed;
+  width: 300px;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  background: #00726f;
+  color: #fff;
+  z-index: 100;
+  text-align: center;
+  padding: 20px 20px; }
+  .menu-right ul {
+    margin-top: 80px; }
+    .menu-right ul li {
+      padding: 15px 0; }
+      .menu-right ul li a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400; }
+
+.scyllaAbout {
+  padding: 120px 0; }
+  .scyllaAbout h2 {
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase; }
+  .scyllaAbout p {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px 6px; }
+
+.btn-scylla {
+  margin-top: 30px;
+  padding: 12px 18px;
+  background: #00726f;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid #00726f;
+  -webkit-transition: background .4s ease-out, color .4s linear;
+  transition: background .4s ease-out, color .4s linear; }
+  .btn-scylla:hover {
+    color: #00726f;
+    background: transparent;
+    border: 1px solid #00726f; }
+
+.bottomLine {
+  width: 60%;
+  position: relative;
+  margin: 60px auto;
+  text-align: center; }
+  .bottomLine:after, .bottomLine:before {
+    position: absolute;
+    display: block;
+    top: 13px;
+    width: 45%;
+    height: 4px;
+    background: #00726f;
+    content: ""; }
+  .bottomLine:after {
+    left: 0; }
+  .bottomLine:before {
+    right: 0; }
+  .bottomLine .fa {
+    font-size: 30px;
+    color: #00726f; }
+
+.scyllaWork {
+  padding: 120px 0; }
+  .scyllaWork h2 {
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase; }
+  .scyllaWork .padding-none {
+    padding: 0;
+    margin-top: 30px; }
+  .scyllaWork p {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 16px; }
+  .scyllaWork a {
+    text-decoration: none;
+    color: transparent; }
+  .scyllaWork__block {
+    position: relative; }
+    .scyllaWork__block:hover .fa {
+      opacity: 0.8; }
+    .scyllaWork__block:before {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      background-color: rgba(0, 0, 0, 0.5); }
+    .scyllaWork__block .fa {
+      position: absolute;
+      top: -webkit-calc(45% + 5px);
+      top: calc(45% + 5px);
+      left: 45%;
+      color: #fff;
+      font-size: 30px;
+      opacity: 0;
+      -webkit-transition: opacity .5s linear;
+      transition: opacity .5s linear; }
+
+.scyllaServices {
+  padding: 120px 0; }
+  .scyllaServices h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .scyllaServices__block {
+    margin-top: 20px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 7px;
+            border-radius: 7px;
+    padding: 20px 30px;
+    -webkit-box-shadow: 2px 2px 2px 2px #ccc;
+            box-shadow: 2px 2px 2px 2px #ccc;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+    .scyllaServices__block:hover {
+      border-color: #00726f;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .scyllaServices__block_head {
+      text-align: center; }
+      .scyllaServices__block_head h3 {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase; }
+    .scyllaServices__block_body h5 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 20px; }
+    .scyllaServices__block_body p {
+      font-weight: 300;
+      line-height: 20px; }
+
+.scyllaStep {
+  padding: 120px 0; }
+  .scyllaStep h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .scyllaStep h4 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  .scyllaStep__info {
+    margin-top: 70px; }
+    .scyllaStep__info p {
+      font-size: 20px; }
+  .scyllaStep__block_desc {
+    margin-top: 15px; }
+  .scyllaStep__block .description {
+    text-align: center; }
+    .scyllaStep__block .description .circle {
+      height: 100px;
+      width: 100px;
+      -webkit-border-radius: 100%;
+              border-radius: 100%;
+      border: 5px solid #00726f;
+      line-height: 90px;
+      margin: auto; }
+      .scyllaStep__block .description .circle span {
+        font-size: 85px;
+        color: #00726f; }
+  .scyllaStep__block .item {
+    text-align: center; }
+    .scyllaStep__block .item p {
+      padding: 15px 20px;
+      font-size: 18px; }
+
+footer {
+  padding: 120px 0;
+  background: #222; }
+  footer p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700; }
