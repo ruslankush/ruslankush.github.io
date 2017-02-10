@@ -1,6 +1,11 @@
 body {
   font-family: 'Exo 2', sans-serif; }
 
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase; }
+
 .section {
   overflow: hidden;
   position: relative; }
@@ -122,10 +127,6 @@ body {
 
 .scyllaAbout {
   padding: 120px 0; }
-  .scyllaAbout h2 {
-    font-weight: 500;
-    font-size: 40px;
-    text-transform: uppercase; }
   .scyllaAbout p {
     font-weight: 500;
     font-size: 20px;
@@ -169,12 +170,24 @@ body {
     font-size: 30px;
     color: #00726f; }
 
+.scyllaGuarantees {
+  padding: 120px 0; }
+  .scyllaGuarantees__block {
+    margin-top: 20px;
+    padding: 15px 40px; }
+    .scyllaGuarantees__block h4 {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 20px; }
+    .scyllaGuarantees__block p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px; }
+    .scyllaGuarantees__block_img img {
+      margin: 0 auto; }
+
 .scyllaWork {
   padding: 120px 0; }
-  .scyllaWork h2 {
-    font-weight: 500;
-    font-size: 40px;
-    text-transform: uppercase; }
   .scyllaWork .padding-none {
     padding: 0;
     margin-top: 30px; }
@@ -211,10 +224,6 @@ body {
 
 .scyllaServices {
   padding: 120px 0; }
-  .scyllaServices h2 {
-    font-size: 40px;
-    font-weight: 500;
-    text-transform: uppercase; }
   .scyllaServices__block {
     margin-top: 20px;
     border: 1px solid transparent;
@@ -242,48 +251,73 @@ body {
       margin-bottom: 20px; }
     .scyllaServices__block_body p {
       font-weight: 300;
-      line-height: 20px; }
+      line-height: 20px;
+      font-size: 14px; }
+      .scyllaServices__block_body p.price {
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px; }
+    .scyllaServices__block_body_btn .btn-scylla {
+      margin-top: 15px;
+      padding: 8px 25px;
+      font-size: 16px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px; }
 
 .scyllaStep {
   padding: 120px 0; }
-  .scyllaStep h2 {
-    font-size: 40px;
-    font-weight: 500;
-    text-transform: uppercase; }
-  .scyllaStep h4 {
-    font-size: 28px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 40px; }
-  .scyllaStep__info {
-    margin-top: 70px; }
-    .scyllaStep__info p {
-      font-size: 20px; }
-  .scyllaStep__block_desc {
-    margin-top: 15px; }
-  .scyllaStep__block .description {
-    text-align: center; }
-    .scyllaStep__block .description .circle {
-      height: 100px;
-      width: 100px;
-      -webkit-border-radius: 100%;
-              border-radius: 100%;
-      border: 5px solid #00726f;
-      line-height: 90px;
-      margin: auto; }
-      .scyllaStep__block .description .circle span {
-        font-size: 85px;
-        color: #00726f; }
-  .scyllaStep__block .item {
-    text-align: center; }
-    .scyllaStep__block .item p {
-      padding: 15px 20px;
-      font-size: 18px; }
+  .scyllaStep__block {
+    padding: 15px 20px;
+    margin-top: 20px; }
+    .scyllaStep__block_img img {
+      margin: 0 auto 15px; }
+    .scyllaStep__block_desc h4 {
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 10px; }
+    .scyllaStep__block_desc ul li {
+      font-size: 13px;
+      font-weight: 400;
+      padding-left: 20px; }
+      .scyllaStep__block_desc ul li a {
+        color: #00726f;
+        text-decoration: none;
+        font-weight: 700; }
 
 footer {
   padding: 120px 0;
   background: #222; }
   footer p {
     color: #fff;
-    font-size: 20px;
-    font-weight: 700; }
+    font-size: 13px;
+    font-weight: 300; }
+    footer p span {
+      font-size: 10px; }
+    footer p.brief {
+      font-size: 14px; }
+      footer p.brief a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        color: #00726f; }
+        footer p.brief a:hover {
+          color: #fff; }
+
+.modal-open .modal {
+  background: rgba(34, 37, 37, 0.8); }
+
+.modal-content {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  top: 50px;
+  padding: 20px; }
+  .modal-content .btn-scylla {
+    font-size: 16px;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    padding: 8px 25px;
+    margin-top: 0; }
