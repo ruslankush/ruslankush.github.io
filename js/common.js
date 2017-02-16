@@ -1,52 +1,14 @@
-
-function heightDetect(){
-    $('.section').css('height', $(window).height());
-  };
-  heightDetect();
-  $(window).resize(function(){
-    heightDetect();
-});
-
-$(document).ready(function(){
-	// $('#menu-open').click(function(){
-	// 	$('body').toggleClass('in')
-	// });
-
-	// $("body").niceScroll({
- //    cursorcolor:"rgba(0, 151, 214, .5)",
- //    cursorminheight: 10,
- //    cursorwidth: 4,
- //    touchbehavior: false,
- //    bouncescroll: false,
- //    // horizrailenabled: true,
- //    scrollspeed: 100,
- //    mousescrollstep: 50,
- //    railpadding: {
- //      right: 3
- //    },
- //    cursorborder: "0px"
- //  });
-
-    // ==scroll navbar
-    // arrowTop();
-    // function arrowTop() {
-    // 	var offset = 20;
-    // 	$back_to_top = $('.top-nav-line');
-    //     $(window).scroll(function(){
-    //       ($(this).scrollTop() > offset) ? $back_to_top.addClass('fixed') : $back_to_top.removeClass('fixed');
-    //     });
-    // }
-
-
-
-    $('#exampleModal').on('show.bs.modal', function (event) {
-        var button = $(event.relatedTarget) 
-        var recipient = button.data('whatever') 
-        var modal = $(this)
-        modal.find('.modal-title').text('New message to ' + recipient)
-        modal.find('.modal-body input').val(recipient)
+$(document).ready(function () {
+  $('.vid-item').each(function(index){
+    $(this).on('click', function(){
+      var current_index = index+1;
+      $('.vid-list li').removeClass('active');
+      $('.vid-list li:nth-child('+current_index+') .thumb').addClass('active');
     });
-
-
-
+  });
+  var $list = $('#vid-list li');
+  $list.click(function(){
+    $list.removeClass('selected');
+    $(this).addClass('selected'); 
+  });
 });
