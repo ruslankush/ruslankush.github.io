@@ -1,4 +1,4 @@
-"use script";
+// "use script";
 function heightDetect(){
     $('.js-height-section').css('height', $(window).height());
 };
@@ -26,10 +26,7 @@ $(".owl-carousel").owlCarousel({
     }
 });
 
-$('.js-header__link').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000, 'linear');
-});
+
 
 
 $("input[name='phone']").inputmask({
@@ -83,4 +80,21 @@ $(document).ready(function(){
 	});
 
 
+    
+
 });
+
+// $(function () {
+//     $('.js-header__link').on('click', function(event) {
+//         e.preventDefault();
+//         $('html, body').animate({
+//             scrollTop: $($(this).attr('href')).offset().top
+//         }, 1000, 'linear');
+//     })
+// });
+
+
+$('.js-header__link').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000, 'linear');
+    });
