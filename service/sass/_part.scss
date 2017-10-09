@@ -1,0 +1,53 @@
+.page  {
+
+	&__center {
+		text-align: center;
+	}
+
+	&__left {
+		text-align: left;
+	}
+
+	&__right {
+		text-align: right;
+	}
+
+	&__justufy {
+		text-align: justify;
+	}
+
+	&__tcolor {
+		color: $red-color;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: 38px;
+		font-weight: 700;
+
+		@include sz(sm) {
+			font-size: 26px;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+
+		&:hover, &:focus, &:active {
+			text-decoration: none;
+		}
+	}
+
+	&__button {
+		border: none;
+		outline: none;
+	}
+
+	&__img {
+		margin: auto;
+		display: block;
+		max-width: 100%;
+	}
+
+	
+}
