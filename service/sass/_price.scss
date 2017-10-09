@@ -1,0 +1,115 @@
+.price {
+	padding: 70px 0;
+
+	&__title {
+		font-weight: 500;
+		color: $grey-color;
+		margin-bottom: 40px;
+		text-transform: uppercase;
+	}
+
+	&__table {
+		@include sz(sm) {
+			min-width: 700px;
+		}
+	}
+
+	&__head {
+		padding: 5px 0;
+		font-size: 16px;
+		font-weight: 500;
+		color: $white-color;
+		background-color: $white-color;
+		border-bottom: 3px solid $blue-color;
+	}
+
+	&__tr {
+		padding: 5px 0;
+		font-size: 16px;
+		font-weight: 500;
+		color: $blue-color;
+	}
+
+}
+
+.accordion__container{
+  	height: auto;
+  	margin: 20px auto;
+  	position: relative;
+  	max-width: 800px;
+}
+
+.accordion__box {
+
+	@include sz(sm) {
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	
+}
+
+.accordion__set{
+  	width: 100%;
+  	height: auto;
+  	position: relative;
+  	margin-bottom: 10px;
+  	background-color: $white-color;
+}
+.accordion__set > .accordion__head{
+  	display: block;
+  	font-weight: 500;
+  	color: $blue-color;
+  	padding: 10px 15px;
+  	text-decoration: none;
+  	transition: all 0.2s linear;
+}
+
+.accordion__head {
+	border-bottom: 3px solid $blue-color;
+	position: relative;
+	cursor: pointer;
+}
+
+.accordion__set > .accordion__head.active{
+  	color: $white-color;
+  	background-color: $blue-color;
+}
+
+.accordion__content{
+  	width: 100%;
+  	height: auto;
+  	display:none;
+  	position:relative;
+  	padding-top: 15px;
+  	background-color: $white-color;
+}
+
+
+.accordion__arrow {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: 15px;
+	top: 5px;
+
+	&:after {
+		position: absolute;
+		top: 44%;
+		width: 17px;
+		height: 2px;
+		content: "";
+		background-color: $grey-color;
+	}
+
+	&:before {
+		position: absolute;
+		width: 2px;
+		height: 17px;
+		top: 0;
+		left: 44%;
+		content: "";
+		background-color: $grey-color;
+	}
+
+
+}
