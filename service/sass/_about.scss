@@ -12,5 +12,10 @@
 		color: $black-color;
 		font-size: 16px;
 		font-weight: 300;
+		margin-bottom: 15px;
+
+		span {
+			color: $red-color;
+		}
 	}
 }

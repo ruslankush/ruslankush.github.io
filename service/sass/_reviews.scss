@@ -25,4 +25,11 @@
 	&__box {
 		margin-top: 70px;
 	}
+
+	&__info {
+		line-height: 1;
+		font-size: 14px;
+		font-weight: 500;
+		color: $blue-color;
+	}
 }

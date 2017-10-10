@@ -10,7 +10,7 @@ $(window).resize(function(){
 $('.js-equal ').equalHeightResponsive();
 
 $(".owl-carousel").owlCarousel({
-	margin: 10,
+	margin: 15,
 	items: 3,
 	
 	responsive:{
@@ -18,10 +18,10 @@ $(".owl-carousel").owlCarousel({
             items:1,
         },
         600:{
-            items:1,
+            items:2,
         },            
         960:{
-            items:2
+            items:3
         },
     }
 });
