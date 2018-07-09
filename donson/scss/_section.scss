@@ -1,0 +1,18 @@
+.section {
+	background-color: #18a2bd;
+	padding: 60px 0 30px;
+
+	&__name {
+		padding-left: 20px;
+		color: #fff;
+		font: normal 26px 'Glober';
+		text-transform: uppercase;
+	}
+
+	&__ins {
+		color: #fff;
+		padding-left: 20px;
+		font: normal 16px 'Glober';
+		text-transform: uppercase;
+	}
+}

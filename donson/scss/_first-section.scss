@@ -1,0 +1,107 @@
+.first-section {
+	padding-top: 20px;
+	padding-bottom: 23px;
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__exclusive {
+		padding: 17px 20px;
+		background-color: #18a2bd;
+		color: #fff;
+		font: normal 30px 'Glober';
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		line-height: 1.25;
+	}
+
+	&__block {
+		display: table;
+		max-width: 617px;
+		background-color: #fff;
+		padding: 20px;
+		position: relative;
+	}
+
+	&__name {
+		color: #18a2bd;
+		font: bold 26px 'Glober';
+		text-transform: uppercase;
+	}
+
+	&__tlt {
+		color: #2a292a;
+		font: bold 16px 'Glober';
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	&__description {
+		padding-left: 10px;
+		border-left: 2px solid #222428;
+		margin-left: 10px;
+
+		p {
+			font: normal 16px 'Glober';
+		}
+	}
+
+	&__btn {
+		color: #2a292a;
+		font: bold 16px 'Glober';
+		text-transform: uppercase;
+		position: relative;
+		background-color: #ffc000;
+		padding: 12px 30px;
+		transition: all .4s ease-out;
+
+		&:before, &:after {
+			position: absolute;
+			content: "";
+			top: 45%;
+			background-color: #222428;
+			width: 20px;
+			height: 2px;
+		}
+
+		&:before {
+			left: 0;
+		}
+
+		&:after {
+			right: 0;
+		}
+
+		&:hover, &:active, &:focus {
+			background-color: #222428;
+			color: #fff;
+		}
+	}
+	
+	&__arrow {
+		width: 23px;
+		height: 23px;
+		display: block;
+		margin: 20px auto 0;
+		background-color: #ffc000;
+		border-radius: 50%;
+		background-image: url(../img/arrow.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: all .4s ease-out;
+
+
+		&:hover, &:active, &:focus {
+			background-image: url(../img/arrow-white.png);
+			background-color: #222428;
+		}
+	}
+
+	&__blanket {
+		position: absolute;
+		left: -15%;
+		bottom: -13%;
+	}
+
+}

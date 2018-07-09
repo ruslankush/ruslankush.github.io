@@ -1,0 +1,146 @@
+.header {
+	background-image: url(../img/header-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	height: 113px;
+
+	&__link {
+		display: inline-block;
+		padding: 7px 0 0 20px;
+
+		span {
+			font: normal 14px 'Glober';
+			letter-spacing: 0.1px;
+		}
+	}
+
+	&__block {
+		display: table;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	&__desc {
+		width: 50%;
+		float: left;
+	}
+
+	&__ins {
+		display: table;
+		padding-top: 35px;
+		float: left;
+	}
+
+	&__info {
+		color: #2a292a;
+		font: normal 14px 'Glober';
+		margin-left: 46px;
+	}
+
+	&__numb {
+		font: normal 26px 'Glober';
+		color: #18a2bd;
+		position: relative;
+		padding-left: 35px;
+		display: inline-block;
+		margin-left: 46px;
+		letter-spacing: 0.3px;
+
+		&:before {
+			position: absolute;
+			width: 26px;
+			height: 26px;
+			background-image: url(../img/phone-icon.png);
+			content: "";
+			left: 0;
+		}
+	}
+
+	&__btn {
+		color: #2a292a;
+		text-transform: uppercase;
+		position: relative;
+		padding: 9px 38px;
+		background-color: #ffc000;
+		font: bold 16px 'Glober';
+		display: inline-block;
+		margin-left: 42px;
+		margin-top: 7px;
+		transition: background .4s ease-in-out;
+
+		&:before, &:after {
+			position: absolute;
+			content: "";
+			width: 20px;
+			height: 2px;
+			background-color: #222428;
+			top: 45%;
+		}
+
+		&:before {
+			left: 0;
+		}
+
+		&:after {
+			right: 0;
+		}
+
+		&:hover, &:active, &:focus {
+			background-color: #222428;
+			color: #fff;
+		}
+	}
+
+	&__nav {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -20px;
+		background-color: #2a292a;
+		margin-left: 10px;
+		margin-right: 10px;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&_link {
+			color: #fff;
+			font: normal 14px 'Glober';
+			padding: 14px 13px;
+			display: inline-block;
+			position: relative;
+			text-transform: uppercase;
+
+			&.active {
+				background-color: #ffc000;
+				color: #2a292a;
+			}
+			
+			&:before, &:after {
+				position: absolute;
+				content: "";
+				background-color: #2a292a;
+				height: 2px;
+				width: 10px;
+				top: 45%;
+			}
+
+			&:before {
+				left: 0;
+			}
+
+			&:after {
+				right: 0;
+			}
+
+			&:hover, &:active, &:focus {
+				background-color: #ffc000;
+				color: #2a292a;
+			}
+
+		}
+	}
+}
