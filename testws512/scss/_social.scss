@@ -1,0 +1,16 @@
+.social {
+	align-self: center;
+
+	&__link {
+		text-decoration: none;
+		color: #000;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border-radius: 50px;
+		background-color: #fff;
+		text-align: center;
+		margin-left: 15px;
+		line-height: 30px;
+	}
+}

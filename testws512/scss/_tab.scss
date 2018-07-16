@@ -1,0 +1,31 @@
+.tab {
+
+	&__link {
+		color: #ccc;
+		padding: 15px 25px;
+		margin-right: 15px;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		display: inline-block;
+		border: 1px solid #ccc;
+		font: 300 15px 'Gilroy';
+		transition: all .4s linear;
+
+		@include sz(average) {
+			padding: 10px 15px;
+			margin-right: 5px;
+		}
+
+		&:hover, &:active &:focus {
+			color: #000;
+			border-color: #000;
+		}
+
+		&.active {
+			color: #000;
+			border-color: #000;
+		}
+
+	}
+
+}
