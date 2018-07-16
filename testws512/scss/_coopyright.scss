@@ -1,0 +1,9 @@
+.coopyright {
+	color: #fff;
+	font: normal 15px 'Gotham Pro';
+	align-self: center;
+
+	@include sz(sm) {
+		margin-bottom: 15px;
+	}
+}
