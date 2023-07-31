@@ -1,0 +1,27 @@
+.create {
+
+	a {
+		outline: none;
+		border: none;
+		text-decoration: none;
+		display: inline-block;
+		white-space: nowrap;
+		@include transition(all, .4s, ease-in, 0s);
+		font-weight: 400;
+		font-size: 0.875rem;
+		color: #000;
+
+		&:focus {
+			outline: none;
+			border: none;
+		}
+
+		i {
+			font-style: normal;
+			text-transform: uppercase;
+			color: #EC6A4F;
+		}
+
+	}
+
+}

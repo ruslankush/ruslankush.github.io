@@ -1,0 +1,217 @@
+
+.page {
+	min-height: 100%;
+
+	&__wrap {
+		clear: both;
+		margin: 0 auto;	
+		max-width: 1490px;
+		position: relative;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		&::before, &::after {
+			content: "";
+			display: table;
+		}
+
+		&::after {
+			clear: both;
+		}
+
+	}
+
+	:where(h1, h2, h3) {
+		margin: 0;
+		color: #000;
+		font-weight: 300;
+		text-transform: uppercase;
+
+		i {
+			font-style: normal;
+			color: #EC6A4F;
+		}
+
+	}
+
+	h1 {
+		font-size: clamp(1.6875rem, 4vw, 3.125rem);
+	}
+
+	h2 {
+		font-size: clamp(1.5rem, 4vw, 2.8125rem);
+	}
+
+	h3 {
+		font-size: clamp(1.5rem, 3vw, 2.25rem);
+	}
+
+	&__rubl {
+		position: relative;
+		display: inline-block;
+		font-family: 'PT Rouble Sans', sans-serif;
+		font-weight: normal;
+		font-style: normal;
+
+		&::before {
+			content: "у";
+		}
+		
+	}
+
+	&__btn {
+		min-width: 250px;
+		padding: 18px 15px;
+		text-align: center;
+		display: inline-block;
+		@include transition(all, .4s, ease-in, 0s);
+		outline: none;
+		border: none;
+		font-weight: 400;
+		text-decoration: none;
+		font-size: 0.875rem;
+		text-transform: uppercase;
+
+		&:focus {
+			outline: none;
+			border: none;
+		}
+
+		&--curr {
+			color: #fff;
+			background-color: #EC6A4F;
+		}
+
+		&--icon {
+
+			span {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+			}
+
+			i {
+				display: inline-block;
+				vertical-align: middle;
+				font-style: normal;
+				line-height: 0;
+				margin-right: 4px;
+			}
+
+		}
+
+	}
+
+	&__link {
+		display: inline-block;
+		text-decoration: none;
+		padding: 8px 18px;
+		text-align: center;
+		color: #EC6A4F;
+		font-weight: 400;
+		font-size: 1rem;
+		border: none;
+		text-transform: uppercase;
+		min-width: 148px;
+		border-left: 2px solid #EC6A4F;
+		border-right: 2px solid #EC6A4F;
+		@include transition(all, .4s, ease-in, 0s);
+		background-color: transparent;
+		outline: none;
+		position: relative;
+
+		&::before {
+			@include pseudo();
+			width: 0;
+			height: 100%;
+			@include transition(all, .4s, ease-in, 0s);
+			right: 0;
+			left: initial;
+			background-color: #EC6A4F;
+			top: 0;
+			z-index: -1;
+		}
+
+		&:focus {
+			border-left: 2px solid #EC6A4F;
+			border-right: 2px solid #EC6A4F;
+		}
+
+		&--main {
+			color: #000;
+			border-left-color: #000;
+			border-right-color: #000;
+
+			&::before {
+				background-color: #000;
+			}
+
+			&:focus {
+				border-left: 2px solid #000;
+				border-right: 2px solid #000;
+			}
+
+		}
+
+		
+
+		&:hover {
+			color: #fff;
+
+			&::before {
+				width: 100%;
+				left: 0;
+				right: initial;
+			}
+
+		}
+
+		
+
+	}
+
+	&__ruller {
+
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-end;
+			gap: 0.625rem;
+
+			li {
+
+				&.point {
+					pointer-events: none;
+					user-select: none;
+				}
+
+				&.active {
+
+					a {
+						color: #EC6A4F;
+					}
+
+				}
+
+				a {
+					text-decoration: none;
+					display: inline-block;
+					color: #000;
+					font-weight: 600;
+					font-size: 1.125rem;
+					@include transition(all, .4s, ease, 0s);
+				}
+
+
+			}
+
+		}
+
+	}
+
+}
