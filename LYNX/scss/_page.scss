@@ -1,0 +1,194 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	&::before, &::after {
+		box-sizing: inherit;
+	}
+
+}
+
+.row {
+	display: flex;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.flex-fill {
+	flex: 1 1 auto;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.justify-content-end {
+	justify-content: flex-end;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.mw-100 {
+	max-width: 100%;
+}
+
+.d-block {
+	display: block;
+}
+
+.pt-0 {
+	padding-top: 0;
+}
+
+a {
+	outline: none;
+	border: none;
+
+	&:focus {
+		outline: none;
+		border: none;
+	}
+
+}
+
+.page {
+	min-height: 100%;
+
+	&-wrap {
+		clear: both;
+		margin: 0 auto;	
+		// max-width: 1200px;
+		position: relative;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		&::before, &::after {
+			content: "";
+			display: table;
+		}
+
+		&::after {
+			clear: both;
+		}
+
+	}
+
+	:where(h1, h2) {
+		margin: 0;
+		color: #000;
+		font-weight: 600;
+	}
+
+	h2 {
+		color: #445561;
+	}
+
+	&-rubl {
+		position: relative;
+		display: inline-block;
+		font-family: 'PT Rouble Sans', sans-serif;
+		font-weight: normal;
+		font-style: normal;
+
+		&::before {
+			content: "у";
+		}
+		
+	}
+
+	&-btn {
+		min-width: 240px;
+		// padding: 15px 15px;
+		text-align: center;
+		display: inline-block;
+		@include transition(all, .4s, ease-in, 0s);
+		text-decoration: none;
+		position: relative;
+		height: 60px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 60px;
+		clip-path: polygon(calc(100% - 4.2px) 0px, 15.1px 0px, 15.1px 0px, 14.354px 0.0385px, 13.62px 0.152px, 12.904px 0.3375px, 12.212px 0.592px, 11.55px 0.9125px, 10.924px 1.296px, 10.34px 1.7395px, 9.804px 2.24px, 9.322px 2.7945px, 8.9px 3.4px, 2.6px 13px, 2.6px 13px, 2.1141px 13.8216px, 1.6768px 14.6648px, 1.2887px 15.5272px, 0.9504px 16.4064px, 0.6625px 17.3px, 0.4256px 18.2056px, 0.2403px 19.1208px, 0.1072px 20.0432px, 0.0269px 20.9704px, 3.3280069439011E-32px 21.9px, 0px calc(100% - 4.2px), 0px calc(100% - 4.2px), 0.0555px calc(100% - 3.5235px), 0.216px calc(100% - 2.88px), 0.4725px calc(100% - 2.2785px), 0.816px calc(100% - 1.728px), 1.2375px calc(100% - 1.2375px), 1.728px calc(100% - 0.816px), 2.2785px calc(100% - 0.4725px), 2.88px calc(100% - 0.216px), 3.5235px calc(100% - 0.055499999999995px), 4.2px calc(100% - 7.105427357601E-15px), calc(100% - 15.1px) calc(100% - 0px), calc(100% - 15.1px) calc(100% - 0px), calc(100% - 14.354px) calc(100% - 0.038499999999992px), calc(100% - 13.62px) calc(100% - 0.15199999999999px), calc(100% - 12.904px) calc(100% - 0.33750000000001px), calc(100% - 12.212px) calc(100% - 0.592px), calc(100% - 11.55px) calc(100% - 0.9125px), calc(100% - 10.924px) calc(100% - 1.296px), calc(100% - 10.34px) calc(100% - 1.7395px), calc(100% - 9.804px) calc(100% - 2.24px), calc(100% - 9.3220000000001px) calc(100% - 2.7945px), calc(100% - 8.9000000000001px) calc(100% - 3.4px), calc(100% - 2.7px) calc(100% - 13px), calc(100% - 2.7px) calc(100% - 13px), calc(100% - 2.2141px) calc(100% - 13.8189px), calc(100% - 1.7768px) calc(100% - 14.6552px), calc(100% - 1.3887px) calc(100% - 15.5083px), calc(100% - 1.0504px) calc(100% - 16.3776px), calc(100% - 0.7625000000001px) calc(100% - 17.2625px), calc(100% - 0.5256px) calc(100% - 18.1624px), calc(100% - 0.34030000000001px) calc(100% - 19.0767px), calc(100% - 0.2072px) calc(100% - 20.0048px), calc(100% - 0.12690000000003px) calc(100% - 20.9461px), calc(100% - 0.10000000000008px) calc(100% - 21.9px), calc(100% - 0.10000000000002px) 4.2px, calc(100% - 0.10000000000002px) 4.2px, calc(100% - 0.1284px) 3.5235px, calc(100% - 0.26719999999995px) 2.88px, calc(100% - 0.5068px) 2.2785px, calc(100% - 0.83760000000001px) 1.728px, calc(100% - 1.25px) 1.2375px, calc(100% - 1.7344px) 0.816px, calc(100% - 2.2812px) 0.4725px, calc(100% - 2.8808px) 0.216px, calc(100% - 3.5236px) 0.0555px, calc(100% - 4.2px) 7.0257924371246E-32px);
+		background: linear-gradient(8deg, rgba(237,28,36,0), rgba(237,28,36,0), rgba(237,28,36,0), rgba(237,28,36,0.2), rgba(237,28,36,1));
+
+		> svg {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		&_icon {
+
+			span {
+
+				i {
+					font-style: normal;
+					display: inline-block;
+					vertical-align: middle;
+					line-height: 1;
+					margin-right: 15px;
+				}
+
+			}
+
+		}
+
+		.stroke {
+			width: 100%;
+			height: 100%;
+			background-color: #3B4851;
+			position: absolute;
+			top: 0;
+			left: 0;
+			clip-path: polygon(calc(100% - 4.2px) 0px, 15.1px 0px, 15.1px 0px, 14.354px 0.0385px, 13.62px 0.152px, 12.904px 0.3375px, 12.212px 0.592px, 11.55px 0.9125px, 10.924px 1.296px, 10.34px 1.7395px, 9.804px 2.24px, 9.322px 2.7945px, 8.9px 3.4px, 2.6px 13px, 2.6px 13px, 2.1141px 13.8216px, 1.6768px 14.6648px, 1.2887px 15.5272px, 0.9504px 16.4064px, 0.6625px 17.3px, 0.4256px 18.2056px, 0.2403px 19.1208px, 0.1072px 20.0432px, 0.0269px 20.9704px, 3.3280069439011E-32px 21.9px, 0px calc(100% - 4.2px), 0px calc(100% - 4.2px), 0.0555px calc(100% - 3.5235px), 0.216px calc(100% - 2.88px), 0.4725px calc(100% - 2.2785px), 0.816px calc(100% - 1.728px), 1.2375px calc(100% - 1.2375px), 1.728px calc(100% - 0.816px), 2.2785px calc(100% - 0.4725px), 2.88px calc(100% - 0.216px), 3.5235px calc(100% - 0.055499999999995px), 4.2px calc(100% - 7.105427357601E-15px), calc(100% - 15.1px) calc(100% - 0px), calc(100% - 15.1px) calc(100% - 0px), calc(100% - 14.354px) calc(100% - 0.038499999999992px), calc(100% - 13.62px) calc(100% - 0.15199999999999px), calc(100% - 12.904px) calc(100% - 0.33750000000001px), calc(100% - 12.212px) calc(100% - 0.592px), calc(100% - 11.55px) calc(100% - 0.9125px), calc(100% - 10.924px) calc(100% - 1.296px), calc(100% - 10.34px) calc(100% - 1.7395px), calc(100% - 9.804px) calc(100% - 2.24px), calc(100% - 9.3220000000001px) calc(100% - 2.7945px), calc(100% - 8.9000000000001px) calc(100% - 3.4px), calc(100% - 2.6px) calc(100% - 13px), calc(100% - 2.6px) calc(100% - 13px), calc(100% - 2.1141px) calc(100% - 13.8216px), calc(100% - 1.6767999999999px) calc(100% - 14.6648px), calc(100% - 1.2887px) calc(100% - 15.5272px), calc(100% - 0.95039999999995px) calc(100% - 16.4064px), calc(100% - 0.66249999999997px) calc(100% - 17.3px), calc(100% - 0.42559999999997px) calc(100% - 18.2056px), calc(100% - 0.24029999999999px) calc(100% - 19.1208px), calc(100% - 0.10719999999998px) calc(100% - 20.0432px), calc(100% - 0.026900000000012px) calc(100% - 20.9704px), calc(100% - 5.6843418860808E-14px) calc(100% - 21.9px), calc(100% - 0px) 4.2px, calc(100% - 0px) 4.2px, calc(100% - 0.055499999999938px) 3.5235px, calc(100% - 0.21599999999995px) 2.88px, calc(100% - 0.47250000000003px) 2.2785px, calc(100% - 0.81599999999997px) 1.728px, calc(100% - 1.2375px) 1.2375px, calc(100% - 1.728px) 0.816px, calc(100% - 2.2785px) 0.4725px, calc(100% - 2.88px) 0.216px, calc(100% - 3.5235px) 0.0555px, calc(100% - 4.2px) 7.0257924371246E-32px, 4.2px calc(100% - 2px), 4.2px calc(100% - 2px), 3.8468px calc(100% - 2.0292px), 3.5104px calc(100% - 2.1136px), 3.1956px calc(100% - 2.2484px), 2.9072px calc(100% - 2.4288px), 2.65px calc(100% - 2.65px), 2.4288px calc(100% - 2.9072px), 2.2484px calc(100% - 3.1956px), 2.1136px calc(100% - 3.5104px), 2.0292px calc(100% - 3.8468px), 2px calc(100% - 4.2px), 2px 21.9px, 2px 21.9px, 2.0239px 21.0876px, 2.0952px 20.2728px, 2.2133px 19.4592px, 2.3776px 18.6504px, 2.5875px 17.85px, 2.8424px 17.0616px, 3.1417px 16.2888px, 3.4848px 15.5352px, 3.8711px 14.8044px, 4.3px 14.1px, 10.6px 4.5px, 10.6px 4.5px, 10.8961px 4.0655px, 11.2408px 3.664px, 11.6287px 3.2985px, 12.0544px 2.972px, 12.5125px 2.6875px, 12.9976px 2.448px, 13.5043px 2.2565px, 14.0272px 2.116px, 14.5609px 2.0295px, 15.1px 2px, calc(100% - 4.2px) 2px, calc(100% - 4.2px) 2px, calc(100% - 3.8468px) 2.0292px, calc(100% - 3.5103999999999px) 2.1136px, calc(100% - 3.1956px) 2.2484px, calc(100% - 2.9071999999999px) 2.4288px, calc(100% - 2.65px) 2.65px, calc(100% - 2.4288px) 2.9072px, calc(100% - 2.2483999999999px) 3.1956px, calc(100% - 2.1136px) 3.5104px, calc(100% - 2.0292px) 3.8468px, calc(100% - 2.0000000000001px) 4.2px, calc(100% - 2px) calc(100% - 21.9px), calc(100% - 2px) calc(100% - 21.9px), calc(100% - 2.0239px) calc(100% - 21.0876px), calc(100% - 2.0951999999999px) calc(100% - 20.2728px), calc(100% - 2.2133px) calc(100% - 19.4592px), calc(100% - 2.3775999999999px) calc(100% - 18.6504px), calc(100% - 2.5875px) calc(100% - 17.85px), calc(100% - 2.8424px) calc(100% - 17.0616px), calc(100% - 3.1417px) calc(100% - 16.2888px), calc(100% - 3.4848px) calc(100% - 15.5352px), calc(100% - 3.8711px) calc(100% - 14.8044px), calc(100% - 4.3000000000001px) calc(100% - 14.1px), calc(100% - 10.6px) calc(100% - 4.5px), calc(100% - 10.6px) calc(100% - 4.5px), calc(100% - 10.9204px) calc(100% - 4.0655px), calc(100% - 11.2792px) calc(100% - 3.664px), calc(100% - 11.6728px) calc(100% - 3.2985px), calc(100% - 12.0976px) calc(100% - 2.972px), calc(100% - 12.55px) calc(100% - 2.6875px), calc(100% - 13.0264px) calc(100% - 2.448px), calc(100% - 13.5232px) calc(100% - 2.2565px), calc(100% - 14.0368px) calc(100% - 2.116px), calc(100% - 14.5636px) calc(100% - 2.0295px), calc(100% - 15.1px) calc(100% - 2px), 4.2px calc(100% - 2px));
+		}
+
+
+		&_curr {
+			color: #fff;
+
+			svg {
+				fill: #fff;
+			}
+
+			.stroke {
+				background-color: #fff;
+			}
+
+		}
+
+		&_main {
+			color: #3B4851;
+
+			svg {
+				fill: #3B4851;
+			}
+
+		}
+
+	}
+
+}

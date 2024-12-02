@@ -1,0 +1,52 @@
+@import "mixin";
+
+.banner {
+    position: relative;
+
+    .image {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+
+        img {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+    }
+
+    &-bottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 5.4375rem;
+        text-align: right;
+
+        .page-wrap {
+            max-width: 1767px;
+        }
+
+        .ttl {
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            color: #445561;
+            font-size: 57px;
+            padding-right: 47px;
+
+            &::after {
+                @include pseudo($content: url(../img/arrow_main.svg));
+                top: 0;
+                right: 0;
+            }
+
+        }
+
+    }
+
+}

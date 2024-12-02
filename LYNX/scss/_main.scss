@@ -1,0 +1,9 @@
+.main {
+	
+	&-section {
+		// background: linear-gradient(80deg, rgba(229,234,237,0) 0%, rgba(229,234,237,1) 100%);
+		background: rgb(229,234,237);
+		background: linear-gradient(-80deg, rgba(229,234,237,1) 0%, rgba(255,255,255,0) 100%);
+	}
+
+}

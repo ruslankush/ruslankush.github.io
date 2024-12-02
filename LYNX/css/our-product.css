@@ -1,0 +1,123 @@
+.our-product {
+  position: relative;
+  padding-top: 3.75rem;
+  padding-bottom: 5.9375rem;
+}
+.our-product h2 {
+  font-size: 60px;
+  max-width: 1080px;
+}
+.our-product h2 i {
+  font-style: normal;
+  color: #ED1C24;
+}
+.our-product-top {
+  padding-right: 3.75rem;
+}
+.our-product-top .page-wrap {
+  max-width: 1767px;
+}
+.our-product-top .d-flex {
+  justify-content: space-between;
+}
+.our-product-block {
+  padding-top: 8.125rem;
+  position: relative;
+}
+.our-product-block .box {
+  position: absolute;
+  top: 8.125rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1390px;
+}
+.our-product-block .bx {
+  flex-basis: 33.3333333333%;
+}
+.our-product-block .image {
+  width: 100%;
+  max-width: 312px;
+  height: 249px;
+  margin-top: 60px;
+  position: relative;
+}
+.our-product-block .image::before, .our-product-block .image::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.our-product-block .image::before {
+  content: attr(data-txt);
+  top: -154px;
+  color: #3B4851;
+  font-weight: 600;
+  font-size: 24px;
+  width: 329px;
+  left: 55%;
+}
+.our-product-block .image::after {
+  height: 154px;
+  width: 1px;
+  background-color: #3B4851;
+  top: -154px;
+  left: 38%;
+  transform: rotate(32deg);
+  -webkit-transform: rotate(32deg);
+  -moz-transform: rotate(32deg);
+  -ms-transform: rotate(32deg);
+  -o-transform: rotate(32deg);
+}
+.our-product-block .image.ml {
+  margin-left: 100px;
+}
+.our-product-block .image.mr {
+  margin-left: -40px;
+}
+.our-product-block .image.mr::before {
+  top: inherit;
+  bottom: -140px;
+  left: -27%;
+}
+.our-product-block .image.mr::after {
+  top: inherit;
+  bottom: -140px;
+  left: -27%;
+}
+.our-product-block .image img {
+  margin: 0 auto;
+}
+.our-product-block .btn {
+  position: absolute;
+  right: 5%;
+  bottom: 24%;
+}
+.our-product-block .btn a {
+  text-decoration: none;
+  position: relative;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ED1C24;
+  text-align: center;
+  display: inline-block;
+  padding-right: 75px;
+}
+.our-product-block .btn a span {
+  display: block;
+}
+.our-product-block .btn a .icon {
+  width: 71px;
+  height: 71px;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #ED1C24;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  right: -10px;
+  top: -73px;
+}/*# sourceMappingURL=our-product.css.map */

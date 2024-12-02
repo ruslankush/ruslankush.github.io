@@ -1,0 +1,145 @@
+@import "mixin";
+
+.our-product {
+    position: relative;
+    padding-top: 3.75rem;
+    padding-bottom: 5.9375rem;
+   
+
+    h2 {
+        font-size: 60px;
+        max-width: 1080px;
+
+        i {
+            font-style: normal;
+            color: #ED1C24;
+        }
+
+    }
+
+    &-top {
+        padding-right: 3.75rem;
+
+        .page-wrap {
+            max-width: 1767px;
+        }
+
+        .d-flex {
+            justify-content: space-between;
+        }
+
+    }
+
+    &-block {
+        padding-top: 8.125rem;
+        position: relative;
+
+        .box {
+            position: absolute;
+            top: 8.125rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            max-width: 1390px;
+        }
+
+        .bx {
+            flex-basis: calc(100% / 3);
+        }
+
+        .image {
+            width: 100%;
+            max-width: 312px;
+            height: 249px;
+            margin-top: 60px;
+            position: relative;
+
+            &::before, &::after {
+                @include pseudo();
+            }
+
+            &::before {
+                content: attr(data-txt);
+                top: -154px;
+                color: #3B4851;
+                font-weight: 600;
+                font-size: 24px;
+                width: 329px;
+                left: 55%;
+            }
+
+            &::after {
+                height: 154px;
+                width: 1px;
+                background-color: #3B4851;
+                top: -154px;
+                left: 38%;
+                @include transform(rotate(32deg));
+            }
+
+            &.ml {
+                margin-left: 100px;
+            }
+
+            &.mr {
+                margin-left: -40px;
+
+                &::before {
+                    top: inherit;
+                    bottom: -140px;
+                    left: -27%;
+                }
+
+                &::after {
+                    top: inherit;
+                    bottom: -140px;
+                    left: -27%;
+                }
+
+            }
+
+            img {
+                margin: 0 auto;
+            }
+
+        }
+
+        .btn {
+            position: absolute;
+            right: 5%;
+            bottom: 24%;
+
+            a {
+                text-decoration: none;
+                position: relative;
+                font-weight: 600;
+                font-size: 24px;
+                color: #ED1C24;
+                text-align: center;
+                display: inline-block;
+                padding-right: 75px;
+
+                span {
+                    display: block;
+                }
+
+                .icon {
+                    width: 71px;
+                    height: 71px;
+                    position: absolute;
+                    @include bRadius(50%);
+                    background-color: #ED1C24;
+                    overflow: hidden;
+                    display: grid;
+                    align-items: center;
+                    right: -10px;
+                    top: -73px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
