@@ -19,7 +19,7 @@ $(function() {
 		$(this).length;
 		var banImg = $(this).find('img').attr('src');
 
-		$(this).attr('style', 'background-image: url(../'+ banImg +')');
+		$(this).attr('style', 'background-image: url(./'+ banImg +')');
 
 	});
 
