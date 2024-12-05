@@ -38,18 +38,142 @@
 
 @include sz(min1100) {
 
-	// ==content
+	.header {
+
+		.d-flex {
+			justify-content: space-between;
+		}
+
+		.bx {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			column-gap: 1.125rem;
+		}
+
+		.logo {
+			padding-top: 10px;
+		}
+
+		&-burger {
+			display: none;
+		}
+
+	}
 
 }
 
 @include sz(min1200) {
 
-	// ==content
+	.header {
+
+		.nav {
+			column-gap: 1.75rem;
+		}
+
+		.bx {
+			column-gap: 1.75rem;
+		}
+
+	}
 
 }
 
 @include sz(min1280) {
 
-	// ==content
+	.header {
+
+		.logo {
+			max-width: fit-content;
+		}
+
+		.nav {
+
+			> li {
+
+				> a {
+					padding-top: 5rem;
+					padding-bottom: 5rem;
+					font-size: 1.125rem;
+				}
+
+			}
+
+		}
+
+		&-subnav {
+
+			ul {
+
+				li {
+
+					a {
+						font-size: 18px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@include sz(min1366) {
+
+	.header {
+
+		.page-btn {
+			min-width: 240px;
+		}
+
+	}
+
+}
+
+@include sz(min1680) {
+
+	.header {
+
+		.bx {
+			column-gap: 2.75rem;
+		}
+
+		.nav {
+			column-gap: 2.5rem;
+
+			> li {
+
+				> a {
+					font-size: 1.5rem;
+				}
+
+			}
+
+		}
+
+		&-subnav {
+
+			ul {
+
+				li {
+
+					a {
+						font-size: 24px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.page-btn {
+		font-size: 24px;
+	}
 
 }

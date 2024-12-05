@@ -4,26 +4,29 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 5;
+	@include transition(all, .24s, linear, 0s);
+
+	&.fix {
+		@include transform(translateY(-100%));
+	}
+
 
 	.page-wrap {
 		max-width: 1670px;
 	}
 
 	.d-flex {
-		justify-content: space-between;
-		// align-items: center;
+		justify-content: center;
 	}
 
 	.bx {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		column-gap: 2.75rem;
+		display: none;
 	}
 
 	.logo {
-		padding-top: 10px;
+		padding-top: 38px;
+		max-width: 150px;
 	}
 	
 	.nav {
@@ -33,11 +36,23 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		column-gap: 2.5rem;
+		column-gap: 1.125rem;
 
 		> li {
 
 			&.drop {
+
+				&:hover {
+
+					> a {
+
+						&::after {
+							@include transform(translateY(-50%) rotateX(180deg));
+						}
+
+					}
+
+				}
 
 				> a {
 					padding-right: 2.635rem;
@@ -46,7 +61,7 @@
 						@include pseudo($content: url(../img/icon/drop-down-icon.svg));
 						top: 50%;
 						right: 0;
-						@include transform(translateY(-50%));
+						@include transform(translateY(-50%) rotateX(0));
 						@include transition(all, .4s, ease-in, 0s);
 						line-height: 0;
 					}
@@ -73,9 +88,9 @@
 				display: inline-block;
 				position: relative;
 				color: #3B4851;
-				font-size: 1.5rem;
-				padding-top: 5rem;
-				padding-bottom: 5rem;
+				font-size: 1rem;
+				padding-top: 4rem;
+				padding-bottom: 4rem;
 				@include transition(all, .4s, ease-in, 0s);
 			}
 
@@ -117,7 +132,7 @@
 				}
 
 				a {
-					font-size: 24px;
+					font-size: 16px;
 					text-decoration: none;
 					display: block;
 					color: #3B4851;
@@ -125,6 +140,47 @@
 
 			}
 
+		}
+
+	}
+
+	.page-btn {
+		min-width: 180px;
+	}
+
+	&-burger {
+		width: 1.75rem;
+		height: 1.25rem;
+		text-decoration: none;
+		display: inline-block;
+		position: absolute;
+		left: 15px;
+		top: 30px;
+
+		&::before, &::after {
+			@include pseudo();
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: #3B4851;
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&:after {
+			bottom: 0;
+		}
+
+		span {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: #3B4851;
+			@include transform(translateY(-50%));
 		}
 
 	}

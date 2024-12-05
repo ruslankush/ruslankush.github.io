@@ -1,11 +1,13 @@
 .offer {
   padding-top: 5.9375rem;
+  overflow: hidden;
 }
 .offer-box {
   padding-left: 50px;
   padding-top: 60px;
   padding-bottom: 55px;
   position: relative;
+  padding-right: 50px;
   z-index: 1;
 }
 .offer-box::before {

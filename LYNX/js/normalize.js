@@ -23,5 +23,16 @@ $(function() {
 
 	});
 
+	var header = $('.header');
+    var hederHeight = header.outerHeight(); 
+
+    $(window).scroll(function() {
+        if($(this).scrollTop() > hederHeight) {
+            header.addClass('fix');
+        } else {
+            header.removeClass('fix');
+        }
+    });
+
 
 });

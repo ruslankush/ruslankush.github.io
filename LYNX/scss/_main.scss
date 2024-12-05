@@ -4,6 +4,124 @@
 		// background: linear-gradient(80deg, rgba(229,234,237,0) 0%, rgba(229,234,237,1) 100%);
 		background: rgb(229,234,237);
 		background: linear-gradient(-80deg, rgba(229,234,237,1) 0%, rgba(255,255,255,0) 100%);
+		overflow: hidden;
+	}
+
+	&-contact {
+		position: relative;
+		display: flow-root;
+		background: linear-gradient(161.09deg, #DFEBF2 22.77%, #8DA5B6 92.88%, #49555D 121.52%);
+		overflow: hidden;
+
+		h2 {
+			font-size: 60px;
+		}
+
+		&-box {
+			padding-left: 50px;
+			float: left;
+			position: relative;
+			padding-top: 50px;
+			padding-bottom: 70px;
+			padding-right: 50px;
+			width: 100%;
+			max-width: 901px;
+			z-index: 1;
+
+			&::before, &::after {
+				@include pseudo();
+			}
+
+			&::before {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(42.91deg, #7390A1 -6.07%, #445561 64.57%);
+				clip-path: polygon(0% 0%, 76% 0%, 100% 54%, 79% 100%, 0% 100%);
+				z-index: -1;
+			}
+
+			&::after {
+				content: url(../img/triangle-arr.svg);
+				right: 0;
+				bottom: 0;
+				line-height: 0;
+				z-index: -1;
+			}
+
+			h2 {
+				color: #fff;
+			}
+
+			.address {
+				color: #fff;
+				font-weight: 600;
+				font-size: 24px;
+				max-width: 590px;
+				margin-top: 40px;
+			}
+
+			.phone {
+				margin-top: 15px;
+
+				b {
+					color: #fff;
+					font-weight: 600;
+					font-size: 24px;
+				}
+
+				a {
+					color: #fff;
+					font-weight: 600;
+					font-size: 24px;
+					display: block;
+					padding-left: 30px;
+					margin-top: 15px;
+
+					i {
+						font-weight: 400;
+						font-style: normal;
+					}
+
+				}
+
+			}
+
+			.email {
+				display: block;
+				text-decoration: none;
+				color: #fff;
+				font-weight: 600;
+				font-size: 24px;
+				margin-top: 15px;
+			}
+
+			.page-btn {
+				min-width: 436px;
+				margin-top: 35px;
+			}
+
+		}
+
+		&-item {
+			float: right;
+			padding-right: 50px;
+			width: 100%;
+			max-width: calc(100% - 901px);
+			padding-left: 30px;
+			padding-top: 50px;
+			padding-bottom: 70px;
+
+			.form-contact {
+				max-width: 853px;
+				width: 100%;
+				margin-top: 40px;
+			}
+
+		}
+
+
 	}
 
 }

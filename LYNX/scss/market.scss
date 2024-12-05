@@ -1,0 +1,82 @@
+@import "mixin";
+
+.market {
+    padding-top: 3.125rem;
+    position: relative;
+    background: linear-gradient(26.76deg, #E5EAED 58.78%, rgba(255, 255, 255, 0) 96.63%);
+    padding-bottom: 4.75rem;
+    overflow: hidden;
+
+    &::before {
+        @include pseudo($content: url(../img/market-clip.svg));
+        left: 50%;
+        top: calc(50% + 64px);
+        @include transform(translateX(-50%) translateY(-50%));
+    }
+
+    .page-wrap {
+        max-width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    h2 {
+        font-size: 60px;
+
+        i {
+            font-style: normal;
+            color: #ED1C24;
+        }
+
+    }
+
+    &-block {
+        padding-top: 4.375rem;
+        position: relative;
+
+        
+
+        .d-flex {
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+
+        .bx {
+            padding-left: 12px;
+            padding-right: 12px;
+
+            &:first-child {
+                flex-basis: 21%;
+            }
+
+        }
+
+        b {
+            color: #000;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        p {
+            color: #000;
+            font-weight: 400;
+            font-size: 24px;
+            margin: 15px 0 0;
+        }
+
+        .image {
+            position: relative;
+            overflow: hidden;
+
+            .img-start {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include transform(translateY(-50%) translateX(-50%));
+            }
+
+        }
+
+    }
+
+}
