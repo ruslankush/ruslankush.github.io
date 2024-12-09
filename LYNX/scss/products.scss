@@ -1,0 +1,80 @@
+@import "mixin";
+
+.products {
+    position: relative;
+    background: linear-gradient(26.76deg, #E5EAED 58.78%, rgba(255, 255, 255, 0) 96.63%);
+    padding-top: 17.75rem;
+    padding-bottom: 7.75rem;
+    overflow: hidden;
+    z-index: 1;
+
+    .page-wrap {
+		max-width: 1670px;
+	}
+
+    &-top {
+
+        .box {
+            position: relative;
+            max-width: 780px;
+        }
+
+        .block {
+            padding-top: 1.875rem;
+
+            p {
+                color: #445561;
+                font-weight: 400;
+                font-size: 1.5rem;
+                margin: 0 0 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                b {
+                    font-weight: 600;
+                    color: #000;
+                }
+
+            }
+
+        }
+
+    }
+
+    &-block {
+        
+        .bx {
+            flex-basis: calc(100% / 3);
+        }
+
+    }
+
+    &-cart {
+
+        a {
+            text-decoration: none;
+            display: block;
+            position: relative;
+            background-image: linear-gradient(8deg, rgba(68,85,97,1), rgba(68,85,97,1), rgba(113,142,159,1));
+            // clip-path: polygon(191.4px 0px, 653.9px 0px, 462.5px 294.4px, 0px 294.8px);
+        }
+
+        .image {
+            // clip-path: polygon(191.4px 0px, 653.9px 0px, 462.5px 294.4px, 0px 294.8px);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: cover;
+            // @include transform(skew(-35deg));
+
+            img {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+        }
+
+    }
+
+}

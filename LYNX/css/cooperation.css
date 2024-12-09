@@ -1,0 +1,57 @@
+.cooperation {
+  position: relative;
+  background: linear-gradient(26.76deg, #E5EAED 58.78%, rgba(255, 255, 255, 0) 96.63%);
+  padding-top: 17.75rem;
+  padding-bottom: 7.75rem;
+  overflow: hidden;
+}
+.cooperation .page-wrap {
+  max-width: 1670px;
+}
+.cooperation .box {
+  max-width: 854px;
+}
+.cooperation .txt {
+  margin-top: 30px;
+  color: #445561;
+  font-weight: 400;
+  font-size: 24px;
+}
+.cooperation .txt b {
+  font-weight: 600;
+}
+.cooperation .txt p {
+  margin: 0 0 13px;
+}
+.cooperation .txt p:last-child {
+  margin-bottom: 0;
+}
+.cooperation .txt a {
+  text-decoration: none;
+  display: inline;
+  color: #ED1C24;
+  font-weight: 600;
+  font-size: 24px;
+}
+.cooperation .form-contact {
+  margin-top: 3.125rem;
+}
+.cooperation .vector {
+  position: absolute;
+}
+.cooperation .vector:first-child {
+  right: 0;
+  bottom: -1px;
+}
+.cooperation .vector-clip {
+  -webkit-clip-path: polygon(59% 17%, 100% 17%, 100% 100%, 13% 100%);
+          clip-path: polygon(59% 17%, 100% 17%, 100% 100%, 13% 100%);
+}
+.cooperation .vector:nth-child(2) {
+  top: 0;
+  right: 30%;
+}
+.cooperation .vector:nth-child(3) {
+  left: 0;
+  bottom: -40%;
+}/*# sourceMappingURL=cooperation.css.map */

@@ -1,0 +1,76 @@
+@import "mixin";
+
+.cooperation {
+    position: relative;
+    background: linear-gradient(26.76deg, #E5EAED 58.78%, rgba(255, 255, 255, 0) 96.63%);
+    padding-top: 17.75rem;
+    padding-bottom: 7.75rem;
+    overflow: hidden;
+
+    .page-wrap {
+		max-width: 1670px;
+	}
+
+    .box {
+        max-width: 854px;
+    }
+
+    .txt {
+        margin-top: 30px;
+        color: #445561;
+        font-weight: 400;
+        font-size: 24px;
+
+        b {
+            font-weight: 600;
+        }
+
+        p {
+            margin: 0 0 13px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+            display: inline;
+            color: #ED1C24;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+    }
+
+    .form-contact {
+        margin-top: 3.125rem;
+    }
+
+    .vector {
+        position: absolute;
+
+        &:first-child {
+            right: 0;
+            bottom: -1px;
+        }
+
+        &-clip {
+            clip-path: polygon(59% 17%, 100% 17%, 100% 100%, 13% 100%);
+        }
+
+        &:nth-child(2) {
+            top: 0;
+            right: 30%;
+        }
+
+        &:nth-child(3) {
+            left: 0;
+            bottom: -40%;
+        }
+
+
+    }
+
+}

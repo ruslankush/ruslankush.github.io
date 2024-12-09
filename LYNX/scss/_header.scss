@@ -59,7 +59,7 @@
 
 					&::after {
 						@include pseudo($content: url(../img/icon/drop-down-icon.svg));
-						top: 50%;
+						top: 67%;
 						right: 0;
 						@include transform(translateY(-50%) rotateX(0));
 						@include transition(all, .4s, ease-in, 0s);
@@ -90,7 +90,7 @@
 				color: #3B4851;
 				font-size: 1rem;
 				padding-top: 4rem;
-				padding-bottom: 4rem;
+				padding-bottom: 2rem;
 				@include transition(all, .4s, ease-in, 0s);
 			}
 

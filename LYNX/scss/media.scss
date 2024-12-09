@@ -47,7 +47,8 @@
 		.bx {
 			display: flex;
 			flex-wrap: wrap;
-			align-items: center;
+			// align-items: center;
+			align-items: baseline;
 			column-gap: 1.125rem;
 		}
 
@@ -93,7 +94,6 @@
 
 				> a {
 					padding-top: 5rem;
-					padding-bottom: 5rem;
 					font-size: 1.125rem;
 				}
 

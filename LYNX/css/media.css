@@ -5,7 +5,7 @@
   .header .bx {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     -moz-column-gap: 1.125rem;
          column-gap: 1.125rem;
   }
@@ -33,7 +33,6 @@
   }
   .header .nav > li > a {
     padding-top: 5rem;
-    padding-bottom: 5rem;
     font-size: 1.125rem;
   }
   .header-subnav ul li a {

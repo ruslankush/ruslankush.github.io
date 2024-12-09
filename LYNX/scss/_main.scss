@@ -125,3 +125,15 @@
 	}
 
 }
+
+.arrow {
+	display: inline-block;
+	text-decoration: none;
+	line-height: 0;
+
+	&.slick-disabled {
+		pointer-events: none;
+		user-select: none;
+	}
+
+}

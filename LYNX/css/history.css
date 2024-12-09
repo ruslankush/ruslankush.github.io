@@ -1,0 +1,72 @@
+.history {
+  position: relative;
+  background: linear-gradient(26.76deg, #E5EAED 58.78%, rgba(255, 255, 255, 0) 96.63%);
+  padding-top: 17.75rem;
+  padding-bottom: 7.75rem;
+  overflow: hidden;
+}
+.history .vector {
+  position: absolute;
+}
+.history .vector:first-child {
+  bottom: 0;
+  right: -10%;
+}
+.history .vector:nth-child(2) {
+  top: 0;
+  right: 10%;
+}
+.history .vector:nth-child(3) {
+  top: 0;
+  left: -7%;
+}
+.history .page-wrap {
+  max-width: 1670px;
+}
+.history .d-flex {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.history .bx {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-basis: 43%;
+}
+.history .bx:first-child {
+  flex-basis: 48%;
+}
+.history .block {
+  padding-top: 1.875rem;
+}
+.history .block p {
+  margin: 0 0 15px;
+  color: #445561;
+  font-weight: 400;
+  font-size: 24px;
+}
+.history .block p b {
+  color: #000;
+  font-weight: 600;
+}
+.history .block p:last-child {
+  margin-bottom: 0;
+}
+.history .block-img {
+  position: relative;
+}
+.history .block-img .image:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-top: -6%;
+}
+.history .block-img .image:nth-child(3) {
+  margin-top: -20%;
+}
+.history .block-img .image:last-child {
+  margin-top: -5%;
+  margin-right: -4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}/*# sourceMappingURL=history.css.map */

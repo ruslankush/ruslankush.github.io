@@ -1,0 +1,49 @@
+.products {
+  position: relative;
+  background: linear-gradient(26.76deg, #E5EAED 58.78%, rgba(255, 255, 255, 0) 96.63%);
+  padding-top: 17.75rem;
+  padding-bottom: 7.75rem;
+  overflow: hidden;
+  z-index: 1;
+}
+.products .page-wrap {
+  max-width: 1670px;
+}
+.products-top .box {
+  position: relative;
+  max-width: 780px;
+}
+.products-top .block {
+  padding-top: 1.875rem;
+}
+.products-top .block p {
+  color: #445561;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0 0 15px;
+}
+.products-top .block p:last-child {
+  margin-bottom: 0;
+}
+.products-top .block p b {
+  font-weight: 600;
+  color: #000;
+}
+.products-block .bx {
+  flex-basis: 33.3333333333%;
+}
+.products-cart a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  background-image: linear-gradient(8deg, rgb(68, 85, 97), rgb(68, 85, 97), rgb(113, 142, 159));
+}
+.products-cart .image {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+.products-cart .image img {
+  opacity: 0;
+  visibility: hidden;
+}/*# sourceMappingURL=products.css.map */

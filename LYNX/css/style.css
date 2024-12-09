@@ -90,8 +90,13 @@ a:focus {
   color: #000;
   font-weight: 600;
 }
+.page h1 {
+  color: #445561;
+  font-size: 3.75rem;
+}
 .page h2 {
   color: #445561;
+  font-size: 3.75rem;
 }
 .page-rubl {
   position: relative;
@@ -299,7 +304,7 @@ body {
   content: url(../img/icon/drop-down-icon.svg);
   display: block;
   position: absolute;
-  top: 50%;
+  top: 67%;
   right: 0;
   transform: translateY(-50%) rotateX(0);
   -webkit-transform: translateY(-50%) rotateX(0);
@@ -327,7 +332,7 @@ body {
   color: #3B4851;
   font-size: 1rem;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   transition: all 0.4s ease-in 0s;
   -webkit-transition: all 0.4s ease-in 0s;
   -moz-transition: all 0.4s ease-in 0s;
@@ -459,8 +464,8 @@ body {
   color: #fff;
   font-weight: normal;
   padding-left: 24px;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  -moz-column-gap: 101px;
+       column-gap: 101px;
 }
 .footer ul.column-3 {
   -moz-column-count: 3;
@@ -607,6 +612,18 @@ body {
   max-width: 853px;
   width: 100%;
   margin-top: 40px;
+}
+
+.arrow {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 0;
+}
+.arrow.slick-disabled {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .form-group {

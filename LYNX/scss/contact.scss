@@ -1,0 +1,102 @@
+@import "mixin";
+
+.contact {
+    position: relative;
+    background: linear-gradient(26.76deg, #E5EAED 58.78%, rgba(255, 255, 255, 0) 96.63%);
+    padding-top: 17.75rem;
+    padding-bottom: 7.75rem;
+    overflow: hidden;
+
+    .page-wrap {
+		max-width: 1670px;
+	}
+
+    &-box {
+        max-width: 780px;
+        padding-top: 40px;
+
+        .address {
+            color: #445561;
+            font-weight: 600;
+            font-size: 24px;
+            // max-width: 590px;
+        }
+
+        .phone {
+            margin-top: 15px;
+
+            b {
+                color: #445561;
+                font-weight: 600;
+                font-size: 24px;
+            }
+
+            a {
+                color: #445561;
+                font-weight: 600;
+                font-size: 24px;
+                display: block;
+                padding-left: 30px;
+                margin-top: 15px;
+
+                i {
+                    font-weight: 400;
+                    font-style: normal;
+                }
+
+            }
+
+        }
+
+        .email {
+            display: block;
+            text-decoration: none;
+            color: #445561;
+            font-weight: 600;
+            font-size: 24px;
+            margin-top: 15px;
+        }
+
+        .page-btn {
+            min-width: 436px;
+            margin-top: 35px;
+        }
+
+    }
+
+    &-item {
+        padding-top: 5rem;
+        max-width: 854px;
+
+        .form-contact {
+            margin-top: 2.5rem;
+        }
+
+    }
+
+    .vector {
+        position: absolute;
+
+        &:first-child {
+            right: 0;
+            bottom: -1px;
+        }
+
+        &-clip {
+            clip-path: polygon(59% 0%, 100% 0%, 100% 100%, 13% 100%);
+        }
+
+        &:nth-child(2) {
+            top: 0;
+            right: 30%;
+        }
+
+        &:nth-child(3) {
+            left: 0;
+            bottom: -40%;
+        }
+
+
+    }
+
+}
