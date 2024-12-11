@@ -3,10 +3,36 @@
 .products {
     position: relative;
     background: linear-gradient(26.76deg, #E5EAED 58.78%, rgba(255, 255, 255, 0) 96.63%);
-    padding-top: 17.75rem;
-    padding-bottom: 7.75rem;
+    padding-top: 10.25rem;
+    padding-bottom: 3.75rem;
     overflow: hidden;
     z-index: 1;
+
+    .vector {
+        position: absolute;
+        z-index: -1;
+
+        &:first-child {
+            top: 0;
+            right: -35%;
+        }
+
+        &:nth-child(2) {
+            top: 40%;
+            right: -20%;
+            @include transform(translateY(-50%) rotate(-4deg));
+        }
+
+        &:nth-child(3) {
+            top: 21%;
+        }
+
+        &:nth-child(4) {
+            bottom: 5%;
+            left: 40%;
+        }
+
+    }
 
     .page-wrap {
 		max-width: 1670px;
@@ -20,12 +46,12 @@
         }
 
         .block {
-            padding-top: 1.875rem;
+            padding-top: 1rem;
 
             p {
                 color: #445561;
                 font-weight: 400;
-                font-size: 1.5rem;
+                font-size: 1rem;
                 margin: 0 0 15px;
 
                 &:last-child {
@@ -44,33 +70,669 @@
     }
 
     &-block {
+        margin-top: 1.5rem;
+        position: relative;
         
-        .bx {
-            flex-basis: calc(100% / 3);
+        .flex {
+            display: none;
+            z-index: -1;
+
+            span {
+                height: 2px;
+                background-color: #fff;
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 100%;
+
+                &:first-child {
+                    top: 0;
+                }
+
+                &:nth-child(2) {
+                    top: 6.6%;
+                }
+
+                &:nth-child(3) {
+                    top: 13.3%;
+                }
+
+                &:nth-child(4) {
+                    top: 20%;
+                }
+
+                &:nth-child(5) {
+                    top: 26.6%;
+                }
+
+                &:nth-child(6) {
+                    top: 33.3%;
+                }
+
+                &:nth-child(7) {
+                    top: 40%;
+                }
+
+                &:nth-child(8) {
+                    top: 46.6%;
+                }
+
+                &:nth-child(9) {
+                    top: 53.3%;
+                }
+
+                &:nth-child(10) {
+                    top: 60%;
+                }
+
+                &:nth-child(11) {
+                    bottom: 33.3%;
+                }
+
+                &:nth-child(12) {
+                    bottom: 26.6%;
+                }
+
+                &:nth-child(13) {
+                    bottom: 20%;
+                }
+
+                &:nth-child(14) {
+                    bottom: 13.3%;
+                }
+
+                &:last-child {
+                    bottom: 6.6%;
+                }
+
+            }
+
         }
 
     }
 
     &-cart {
+        clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        position: relative;
+        left: 0;
+        background-image: linear-gradient(8deg, rgba(68,85,97,1), rgba(68,85,97,1), rgba(113,142,159,1));
+        overflow: hidden;
+
+        &:hover {
+
+            .image {
+
+                img {
+
+                    &.hide {
+                        opacity: 1;
+                    }
+
+                }
+
+            }
+
+        }
 
         a {
             text-decoration: none;
             display: block;
             position: relative;
-            background-image: linear-gradient(8deg, rgba(68,85,97,1), rgba(68,85,97,1), rgba(113,142,159,1));
-            // clip-path: polygon(191.4px 0px, 653.9px 0px, 462.5px 294.4px, 0px 294.8px);
         }
 
         .image {
-            // clip-path: polygon(191.4px 0px, 653.9px 0px, 462.5px 294.4px, 0px 294.8px);
             background-repeat: no-repeat;
             background-position: 0 0;
             background-size: cover;
-            // @include transform(skew(-35deg));
+            position: relative;
 
             img {
-                opacity: 0;
-                visibility: hidden;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include transition(all, .4s, ease-in, 0s);
+
+                &.hide {
+                    position: absolute;
+                    inset: 0;
+                    opacity: 0;
+                }
+
+            }
+
+        }
+
+        .info {
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 10px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.75rem;
+            max-width: 387px;
+            padding-left: 3.375rem;
+            padding-right: 5rem;
+        }
+
+    }
+
+}
+
+@include sz(min393) {
+
+    .products {
+
+        &-block {
+            display: grid;
+            grid-template-columns: repeat(2, 255px);
+            row-gap: 2px;
+
+            .flex {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+        }
+
+        &-cart {
+
+            &#item {
+
+                &-01 {
+                    left: -12%;
+                }
+    
+                &-02 {
+                    left: -36.2%;
+                }
+    
+                &-03 {
+                    left: -12%;
+                }
+    
+                &-04 {
+                    left: -36.2%;
+                }
+    
+                &-05 {
+                    left: -12%;
+                }
+    
+                &-06 {
+                    left: -36.2%;
+                }
+    
+                &-07 {
+                    left: -12%;
+                }
+    
+                &-08 {
+                    left: -36.2%;
+                }
+    
+                &-09 {
+                    left: -12%;
+                }
+    
+                &-10 {
+                    left: -36.2%;
+                }
+    
+                &-11 {
+                    left: -12%;
+                }
+    
+                &-12 {
+                    left: -36.2%;
+                }
+                &-13 {
+                    left: -12%;
+                }
+    
+                &-14 {
+                    left: -36.2%;
+                }
+    
+                &-15 {
+                    left: -12%;
+                }
+    
+                &-16 {
+                    left: -36.2%;
+                }
+    
+                &-17 {
+                    left: -12%;
+                }
+    
+                &-18 {
+                    left: -36.2%;
+                }
+                &-19 {
+                    left: -12%;
+                }
+    
+                &-20 {
+                    left: -36.2%;
+                }
+    
+                &-21 {
+                    left: -12%;
+                }
+    
+                &-22 {
+                    left: -36.2%;
+                }
+    
+                &-23 {
+                    left: -12%;
+                }
+    
+                &-24 {
+                    left: -36.2%;
+                }
+    
+                &-25 {
+                    left: -12%;
+                }
+    
+                &-26 {
+                    left: -36.2%;
+                }
+    
+                &-27 {
+                    left: -12%;
+                }
+    
+                &-28 {
+                    left: -36.2%;
+                }
+    
+                &-29 {
+                    left: 38.2%;
+                }
+    
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min480) {
+
+    .products {
+
+        &-block {
+            grid-template-columns: repeat(2, 340px);
+        }
+
+    }
+
+}
+
+@include sz(min576) {
+
+    .products {
+
+        &-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+        }
+
+        &-cart {
+            width: 100%;
+            max-width: 50%;
+
+            &#item {
+
+                &-01 {
+                    left: 0;
+                }
+    
+                &-02 {
+                    left: -12.2%;
+                }
+    
+                &-03 {
+                    left: 0;
+                }
+    
+                &-04 {
+                    left: -12.2%;
+                }
+    
+                &-05 {
+                    left: 0;
+                }
+    
+                &-06 {
+                    left: -12.2%;
+                }
+    
+                &-07 {
+                    left: 0;
+                }
+    
+                &-08 {
+                    left: -12.2%;
+                }
+    
+                &-09 {
+                    left: 0;
+                }
+    
+                &-10 {
+                    left: -12.2%;
+                }
+    
+                &-11 {
+                    left: 0;
+                }
+    
+                &-12 {
+                    left: -12.2%;
+                }
+                &-13 {
+                    left: 0;
+                }
+    
+                &-14 {
+                    left: -12.2%;
+                }
+    
+                &-15 {
+                    left: 0;
+                }
+    
+                &-16 {
+                    left: -12.2%;
+                }
+    
+                &-17 {
+                    left: 0;
+                }
+    
+                &-18 {
+                    left: -12.2%;
+                }
+                &-19 {
+                    left: 0;
+                }
+    
+                &-20 {
+                    left:-12.2%;
+                }
+    
+                &-21 {
+                    left: 0;
+                }
+    
+                &-22 {
+                    left: -12.2%;
+                }
+    
+                &-23 {
+                    left: 0;
+                }
+    
+                &-24 {
+                    left: -12.2%;
+                }
+    
+                &-25 {
+                    left: 0;
+                }
+    
+                &-26 {
+                    left: -12.2%;
+                }
+    
+                &-27 {
+                    left: 0;
+                }
+    
+                &-28 {
+                    left: -12.2%;
+                }
+    
+                &-29 {
+                    left: 25.2%;
+                }
+    
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min768) {
+
+    .products {
+        padding-top: 17.75rem;
+        padding-bottom: 7.75rem;
+
+        .vector {
+
+            &:first-child {
+                right: 0;
+            }
+
+        }
+
+        &-top {
+
+            .block {
+                padding-top: 1.875rem;
+            }
+
+        }
+
+        &-block {
+            margin-top: 2.5rem;
+        }
+
+    }
+
+}
+
+@include sz(min992) {
+
+    .products {
+
+        &-cart {
+            max-width: calc(100% / 3.3);
+
+            &#item {
+
+                &-01 {
+                    left: 7.5%;
+                }
+    
+                &-02 {
+                    left: 0.1%;
+                }
+    
+                &-03 {
+                    left: -7.3%;
+                }
+    
+                &-04 {
+                    left: 0%;
+                }
+    
+                &-05 {
+                    left: -7.4%;
+                }
+    
+                &-06 {
+                    left: -14.8%;
+                }
+    
+                &-07 {
+                    left: 15.3%;
+                }
+    
+                &-08 {
+                    left: 7.9%;
+                }
+    
+                &-09 {
+                    left: 0.5%;
+                }
+    
+                &-10 {
+                    left: 7.8%;
+                }
+    
+                &-11 {
+                    left: 0.4%;
+                }
+    
+                &-12 {
+                    left: -7%;
+                }
+                &-13 {
+                    margin-left: 23%;
+                }
+    
+                &-14 {
+                    left: -7.4%;
+                }
+    
+                &-15 {
+                    left: 15.4%;
+                }
+    
+                &-16 {
+                    left: 8%;
+                }
+    
+                &-17 {
+                    left: 0.6%;
+                }
+    
+                &-18 {
+                    left: 7.8%;
+                }
+                &-19 {
+                    left: 0.4%;
+                }
+    
+                &-20 {
+                    left: -7%;
+                }
+    
+                &-21 {
+                    left: 23.1%;
+                }
+    
+                &-22 {
+                    left: 15.7%;
+                }
+    
+                &-23 {
+                    left: 8.3%;
+                }
+    
+                &-24 {
+                    left: 15.6%;
+                }
+    
+                &-25 {
+                    left: 8.2%;
+                }
+    
+                &-26 {
+                    left: 0.8%;
+                }
+    
+                &-27 {
+                    margin-left: 30.9%;
+                }
+    
+                &-28 {
+                    margin-left: 4.8%;
+                }
+    
+                &-29 {
+                    left: 46.2%;
+                }
+    
+            }
+
+        }
+
+        &-block {
+
+            .flex {
+
+                span {
+                    position: relative;
+                    top: inherit!important;
+                    bottom: inherit!important;
+
+                    &.hide {
+                        display: none;
+                    }
+
+                }
+
+            }
+
+
+        }
+
+    }
+
+}
+
+@include sz(min1366) {
+
+    .products {
+
+        &-top {
+
+            .block {
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+            }
+
+        }
+
+        &-cart {
+
+            .info {
+                font-weight: 400;
+                font-size: 1.125rem;
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min1680) {
+
+    .products {
+
+        &-cart {
+
+            .info {
+                font-size: 1.5rem;
+                padding-left: 3.4375rem;
+                padding-right: 0;
             }
 
         }

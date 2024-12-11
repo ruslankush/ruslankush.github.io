@@ -83,6 +83,14 @@
 
 			}
 
+			&.active {
+
+				> a {
+					font-weight: 600;
+				}
+
+			}
+
 			> a {
 				text-decoration: none;
 				display: inline-block;
@@ -129,6 +137,14 @@
 
 				&:not(:last-child) {
 					margin-bottom: 10px;
+				}
+
+				&.active {
+
+					a {
+						font-weight: 600;
+					}
+
 				}
 
 				a {

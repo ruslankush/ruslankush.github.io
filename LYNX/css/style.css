@@ -87,16 +87,9 @@ a:focus {
 }
 .page :where(h1, h2) {
   margin: 0;
-  color: #000;
+  color: #445561;
   font-weight: 600;
-}
-.page h1 {
-  color: #445561;
-  font-size: 3.75rem;
-}
-.page h2 {
-  color: #445561;
-  font-size: 3.75rem;
+  font-size: clamp(1.6875rem, 4vw, 3.75rem);
 }
 .page-rubl {
   position: relative;
@@ -325,6 +318,9 @@ body {
   opacity: 1;
   visibility: visible;
 }
+.header .nav > li.active > a {
+  font-weight: 600;
+}
 .header .nav > li > a {
   text-decoration: none;
   display: inline-block;
@@ -363,6 +359,9 @@ body {
 }
 .header-subnav ul li:not(:last-child) {
   margin-bottom: 10px;
+}
+.header-subnav ul li.active a {
+  font-weight: 600;
 }
 .header-subnav ul li a {
   font-size: 16px;
@@ -455,7 +454,7 @@ body {
 .footer a {
   color: #fff;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1rem;
   text-decoration: none;
   display: block;
   margin-bottom: 10px;
@@ -464,8 +463,8 @@ body {
   color: #fff;
   font-weight: normal;
   padding-left: 24px;
-  -moz-column-gap: 101px;
-       column-gap: 101px;
+  -moz-column-gap: 51px;
+       column-gap: 51px;
 }
 .footer ul.column-3 {
   -moz-column-count: 3;
@@ -519,7 +518,6 @@ body {
   position: relative;
   display: flow-root;
   background: linear-gradient(161.09deg, #DFEBF2 22.77%, #8DA5B6 92.88%, #49555D 121.52%);
-  overflow: hidden;
 }
 .main-contact h2 {
   font-size: 60px;

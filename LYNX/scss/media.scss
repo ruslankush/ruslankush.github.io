@@ -177,3 +177,19 @@
 	}
 
 }
+
+@include sz(min1860) {
+
+	.footer {
+
+		a {
+			font-size: 1.125rem;
+		}
+
+		ul {
+			column-gap: 101px
+		}
+
+	}
+
+}

@@ -62,4 +62,13 @@
   .page-btn {
     font-size: 24px;
   }
+}
+@media (min-width: 1860px) {
+  .footer a {
+    font-size: 1.125rem;
+  }
+  .footer ul {
+    -moz-column-gap: 101px;
+         column-gap: 101px;
+  }
 }/*# sourceMappingURL=media.css.map */
