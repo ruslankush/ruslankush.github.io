@@ -1,0 +1,448 @@
+.form {
+	
+	&-gr {
+		overflow: hidden;
+		position: relative;
+
+		input {
+			width: 100%;
+			outline: none;
+			line-height: 1.3;
+			padding: 5px 10px;
+			box-sizing: border-box;
+
+			&:focus {
+
+				~ label {
+					opacity: 0;
+					visibility: hidden;
+				}
+
+			}
+
+			&.used {
+
+				~ label {
+					opacity: 0;
+					visibility: hidden;
+				}
+
+			}
+
+		}
+
+		label {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			@include transform(translateY(-50%));
+			@include transition(all, .4s, ease-in, 0s);
+			color: #2D2928;
+			pointer-events: none;
+			user-select: none;
+
+			sup {
+				color: #C1111B;
+			}
+
+		}
+
+	}
+
+	&-search {
+		position: relative;
+		@include bRadius(5px);
+		overflow: hidden;
+
+		input {
+			height: 50px;
+			border: none;
+			background-color: #E5E6EF;
+			font-weight: 600;
+			font-size: 0.75rem;
+			color: #2D2928;
+			text-transform: uppercase;
+			font-family: 'Montserrat', sans-serif;
+			padding-left: 1.25rem;
+			padding-right: 3.125rem;
+
+			&::placeholder {
+				font-weight: 600;
+				font-size: 0.75rem;
+				color: #2D2928;
+				text-transform: uppercase;
+				font-family: 'Montserrat', sans-serif;
+			}
+
+		}
+
+		.icon {
+			position: absolute;
+			top: 50%;
+			right: 1.25rem;
+			@include transform(translateY(-50%));
+			line-height: 0;
+			z-index: 1;
+
+			svg {
+				fill: #13447C;
+			}
+
+		}
+
+	}
+
+	&-products {
+
+		&_gr {
+			margin-bottom: 1.25rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			input {
+				height: 3.75rem;
+				@include bRadius(5px);
+				border: none;
+				background-color: #fff;
+				color: #2D2928;
+				font-weight: normal;
+				font-size: 1rem;
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+			}
+
+			label {
+				font-weight: normal;
+				font-size: 1rem;
+				left: 1.5rem;
+			}
+
+		}
+
+		.form-file {
+			margin-top: 1.5rem;
+
+			.icon {
+
+				svg {
+					fill: #fff;
+				}
+
+			}
+
+			label {
+				color: #fff;
+			}
+
+		}
+
+		button {
+			margin-top: 1.25rem;
+			min-width: 209px;
+		}
+
+		.form-personal {
+			margin-top: 0.9375rem;
+			color: rgba(255, 255, 255, 0.5);
+			max-width: 207px;
+
+			a {
+				color: rgba(255, 255, 255, 0.5);
+			}
+
+		}
+
+	}
+
+	&-file {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		column-gap: 7px;
+
+		.icon {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 0;
+
+			svg {
+				fill: #2D2928;
+			}
+
+		}
+
+		label {
+			position: relative;
+			font-weight: 500;
+			color: #2D2928;
+			font-size: 0.9375em;
+			cursor: pointer;
+			display: inline-block;
+		}
+
+		input {
+			position: absolute;
+			opacity: 0;
+			z-index: -1;
+			left: -999px;
+		}
+
+	}
+
+	&-personal {
+		font-weight: normal;
+		font-size: 0.6875rem;
+
+		a {
+			text-decoration: underline;
+			text-decoration-skip-ink: none;
+			font-weight: normal;
+			font-size: 0.6875rem;
+			display: inline-block;
+		}
+
+	}
+
+	&-subscribe {
+
+		&_fl {
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: -0.75rem;
+			margin-right: -0.75rem;
+		}
+
+		&_gr {
+			padding-left: 0.75rem;
+			padding-right: 0.75rem;
+			flex-basis: 27%;
+
+			&:first-child {
+				flex-basis: 73%;
+			}
+
+			.page-btn {
+				min-width: 100%;
+			}
+
+			input {
+				height: 3.6875rem;
+				@include bRadius(5px);
+				font-size: 1rem;
+				font-weight: normal;
+				padding-left: 1.375rem;
+				padding-right: 1.375rem;
+				border: none;
+				color: #2D2928;
+			}
+
+			label {
+				font-size: 1rem;
+				font-weight: normal;
+				left: 1.375rem;
+			}
+
+		}
+
+	}
+
+	&-ps  {
+
+		&_fl {
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: -0.75rem;
+			margin-right: -0.75rem;
+		}
+
+		&_gr {
+			padding-left: 0.75rem;
+			padding-right: 0.75rem;
+			flex: 0 0 25%;
+			max-width: 25%;
+
+			.page-btn {
+				min-width: 100%;
+			}
+
+			input {
+				height: 3.6875rem;
+				@include bRadius(5px);
+				font-size: 1rem;
+				font-weight: normal;
+				padding-left: 1.375rem;
+				padding-right: 1.375rem;
+				border: none;
+				color: #2D2928;
+			}
+
+			label {
+				font-size: 1rem;
+				font-weight: normal;
+				left: 1.375rem;
+			}
+
+		}
+
+		.form-file {
+			margin-top: 1.5rem;
+
+			.icon {
+
+				svg {
+					fill: #fff;
+				}
+
+			}
+
+			label {
+				color: #fff;
+			}
+
+		}
+
+		.form-personal {
+			color: #FFFFFF99;
+			margin-top: 8px;
+
+			a {
+				color: #FFFFFF99;
+			}
+
+		}
+
+	}
+
+	&-filter {
+
+		&_fl {
+			margin-left: -0.75rem;
+			margin-right: -0.75rem;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&_gr {
+			padding-left: 0.75rem;
+			padding-right: 0.75rem;
+			flex: 0 0 25%;
+			max-width: 25%;
+		}
+
+	}
+
+	&-select{
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		color: #2D2928;
+		text-align: left;
+		font-weight: 600;
+		font-size: 0.875rem;
+		user-select: none;
+		-webkit-touch-callout: none;
+	  
+		.placeholder{
+			position: relative;
+			display: block;
+			background-color: #E5E6EF;
+			z-index: 1;
+			padding: 1.375rem 1.5rem 1.375rem 1rem;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			cursor: pointer;
+			@include transition(all, .4s, ease-in, 0s);
+			border-bottom: 1px solid transparent;
+			@include bRadius(5px);
+			overflow: hidden;
+			line-height: 1;
+
+			&::after {
+				@include pseudo($content: url(../img/icon/drop-select-icon.svg));
+				top: 50%;
+				right: 0.625rem;
+				@include transform(translateY(-50%));
+				@include transition(all, .3s, ease-in, 0s);
+			}
+		  
+		}
+	  
+		&-item {
+			display: none;
+			position: absolute;
+			overflow: hidden;
+			overflow-y: auto;
+			width: 100%;
+			background: #fff;
+			border-radius: 2px;
+			top: 100%;
+			left: 0;
+			z-index: 100;
+			max-height: 170px;
+			padding-bottom: 0.75rem;
+			padding-top: 0.75rem;
+
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+		
+				li{
+					display: block;
+					text-align: left;
+					padding-left: 1rem;
+					padding-right: 1rem;
+					cursor: pointer;
+
+					&:not(:last-child) {
+						margin-bottom: 0.75rem;
+					}
+
+					&:hover {
+
+						.checked {
+		
+							label {
+								color: #13447C;
+							}
+		
+						}
+		
+					}
+
+				}
+
+			}
+
+		}
+
+		&.is-open{
+			box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+
+			.placeholder {
+				background-color: #fff;
+				border-bottom-color: #E5E6EF;
+				@include bRadius(5px 5px 0 0);
+
+				&::after {
+					@include transform(translateY(-50%) rotateX(-180deg));
+				}
+
+			}
+
+			.form {
+				&-select-item {
+					display: block;
+				}
+
+			}
+		}
+	  
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+@import "mixin";
+
+.movie {
+    padding-bottom: 3.75rem;
+
+    &-block {
+        padding-top: 2.5rem;
+
+        .d-flex {
+            margin-left: -0.8125rem;
+            margin-right: -0.8125rem;
+            row-gap: 2.5rem;
+        }
+
+        .bx {
+            padding-left: 0.8125rem;
+            padding-right: 0.8125rem;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+
+    }
+
+}

@@ -1,0 +1,32 @@
+@import "mixin";
+
+.partner {
+    padding-bottom: 4.375rem;
+
+    .desc {
+        color: #2D2928;
+        font-weight: 500;
+        font-size: 1.125rem;
+        margin-top: 1.125rem;
+        max-width: 1220px;
+    }
+
+    &-block {
+        padding-top: 2.5rem;
+
+        .d-flex {
+            margin-left: -0.8125rem;
+            margin-right: -0.8125rem;
+            row-gap: 3.125rem;
+        }
+
+        .bx {
+            padding-left: 0.8125rem;
+            padding-right: 0.8125rem;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+
+    }
+
+}

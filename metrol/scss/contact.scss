@@ -1,0 +1,96 @@
+@import "mixin";
+
+.contact {
+    padding-bottom: 5rem;
+
+    &-block {
+        padding-top: 2.5rem;
+    }
+
+    &-group {
+
+        .d-flex {
+            column-gap: 5rem;
+        }
+
+        .group {
+            position: relative;
+            padding-left: 4.375rem;
+
+            .name {
+                font-weight: normal;
+                color: #8A8A8A;
+                font-size: 0.9375rem;
+                margin-bottom: 5px;
+            }
+
+            .address, .work-time {
+                color: #2D2928;
+                font-weight: 500;
+                font-size: 1rem;
+            }
+
+            .address {
+                max-width: 414px;
+            }
+
+            .icon {
+                position: absolute;
+                left: 0;
+                top: 0;
+                overflow: hidden;
+                display: grid;
+                place-items: center;
+                width: 3.25rem;
+                height: 3.25rem;
+                @include bRadius(5px);
+                background-color: rgba(19, 68, 124, 0.05);
+            }
+
+            .phone {
+
+                a {
+                    color: #13447C;
+                    font-weight: 600;
+                    font-size: 1.1875rem;
+                    display: block;
+                }
+
+            }
+
+            .email {
+
+                a {
+                    font-weight: 600;
+                    font-size: 1rem;
+                    color: #13447C;
+                    text-decoration: none;
+                    display: inline-block;
+                }
+
+            }
+
+        }
+
+    }
+
+    &-map {
+        margin-top: 3.125rem;
+        position: relative;
+        overflow: hidden;
+        @include bRadius(10px);
+        min-height: 680px;
+
+        .map {
+            position: absolute;
+            inset: 0;
+        }
+
+        [class*="ground-pane"] {
+            filter: grayscale(1);
+            -webkit-filter: grayscale(1);
+        }
+
+    }
+
+}

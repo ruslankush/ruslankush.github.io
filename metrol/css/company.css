@@ -1,0 +1,61 @@
+.company {
+  padding-top: 3.125rem;
+  padding-bottom: 3.75rem;
+}
+.company .bx {
+  flex-basis: 40%;
+  position: relative;
+}
+.company .bx:first-child {
+  flex-basis: 49%;
+  order: 1;
+}
+.company .map-img {
+  position: absolute;
+  bottom: -20%;
+  left: 5%;
+  z-index: -1;
+}
+.company .txt {
+  margin-top: 1.25rem;
+}
+.company .txt b {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #2D2928;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+.company .txt p {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #2D2928;
+}
+.company .page-btn {
+  min-width: 224px;
+  margin-top: 1.875rem;
+}
+.company .video a {
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 94% 0, 100% 6%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 94% 0, 100% 6%, 100% 100%, 0 100%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: block;
+}
+.company .video .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  display: inline-block;
+}/*# sourceMappingURL=company.css.map */

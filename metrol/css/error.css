@@ -1,0 +1,36 @@
+.error {
+  padding-top: 8rem;
+  padding-bottom: 12.375rem;
+  position: relative;
+  overflow: hidden;
+}
+.error::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 150%;
+  height: 24vw;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(229, 230, 239, 0.4) 100%);
+  transform: rotate(-23deg) translateY(-50%);
+  -webkit-transform: rotate(-23deg) translateY(-50%);
+  -moz-transform: rotate(-23deg) translateY(-50%);
+  -ms-transform: rotate(-23deg) translateY(-50%);
+  -o-transform: rotate(-23deg) translateY(-50%);
+}
+.error .box {
+  text-align: center;
+}
+.error .image {
+  margin-bottom: 1.25rem;
+}
+.error .ttl {
+  color: #2D2928;
+  font-weight: 600;
+  font-size: 1.325rem;
+  margin-bottom: 1.25rem;
+}
+.error .page-btn {
+  min-width: 254px;
+}/*# sourceMappingURL=error.css.map */

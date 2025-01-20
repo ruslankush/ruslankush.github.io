@@ -1,0 +1,127 @@
+.press-centr {
+  padding-top: 3.125rem;
+  padding-bottom: 6.6875rem;
+}
+.press-centr_block {
+  padding-top: 1.875rem;
+}
+.press-centr_block .link {
+  text-decoration: underline;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #13447C;
+  text-transform: uppercase;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.press-centr_block .tab-wrap {
+  padding-top: 2.5rem;
+}
+.press-centr_slider {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.press-centr_slider .item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.press-centr_slider .item.slick-current {
+  padding-right: 30px;
+}
+.press-centr_slider .item.slick-current .press-centr_cart {
+  max-width: 820px;
+}
+.press-centr_slider .item.slick-current .press-centr_cart a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+.press-centr_slider .item.slick-current .press-centr_cart a .name {
+  font-size: 1.3125rem;
+  margin-bottom: 15px;
+}
+.press-centr_slider .item.slick-current .press-centr_cart a .box {
+  flex-basis: 45%;
+}
+.press-centr_slider .item.slick-current .press-centr_cart a .image {
+  flex-basis: 48%;
+  margin-bottom: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 0 75%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 0 75%);
+  min-height: 324px;
+  max-height: 324px;
+}
+.press-centr_slider .item.slick-current .press-centr_cart a .info {
+  margin-bottom: 15px;
+  display: block;
+}
+.press-centr_slider .arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.press-centr_slider .arrow-next {
+  right: 0;
+}
+.press-centr_slider .slick-prev {
+  display: none;
+}
+.press-centr_cart {
+  max-width: 270px;
+  width: 100%;
+}
+.press-centr_cart a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.press-centr_cart a .name {
+  color: #2D2928;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  margin-bottom: 7px;
+}
+.press-centr_cart a .date {
+  color: #A1A5C6;
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+.press-centr_cart a .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
+  margin-bottom: 0.8125rem;
+  min-height: 256px;
+}
+.press-centr_cart a .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.press-centr_cart a .info {
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: #2D2928;
+  display: none;
+}
+.press-centr_cart a .info p {
+  margin: 0 0 15px;
+}
+.press-centr_cart a .info p:last-child {
+  margin-bottom: 0;
+}/*# sourceMappingURL=press-centr.css.map */

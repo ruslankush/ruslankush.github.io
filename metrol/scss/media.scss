@@ -1,0 +1,186 @@
+@import "mixin";
+
+@include sz(min480) {
+
+	// ==content
+
+}
+
+@include sz(min576) {
+
+	// ==content
+
+}
+
+@include sz(min680) {
+
+	// ==content
+
+}
+
+@include sz(min768) {
+
+	// == content
+
+}
+
+@include sz(min860) {
+
+	// ==content
+
+}
+
+@include sz(min992) {
+
+	// ==content
+
+}
+
+@include sz(min1100) {
+
+	// ==content
+
+}
+
+@include sz(min1200) {
+
+	// ==content
+
+}
+
+@include sz(min1280) {
+
+	// ==content
+
+}
+
+@include sz(min1366) {
+
+	.header {
+
+		.phone {
+			display: inline-block;
+		}
+
+		&-phone {
+			display: none;
+		}
+
+	}
+
+}
+
+@include sz(min1440) {
+
+	.header {
+
+		.link {
+			margin-right: 1.625rem;
+		}
+
+		nav {
+			margin-right: 1.125rem;
+
+			> ul {
+				column-gap: 1.125rem;
+			}
+
+		}
+
+		.phone {
+			margin-left: 1.125rem;
+
+			a {
+				font-size: 1.0625rem;
+			}
+
+		}
+
+		.bx {
+			flex: 0 0 78%;
+			max-width: 78%;
+		}
+
+		&-subnav {
+
+			ul {
+
+				li {
+
+					a {
+						font-size: 1rem;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@include sz(min1550) {
+
+	.header {
+
+		nav {
+			margin-right: 1.625rem;
+
+			> ul {
+				column-gap: 1.625rem;
+			}
+
+		}
+
+		&-subnav {
+
+			ul.column-2 {
+				column-gap: 5rem;
+			}
+
+		}
+
+	}
+
+}
+
+@include sz(min1640) {
+
+	.header {
+
+		.bx {
+			flex: 0 0 73%;
+			max-width: 73%;
+
+			&:first-child {
+				flex: 0 0 24%;
+				max-width: 24%;
+			}
+
+		}
+
+		.phone {
+
+			a {
+				font-size: 1.25rem;
+			}
+
+		}
+
+	}
+
+}
+
+@include sz(min1860) {
+
+	.header {
+
+		.link {
+			margin-right: 5rem;
+		}
+
+	}
+
+}

@@ -1,0 +1,45 @@
+@import "mixin";
+
+.similar {
+    padding-top: 2.5rem;
+    padding-bottom: 6.25rem;
+
+    &-block {
+        padding-top: 2.5rem;
+    }
+
+    &-arr {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 8px;
+
+        .arrow {
+
+            &.slick-disabled {
+                pointer-events: none;
+                user-select: none;
+                background-color: #E5E6EF;
+                box-shadow: none;
+
+                svg {
+                    fill: #BCBECD;
+                }
+
+            }
+
+        }
+
+    }
+
+    &-slider {
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+
+        .item {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+
+    }
+
+}

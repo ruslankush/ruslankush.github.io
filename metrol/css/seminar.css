@@ -1,0 +1,77 @@
+.seminar {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.seminar-box {
+  position: relative;
+  overflow: hidden;
+  background-color: #13447C;
+  padding-top: 4.375rem;
+  padding-bottom: 6.25rem;
+}
+.seminar-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(258.16deg, rgba(255, 255, 255, 0.05) 35.7%, rgba(19, 68, 124, 0.05) 94.44%);
+  top: -12%;
+  bottom: 0;
+  width: 15%;
+  left: 0;
+  transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  height: 140%;
+}
+.seminar-box_top h2 {
+  color: #fff;
+}
+.seminar-box_top .link {
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.seminar-box_block {
+  padding-top: 2.5rem;
+}
+.seminar-slider {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+}
+.seminar-slider .item {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.seminar-slider .arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.seminar-slider .arrow-next {
+  right: -0.9375rem;
+}
+.seminar-slider .arrow-prev {
+  left: -0.9375rem;
+}
+.seminar-slider .arrow.slick-disabled {
+  opacity: 0;
+  visibility: hidden;
+}
+.seminar-slider .cart-seminar a .name {
+  color: #fff;
+}
+.seminar-slider .cart-seminar a .date {
+  color: #fff;
+}/*# sourceMappingURL=seminar.css.map */

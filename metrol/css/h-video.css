@@ -1,0 +1,45 @@
+.h-video {
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+}
+.h-video-top .link {
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  display: inline-block;
+  color: #13447C;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.h-video-block {
+  padding-top: 2.5rem;
+}
+.h-video-slider {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+.h-video-slider .item {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.h-video-slider .arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.h-video-slider .arrow-next {
+  right: -0.9375rem;
+}
+.h-video-slider .arrow-prev {
+  left: -0.9375rem;
+}
+.h-video-slider .arrow.slick-disabled {
+  opacity: 0;
+  visibility: hidden;
+}/*# sourceMappingURL=h-video.css.map */

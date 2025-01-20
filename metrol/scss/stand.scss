@@ -1,0 +1,123 @@
+@import "mixin";
+
+.stand {
+    // padding-top: 6.25rem;
+    height: 87vh;
+
+    .page-wrap {
+        max-width: 1890px;
+        height: 100%;
+    }
+
+    &-slider {
+        height: 100%;
+
+        .slick {
+
+            &-list {
+                height: 100%;
+            }
+
+            &-track {
+                height: 100%;
+            }
+
+        }
+
+        .arrow {
+            position: absolute;
+            z-index: 1;
+            bottom: 1.0625rem;
+            left: 3.6%;
+
+            &.slick-disabled {
+                box-shadow: none;
+                pointer-events: none;
+                user-select: none;
+                background-color: #E5E6EF;
+
+                svg {
+                    fill: #BCBECD;
+                }
+
+            }
+
+            &-next {
+                left: 7%;
+            }
+
+        }
+
+        &_bg {
+            position: relative;
+            height: 100%;
+
+            h1 {
+                max-width: 640px;
+                line-height: 1.2;
+            }
+
+            .info {
+                color: #595959;
+                font-weight: 500;
+                font-size: 1rem;
+                max-width: 480px;
+                margin-top: 1.25rem;
+            }
+
+            .img {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                @include transform(translateY(-50%));
+                max-width: 60%;
+            }
+
+            .bg {
+                position: relative;
+                height: 100%;
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                // width: 100%;
+                // height: 100%;
+                overflow: hidden;
+                @include bRadius(10px);
+                clip-path: polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 25% 100%, 0% 78%, 0% 30%);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
+
+            .box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding-top: 6.9375rem;
+                padding-left: 4.375rem;
+                padding-right: 4.375rem;
+                padding-bottom: 3.5625rem;
+
+                &-btn {
+                    position: absolute;
+                    right: 4.375rem;
+                    bottom: 3.5625rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    column-gap: 0.9375rem;
+                }
+
+            }
+
+        }
+
+    }
+
+}

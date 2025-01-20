@@ -1,0 +1,70 @@
+@import "mixin";
+
+.rekvizit {
+    padding-bottom: 5rem;
+
+    &-block {
+        padding-top: 2.5rem;
+
+        .block {
+            margin-bottom: 3.125rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+        .txt {
+            color: #2D2928;
+            font-weight: normal;
+            font-size: 1rem;
+            margin-top: 1.25rem;
+
+            p {
+                margin: 0 0 1.25rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+            }
+
+        }
+
+        table {
+            border-collapse: collapse;
+            border: none;
+            margin-top: 1.25rem;
+
+            td {
+                color: #2D2928;
+                font-weight: 500;
+                font-size: 1rem;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                vertical-align: top;
+
+                &:first-child {
+                    color: #595959;
+                    font-weight: normal;
+                    font-size: 1.0625rem;
+                    padding-right: 1.625rem;
+                }
+
+                span {
+                    display: block;
+
+                    &:not(:first-child) {
+                        margin-top: 10px;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

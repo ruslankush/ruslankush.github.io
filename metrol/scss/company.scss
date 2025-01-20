@@ -1,0 +1,70 @@
+@import "mixin";
+
+.company {
+    padding-top: 3.125rem;
+    padding-bottom: 3.75rem;
+
+    .bx {
+        flex-basis: 40%;
+        position: relative;
+
+        &:first-child {
+            flex-basis: 49%;
+            order: 1;
+        }
+
+    }
+
+    .map-img {
+        position: absolute;
+        bottom: -20%;
+        left: 5%;
+        z-index: -1;
+    }
+
+    .txt {
+        margin-top: 1.25rem;
+
+        b {
+            font-weight: 500;
+            font-size: 1.125rem;
+            color: #2D2928;
+            margin-bottom: 1.25rem;
+            display: block;
+        }
+
+        p {
+            font-weight: normal;
+            font-size: 1rem;
+            color: #2D2928;
+        }
+
+    }
+
+    .page-btn {
+        min-width: 224px;
+        margin-top: 1.875rem;
+    }
+
+    .video {
+
+        a {
+            position: relative;
+            text-decoration: none;
+            overflow: hidden;
+            clip-path: polygon(0 0, calc(100% - 6%) 0, 100% 6%, 100% 100%, 0 100%);
+            @include bRadius(10px);
+            display: block;
+        }
+
+        .play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translateY(-50%) translateX(-50%));
+            display: inline-block;
+        }
+
+    }
+
+}

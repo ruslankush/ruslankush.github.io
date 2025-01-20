@@ -1,0 +1,106 @@
+.products {
+  padding-top: 4.6875rem;
+  padding-bottom: 3.75rem;
+}
+.products-top .d-flex {
+  align-items: flex-end;
+}
+.products-top .link {
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #13447C;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+.products-block {
+  padding-top: 2.5rem;
+}
+.products-block .d-flex {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+  row-gap: 1.25rem;
+}
+.products-block .bx {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  flex-basis: 33%;
+}
+.products-block .bx:first-child {
+  flex-basis: 67%;
+}
+.products-block .box {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.products-block .col-2 {
+  flex-basis: 50%;
+}
+.products-block .col-2 .cart-products a {
+  flex-direction: row;
+}
+.products-block .col-2 .cart-products .img {
+  flex-basis: 40%;
+}
+.products-block .col-4 {
+  flex-basis: 25%;
+}
+.products-form {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #13447C;
+  -webkit-clip-path: polygon(0 0, calc(100% - 55px) 0, 100% 55px, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, calc(100% - 55px) 0, 100% 55px, 100% 100%, 0 100%);
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  padding-top: 3.375rem;
+  padding-bottom: 4.25rem;
+  height: 100%;
+}
+.products-form::before {
+  width: 50%;
+  height: 140%;
+  background: linear-gradient(158.16deg, rgba(255, 255, 255, 0.2) 4.13%, rgba(19, 68, 124, 0.2) 85.7%);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
+  right: -10%;
+  z-index: -1;
+}
+.products-form .image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.products-form .ttl {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.875rem;
+}
+.products-form .desc {
+  margin-top: 1.0625rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: normal;
+  font-size: 0.9375rem;
+  max-width: 354px;
+  line-height: 23px;
+}
+.products-form .desc b {
+  font-weight: 500;
+}
+.products-form .form-products {
+  margin-top: 1rem;
+}/*# sourceMappingURL=products.css.map */

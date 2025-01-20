@@ -1,0 +1,101 @@
+.stand {
+  height: 87vh;
+}
+.stand .page-wrap {
+  max-width: 1890px;
+  height: 100%;
+}
+.stand-slider {
+  height: 100%;
+}
+.stand-slider .slick-list {
+  height: 100%;
+}
+.stand-slider .slick-track {
+  height: 100%;
+}
+.stand-slider .arrow {
+  position: absolute;
+  z-index: 1;
+  bottom: 1.0625rem;
+  left: 3.6%;
+}
+.stand-slider .arrow.slick-disabled {
+  box-shadow: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #E5E6EF;
+}
+.stand-slider .arrow.slick-disabled svg {
+  fill: #BCBECD;
+}
+.stand-slider .arrow-next {
+  left: 7%;
+}
+.stand-slider_bg {
+  position: relative;
+  height: 100%;
+}
+.stand-slider_bg h1 {
+  max-width: 640px;
+  line-height: 1.2;
+}
+.stand-slider_bg .info {
+  color: #595959;
+  font-weight: 500;
+  font-size: 1rem;
+  max-width: 480px;
+  margin-top: 1.25rem;
+}
+.stand-slider_bg .img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  max-width: 60%;
+}
+.stand-slider_bg .bg {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 25% 100%, 0% 78%, 0% 30%);
+          clip-path: polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 25% 100%, 0% 78%, 0% 30%);
+}
+.stand-slider_bg .bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stand-slider_bg .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 6.9375rem;
+  padding-left: 4.375rem;
+  padding-right: 4.375rem;
+  padding-bottom: 3.5625rem;
+}
+.stand-slider_bg .box-btn {
+  position: absolute;
+  right: 4.375rem;
+  bottom: 3.5625rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
+}/*# sourceMappingURL=stand.css.map */

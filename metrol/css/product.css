@@ -1,0 +1,20 @@
+.product {
+  padding-bottom: 3.125rem;
+}
+.product-block {
+  padding-top: 2.5rem;
+}
+.product-block .d-grid {
+  grid-gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(269px, 1fr));
+}
+.product-block .bx-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.product-block .bx-large .cart-products .desc {
+  font-size: 1.25rem;
+}
+.product-block .bx-long {
+  grid-column: span 2;
+}/*# sourceMappingURL=product.css.map */
