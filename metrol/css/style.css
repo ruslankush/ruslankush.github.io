@@ -283,12 +283,12 @@ body {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   box-shadow: 0px 0px 40px 0px #E5E6EF;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .header .box {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: none;
 }
 .header .box .form-search {
   position: absolute;
@@ -300,13 +300,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  flex: 0 0 80%;
-  max-width: 80%;
   justify-content: flex-end;
 }
-.header .bx:first-child {
-  flex: 0 0 18%;
-  max-width: 18%;
+.header .logo {
+  max-width: 256px;
 }
 .header nav {
   margin-right: 1rem;
@@ -551,6 +548,10 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.header-subnav .bx:first-child {
+  flex: inherit;
+  max-width: inherit;
+}
 .header-subnav .image {
   position: relative;
   overflow: hidden;
@@ -578,12 +579,8 @@ body {
   margin: 0;
   list-style-type: none;
 }
-.header-subnav ul.column-2 {
-  -moz-column-count: 2;
-       column-count: 2;
-}
 .header-subnav ul li {
-  margin-bottom: 1.325rem;
+  margin-bottom: 0.625rem;
 }
 .header-subnav ul li a {
   color: #2D2928;

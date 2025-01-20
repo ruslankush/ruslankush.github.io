@@ -7,12 +7,12 @@
 	background-color: #fff;
 	backdrop-filter: blur(20px);
 	box-shadow: 0px 0px 40px 0px #E5E6EF;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
 	
 	.box {
 		position: relative;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
+		display: none;
 
 		.form-search {
 			position: absolute;
@@ -27,15 +27,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		flex: 0 0 80%;
-		max-width: 80%;
 		justify-content: flex-end;
+	}
 
-		&:first-child {
-			flex: 0 0 18%;
-			max-width: 18%;
-		}
-
+	.logo {
+		max-width: 256px;
 	}
 
 	nav {
@@ -314,6 +310,11 @@
 				justify-content: space-between;
 			}
 
+			&:first-child {
+				flex: inherit;
+				max-width: inherit;
+			}
+
 		}
 
 		.image {
@@ -342,13 +343,8 @@
 			margin: 0;
 			list-style-type: none;
 
-			&.column-2 {
-				column-count: 2;
-				// column-gap: 5rem;
-			}
-
 			li {
-				margin-bottom: 1.325rem;
+				margin-bottom: 0.625rem;
 
 				a {
 					color: #2D2928;
