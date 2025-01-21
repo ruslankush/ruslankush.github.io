@@ -14,6 +14,12 @@
 
 @include sz(min680) {
 
+	
+
+}
+
+@include sz(min768) {
+
 	.header {
 
 		.logo {
@@ -21,12 +27,6 @@
 		}
 
 	}
-
-}
-
-@include sz(min768) {
-
-	// == content
 
 }
 
@@ -76,6 +76,10 @@
 				max-width: 18%;
 			}
 	
+		}
+
+		&-burger {
+			display: none;
 		}
 
 	}

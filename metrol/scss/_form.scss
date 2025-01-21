@@ -445,4 +445,88 @@
 		
 	}
 
+	&-s-engine {
+		position: relative;
+		background-color: rgba(229, 230, 239, 0.5);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		@include bRadius(5px);
+		padding: 0.75rem;
+		justify-content: space-between;
+
+		.page-btn {
+			min-width: 202px;
+			height: 50px;
+			display: grid;
+			place-items: center;
+		}
+
+		&_gr {
+			flex: 0 0 calc(100% - 260px);
+			max-width: calc(100% - 260px);
+			position: relative;
+
+			.icon {
+				position: absolute;
+				left: 0.625rem;
+				top: 50%;
+				@include transform(translateY(-50%));
+				display: inline-block;
+				pointer-events: none;
+				user-select: none;
+				line-height: 0;
+
+				svg {
+					fill: #13447C;
+				}
+
+			}
+
+			input {
+				outline: none;
+				width: 100%;
+				box-sizing: border-box;
+				height: 50px;
+				border: none;
+				background-color: transparent;
+				font-weight: normal;
+				color: #2D2928;
+				font-size: 1rem;
+				padding-left: 2.6875rem;
+				padding-right: 1.5rem;
+			}
+
+		}
+
+		&_del {
+			display: inline-block;
+			line-height: 0;
+			text-decoration: none;
+			margin-right: 1.5rem;
+			position: relative;
+			width: 0.875rem;
+			height: 0.875rem;
+
+			&::before, &::after {
+				@include pseudo();
+				top: 50%;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: #2D2928;
+			}
+
+			&::before {
+				@include transform(translateY(-50%) rotate(45deg));
+			}
+
+			&::after {
+				@include transform(translateY(-50%) rotate(-45deg));
+			}
+
+		}
+
+	}
+
 }

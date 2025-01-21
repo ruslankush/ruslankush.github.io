@@ -1,0 +1,105 @@
+.s-engine {
+  padding-bottom: 12.5rem;
+}
+.s-engine h1 {
+  font-size: 2.8125rem;
+}
+.s-engine-block {
+  padding-top: 2.5rem;
+}
+.s-engine-sort {
+  margin-top: 1.625rem;
+  color: #A1A5C6;
+  font-weight: normal;
+  font-size: 0.9375rem;
+}
+.s-engine-sort select {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #13447C;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border-bottom: 1px solid #13447C;
+  margin-left: 0.75rem;
+}
+.s-engine-group {
+  padding-top: 2.5rem;
+}
+.s-engine-group .group {
+  position: relative;
+  border-bottom: 1px solid #E3E4EE;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+.s-engine-group .group:first-child {
+  border-top: 1px solid #E3E4EE;
+}
+.s-engine-group .name {
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2D2928;
+  margin-bottom: 5px;
+}
+.s-engine-group .date {
+  color: #A1A5C6;
+  font-weight: normal;
+  font-size: 0.8125rem;
+  margin-bottom: 5px;
+}
+.s-engine-group ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.s-engine-group ul li {
+  position: relative;
+  padding-right: 0.875rem;
+}
+.s-engine-group ul li::after {
+  content: "-";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  line-height: 1;
+  color: #595959;
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+.s-engine-group ul li:last-child {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding-right: 0;
+}
+.s-engine-group ul li:last-child::after {
+  content: none;
+}
+.s-engine-group ul li:last-child a {
+  font-weight: 500;
+  color: #13447C;
+}
+.s-engine-group ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #595959;
+  font-weight: normal;
+  font-size: 0.75rem;
+}/*# sourceMappingURL=s-engine.css.map */

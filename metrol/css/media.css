@@ -1,4 +1,4 @@
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .header .logo {
     max-width: -moz-fit-content;
     max-width: fit-content;
@@ -22,6 +22,9 @@
   .header .bx:first-child {
     flex: 0 0 18%;
     max-width: 18%;
+  }
+  .header-burger {
+    display: none;
   }
 }
 @media (min-width: 1366px) {

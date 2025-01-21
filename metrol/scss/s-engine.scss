@@ -1,0 +1,119 @@
+@import "mixin";
+
+.s-engine {
+    padding-bottom: 12.5rem;
+
+    h1 {
+        font-size: 2.8125rem;
+    }
+
+    &-block {
+        padding-top: 2.5rem;
+    }
+
+    &-sort {
+        margin-top: 1.625rem;
+        color: #A1A5C6;
+        font-weight: normal;
+        font-size: 0.9375rem;
+
+        select {
+            display: inline-block;
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.875rem;
+            color: #13447C;
+            border: none;
+            outline: none;
+            appearance: none;
+            background-color: transparent;
+            border-bottom: 1px solid #13447C;
+            margin-left: 0.75rem;
+        }
+
+    }
+
+    &-group {
+        padding-top: 2.5rem;
+
+        .group {
+            position: relative;
+            border-bottom: 1px solid #E3E4EE;
+            padding-top: 1.75rem;
+            padding-bottom: 1.75rem;
+
+            &:first-child {
+                border-top: 1px solid #E3E4EE;
+            }
+        }
+
+        .name {
+            text-decoration: none;
+            display: block;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #2D2928;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #A1A5C6;
+            font-weight: normal;
+            font-size: 0.8125rem;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                position: relative;
+                padding-right: 0.875rem;
+
+                &::after {
+                    @include pseudo($content: '-');
+                    top: 50%;
+                    right: 5px;
+                    @include transform(translateY(-50%));
+                    line-height: 1;
+                    color: #595959;
+                    font-weight: normal;
+                    font-size: 0.75rem;
+                }
+
+                &:last-child {
+                    pointer-events: none;
+                    user-select: none;
+                    padding-right: 0;
+
+                    &::after {
+                        content: none;
+                    }
+
+                    a {
+                        font-weight: 500;
+                        color: #13447C;
+                    }
+
+                }
+
+                a {
+                    text-decoration: none;
+                    display: inline-block;
+                    color: #595959;
+                    font-weight: normal;
+                    font-size: 0.75rem;
+                }
+
+            }
+
+        }
+
+    }
+
+}

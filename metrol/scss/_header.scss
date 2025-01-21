@@ -371,6 +371,44 @@
 
 	}
 
+	&-burger {
+		text-decoration: none;
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		height: 0.875rem;
+		width: 1.625rem;
+		margin-left: 0.75rem;
+
+		span {
+			width: 100%;
+			height: 2px;
+			background-color: #2D2928;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			@include transform(translateY(-50%));
+		}
+
+		&::before, &::after {
+			@include pseudo();
+			height: 2px;
+			background-color: #2D2928;
+			left: 0;
+		}
+
+		&::before {
+			top: 0;
+			width: 100%;
+		}
+
+		&::after {
+			bottom: 0;
+			width: 75%;
+		}
+
+	}
+
 }
 
 .logo {
