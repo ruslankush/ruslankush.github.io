@@ -732,6 +732,7 @@ body {
 }
 .footer-mid .page-btn {
   min-width: 289px;
+  max-width: 289px;
 }
 .footer-mid .social {
   margin-top: 1.25rem;

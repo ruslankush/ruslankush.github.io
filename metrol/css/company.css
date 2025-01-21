@@ -34,6 +34,7 @@
 .company .page-btn {
   min-width: 224px;
   margin-top: 1.875rem;
+  max-width: 224px;
 }
 .company .video a {
   position: relative;
