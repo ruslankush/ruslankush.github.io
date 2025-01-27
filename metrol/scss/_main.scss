@@ -59,13 +59,13 @@
 		position: relative;
 		@include bRadius(100px);
 		background-color: #E5E6EF;
+		display: inline-block;
 
 		ul {
 			padding: 0;
 			margin: 0;
 			list-style-type: none;
 			display: flex;
-			flex-wrap: wrap;
 
 			li {
 
@@ -92,6 +92,7 @@
 					padding-right: 1.5rem;
 					padding-top: 6px;
 					padding-bottom: 6px;
+					white-space: nowrap;
 
 					&:hover {
 						color: #13447C;
@@ -511,6 +512,11 @@
 	&.active {
 		opacity: 1;
 		visibility: visible;
+
+		.modal-wrap {
+			@include transform(translateX(0));
+		}
+
 	}
 
 	&-overflow {
@@ -528,17 +534,18 @@
 
 	&-wrap {
 		@include transition(all, .4s, ease-in, 0s);
+		background-color: #fff;
+		position: relative;
+		@include bRadius(10px);
+		width: 100%;
+		overflow-x: hidden;
+		@include transform(translateX(100%));
 	}
 
 	&-map, &-rebr, &-metr {
 
 		&_wrap {
-			width: 100%;
 			max-width: 1031px;
-			background-color: #fff;
-			position: relative;
-			@include bRadius(10px);
-			overflow-x: hidden;
 			height: 100%;
 
 			.modal-close {
@@ -833,6 +840,353 @@
 
 				}
 
+			}
+
+		}
+
+	}
+
+	&-basket {
+
+		&.active {
+
+			.modal-basket_wrap {
+				@include transform(translateX(0));
+			}
+
+		}
+
+		&_wrap {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			max-width: 582px;
+			@include transform(translateX(100%));
+
+			.name {
+				font-weight: 600;
+				font-size: 0.9375rem;
+				color: #13447C;
+				padding-left: 0.9375rem;
+				padding-right: 0.9375rem;
+			}
+
+		}
+
+		&_top {
+			padding-top: 2.5rem;
+			padding-bottom: 1.125rem;
+			padding-left: 0.9375rem;
+			padding-right: 0.9375rem;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+
+			.ttl {
+				color: #2D2928;
+				font-weight: 600;
+				font-size: 1.25rem;
+				position: relative;
+				padding-left: 2.75rem;
+
+				.icon {
+					position: absolute;
+					left: 0;
+					top: 50%;
+					@include transform(translateY(-50%));
+					line-height: 0;
+
+					svg {
+						fill: #2D2928;
+					}
+
+				}
+
+			}
+
+			.modal-close {
+				position: relative;
+				top: 0;
+				right: 0;
+				width: 1.0625rem;
+				height: 1.0625rem;
+				display: inline-block;
+
+				&::before, &::after {
+					@include pseudo();
+					top: 50%;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background-color: #2D2928;
+				}
+
+				&::before {
+					@include transform(translateY(-50%) rotate(45deg));
+				}
+
+				&::after {
+					@include transform(translateY(-50%) rotate(-45deg));
+				}
+
+			}
+
+		}
+
+		&_block {
+			padding-top: 0.75rem;
+		}
+
+		&_group {
+			position: relative;
+			padding-left: 0.9375rem;
+			padding-right: 0.9375rem;
+			border-bottom: 1px solid #E3E4EE;
+
+			&:first-child {
+				border-top: 1px solid #E3E4EE;
+			}
+
+			.group {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+				margin-left: -7px;
+				margin-right: -7px;
+				padding-top: 1.125rem;
+				padding-bottom: 1.125rem;
+
+				&-bx {
+					padding-left: 7px;
+					padding-right: 7px;
+
+					&:first-child {
+						flex: 0 0 87%;
+						max-width: 87%;
+					}
+
+				}
+
+				a {
+					text-decoration: none;
+					position: relative;
+					display: inline-block;
+
+					.img {
+						position: absolute;
+						left: 0;
+						top: 50%;
+						@include transform(translateY(-50%));
+						max-width: 82px;
+					}
+
+				}
+
+				&-name {
+					font-weight: 500;
+					font-size: 0.9375rem;
+					color: #2D2928;
+					padding-left: 6rem;
+				}
+
+			}
+
+		}
+
+		&_btn {
+			padding-top: 1.25rem;
+			padding-left: 0.9375rem;
+			padding-right: 0.9375rem;
+			padding-bottom: 2.5rem;
+		}
+
+	}
+
+	&-kp {
+
+		&_wrap {
+			max-width: 450px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			align-self: stretch;
+			@include bRadius(10px 0 0 10px);
+
+			.modal-close {
+				width: 1.0625rem;
+				height: 1.0625rem;
+				display: inline-block;
+
+				&::before, &::after {
+					@include pseudo();
+					top: 50%;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background-color: #2D2928;
+				}
+
+				&::before {
+					@include transform(translateY(-50%) rotate(45deg));
+				}
+
+				&::after {
+					@include transform(translateY(-50%) rotate(-45deg));
+				}
+
+			}
+
+		}
+
+		&_top {
+			padding-top: 2.1875rem;
+			padding-left: 0.9375rem;
+			padding-right: 0.9375rem;
+			padding-bottom: 0.75rem;
+			
+			h3 {
+				color: #2D2928;
+				font-weight: 600;
+				font-size: 1.25rem;
+			}
+
+			.desc {
+				margin-top: 0.75rem;
+				color: #2D2928;
+				font-weight: 500;
+				font-size: 0.875rem;
+			}
+
+		}
+
+	}
+
+	&-sent {
+
+		&_wrap {
+			max-width: 450px;
+			padding: 3.125rem 0.9375rem;
+			@include bRadius(10px 0 0 10px);
+			height: 100%;
+			top: 0;
+			position: absolute;
+			right: 0;
+
+			.modal-close {
+				width: 1.0625rem;
+				height: 1.0625rem;
+				display: inline-block;
+
+				&::before, &::after {
+					@include pseudo();
+					top: 50%;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background-color: #2D2928;
+				}
+
+				&::before {
+					@include transform(translateY(-50%) rotate(45deg));
+				}
+
+				&::after {
+					@include transform(translateY(-50%) rotate(-45deg));
+				}
+
+			}
+
+		}
+
+		&_grid {
+			height: 100%;
+			display: grid;
+			place-items: center;
+
+			h3 {
+				color: #2D2928;
+				font-weight: 600;
+				font-size: 1.25rem;
+				max-width: 354px;
+			}
+
+			.desc {
+				margin-top: 0.9375rem;
+				color: #2D2928;
+				font-weight: normal;
+				font-size: 0.875rem;
+				max-width: 464px;
+				line-height: 26px;
+			}
+
+			.page-btn {
+				margin-top: 1.25rem;
+			}
+
+		}
+
+	}
+
+	&-call {
+
+		&_wrap {
+			max-width: 450px;
+			padding: 3.125rem 0.9375rem;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			@include bRadius(10px 0 0 10px);
+
+			.modal-close {
+				width: 1.0625rem;
+				height: 1.0625rem;
+				display: inline-block;
+
+				&::before, &::after {
+					@include pseudo();
+					top: 50%;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background-color: #2D2928;
+				}
+
+				&::before {
+					@include transform(translateY(-50%) rotate(45deg));
+				}
+
+				&::after {
+					@include transform(translateY(-50%) rotate(-45deg));
+				}
+
+			}
+		}
+
+		&_grid {
+			height: 100%;
+			display: grid;
+			place-items: center;
+
+			h3 {
+				color: #2D2928;
+				font-weight: 600;
+				font-size: 1.25rem;
+			}
+
+			.desc {
+				margin-top: 0.625rem;
+				color: #2D2928;
+				font-weight: normal;
+				font-size: 0.875rem;
+			}
+
+			.form-call {
+				margin-top: 0.9375rem;
 			}
 
 		}

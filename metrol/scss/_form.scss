@@ -211,17 +211,18 @@
 		&_fl {
 			display: flex;
 			flex-wrap: wrap;
-			margin-left: -0.75rem;
-			margin-right: -0.75rem;
+			margin-left: -7px;
+			margin-right: -7px;
+			row-gap: 0.9375rem;
 		}
 
 		&_gr {
-			padding-left: 0.75rem;
-			padding-right: 0.75rem;
-			flex-basis: 27%;
+			padding-left: 7px;
+			padding-right: 7px;
+			flex-basis: 100%;
 
 			&:first-child {
-				flex-basis: 73%;
+				flex-basis: 100%;
 			}
 
 			.page-btn {
@@ -523,6 +524,179 @@
 
 			&::after {
 				@include transform(translateY(-50%) rotate(-45deg));
+			}
+
+		}
+
+	}
+
+	&-kp {
+
+		&_block {
+			padding-left: 0.9375rem;
+			padding-right: 0.9375rem;
+			padding-bottom: 1.5rem;
+			border-bottom: 1px solid #E3E4EE;
+
+			.form-file {
+
+				.icon {
+
+					svg {
+						fill: #13447C;
+					}
+
+				}
+
+				label {
+					color: #13447C;
+				}
+
+			}
+
+		}
+
+		&_gr {
+			margin-bottom: 1.25rem;
+
+			input {
+				height: 60px;
+				border: none;
+				background-color: #E5E6EF;
+				@include bRadius(5px);
+				color: #2D2928;
+				font-weight: normal;
+				font-size: 1rem;
+				padding-left: 1.25rem;
+				padding-right: 1.25rem;
+			}
+
+			label {
+				left: 1.25rem;
+				color: #2D2928;
+				font-weight: normal;
+				font-size: 1rem;
+
+				sup {
+					color: #C1111B;
+				}
+
+			}
+
+		}
+
+		&_box {
+			padding-left: 0.9375rem;
+			padding-right: 0.9375rem;
+			padding-top: 1.25rem;
+			padding-bottom: 3.75rem;
+
+			.name {
+				color: #2D2928;
+				font-weight: 600;
+				font-size: 1.25rem;
+				margin-bottom: 1.25rem;
+			}
+
+			.group {
+				position: relative;
+				background-color: #fff;
+				box-shadow: 0px 0px 20px 0px #0000001A;
+				@include bRadius(10px);
+				padding-left: 0.75rem;
+				padding-right: 0.75rem;
+
+
+				&-bx {
+					position: relative;
+					padding-left: 5.8125rem;
+					padding-top: 0.9375rem;
+					padding-bottom: 0.9375rem;
+
+					.img {
+						position: absolute;
+						top: 50%;
+						left: 0;
+						max-width: 82px;
+						@include transform(translateY(-50%));
+					}
+
+				}
+
+				&-name {
+					color: #2D2928;
+					font-weight: 500;
+					font-size: 0.9375rem;
+				}
+
+			}
+
+			.form-personal {
+				color: #A1A5C6;
+				margin-top: 1.5rem;
+				text-align: center;
+
+				a {
+					color: #A1A5C6;
+				}
+
+			}
+
+		}
+
+		&_btn {
+			padding-top: 1.5rem;
+			
+			.page-btn {
+				min-width: 100%;
+			}
+
+		}
+
+	}
+
+	&-call {
+
+		&_gr {
+			margin-bottom: 1.25rem;
+
+			input {
+				height: 60px;
+				border: none;
+				background-color: #E5E6EF;
+				@include bRadius(5px);
+				color: #2D2928;
+				font-weight: normal;
+				font-size: 1rem;
+				padding-left: 1.25rem;
+				padding-right: 1.25rem;
+			}
+
+			label {
+				left: 1.25rem;
+				color: #2D2928;
+				font-weight: normal;
+				font-size: 1rem;
+
+				sup {
+					color: #C1111B;
+				}
+
+			}
+
+		}
+
+		.page-btn {
+			min-width: 100%;
+		}
+
+		.form-personal {
+			color: #A1A5C6;
+			margin-top: 1.5rem;
+			text-align: center;
+
+			a {
+				color: #A1A5C6;
 			}
 
 		}

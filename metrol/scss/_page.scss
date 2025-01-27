@@ -97,7 +97,7 @@ a {
 
 	}
 
-	:where(h1, h2, h3) {
+	:where(h1, h2, h3, h4) {
 		margin: 0;
 		color: #2D2928;
 		font-weight: 600;
@@ -108,11 +108,15 @@ a {
 	}
 
 	h2 {
-		font-size: 3rem;
+		font-size: clamp(1.375rem, 4vw, 3rem);
 	}
 
 	h3 {
 		font-size: 2.1875rem;
+	}
+
+	h4 {
+		font-size: 1.5625rem;
 	}
 
 	&-rubl {
@@ -130,20 +134,18 @@ a {
 
 	&-btn {
 		min-width: 212px;
-		padding: 10px 15px;
+		padding: 10px 10px;
 		@include bRadius(5px);
 		text-align: center;
-		// display: inline-block;
 		display: grid;
 		place-items: center;
 		@include transition(all, .4s, ease-in, 0s);
 		text-decoration: none;
 		font-weight: bold;
-		font-size: 0.875rem;
+		font-size: 0.8125rem;
 		text-transform: uppercase;
 		border: none;
 		font-family: 'Montserrat', sans-serif;
-		// line-height: 60px;
 		cursor: pointer;
 		height: 60px;
 

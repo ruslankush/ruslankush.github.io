@@ -1,40 +1,40 @@
 .company {
   padding-top: 3.125rem;
-  padding-bottom: 3.75rem;
+  padding-bottom: 1.875rem;
+}
+.company .d-flex {
+  row-gap: 1.5rem;
 }
 .company .bx {
-  flex-basis: 40%;
+  flex-basis: 100%;
   position: relative;
-}
-.company .bx:first-child {
-  flex-basis: 49%;
-  order: 1;
 }
 .company .map-img {
   position: absolute;
-  bottom: -20%;
+  bottom: 30%;
   left: 5%;
   z-index: -1;
 }
 .company .txt {
   margin-top: 1.25rem;
+  font-weight: normal;
+  font-size: 0.9375rem;
+  color: #2D2928;
 }
 .company .txt b {
   font-weight: 500;
-  font-size: 1.125rem;
-  color: #2D2928;
-  margin-bottom: 1.25rem;
-  display: block;
+  font-size: 1rem;
 }
 .company .txt p {
-  font-weight: normal;
-  font-size: 1rem;
-  color: #2D2928;
+  margin: 0 0 1.25rem;
+}
+.company .txt p:last-child {
+  margin-bottom: 0;
 }
 .company .page-btn {
-  min-width: 224px;
+  min-width: 100%;
   margin-top: 1.875rem;
-  max-width: 224px;
+  max-width: 100%;
 }
 .company .video a {
   position: relative;
@@ -59,4 +59,41 @@
   -ms-transform: translateY(-50%) translateX(-50%);
   -o-transform: translateY(-50%) translateX(-50%);
   display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .company .page-btn {
+    min-width: 224px;
+    max-width: 224px;
+  }
+  .company .map-img {
+    bottom: -20%;
+  }
+}
+@media (min-width: 680px) {
+  .company .txt {
+    font-size: 1rem;
+  }
+  .company .txt b {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 768px) {
+  .company {
+    padding-bottom: 3.75rem;
+  }
+}
+@media (min-width: 860px) {
+  .company .bx {
+    flex-basis: 46%;
+  }
+  .company .bx:first-child {
+    flex-basis: 49%;
+    order: 1;
+  }
+}
+@media (min-width: 1280px) {
+  .company .bx {
+    flex-basis: 40%;
+  }
 }/*# sourceMappingURL=company.css.map */

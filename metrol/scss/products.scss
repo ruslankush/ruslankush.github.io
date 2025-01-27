@@ -16,14 +16,22 @@
             text-transform: uppercase;
             font-weight: bold;
             color: #13447C;
-            font-size: 0.875rem;
+            font-size: 0.8125rem;
             display: inline-block;
+        }
+
+        .bx {
+
+            &:last-child {
+                display: none;
+            }
+
         }
 
     }
 
     &-block {
-        padding-top: 2.5rem;
+        padding-top: 1.5rem;
 
         .d-flex {
             margin-left: -0.625rem;
@@ -34,10 +42,10 @@
         .bx {
             padding-left: 0.625rem;
             padding-right: 0.625rem;
-            flex-basis: 33%;
+            flex-basis: 100%;
 
             &:first-child {
-                flex-basis: 67%;
+                flex-basis: 100%;
             }
 
         }
@@ -50,7 +58,7 @@
         .col {
 
             &-2 {
-                flex-basis: 50%;
+                flex-basis: 100%;
 
                 .cart-products {
 
@@ -67,7 +75,7 @@
             }
 
             &-4 {
-                flex-basis: 25%;
+                flex-basis: 100%;
             }
 
         }
@@ -80,11 +88,12 @@
         @include bRadius(10px);
         background-color: #13447C;
         clip-path: polygon(0 0, calc(100% - 55px) 0, 100% 55px, 100% 100%, 0 100%);
-        padding-left: 4.5rem;
-        padding-right: 4.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
         padding-top: 3.375rem;
         padding-bottom: 4.25rem;
         height: 100%;
+        display: none;
 
         &::before {
             width: 50%;
@@ -125,6 +134,176 @@
 
         .form-products {
             margin-top: 1rem;
+        }
+
+    }
+
+    &-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .page-btn {
+            min-width: 100%;
+        }
+
+    }
+
+}
+
+@include sz(min393) {
+
+    .products {
+
+        &-top {
+
+            .bx {
+
+                &:last-child {
+                    display: block;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min576) {
+
+    .products {
+
+        &-btn {
+
+            .page-btn {
+                min-width: 270px;
+            }
+
+        }
+
+        &-top {
+
+            .link {
+                font-size: 0.875rem;
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min680) {
+
+    .products {
+
+        &-block {
+
+            .col {
+
+                &-2 {
+                    flex-basis: 50%;
+                }
+
+                &-4 {
+                    flex-basis: 50%;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min768) {
+
+    .products {
+
+        &-block {
+            padding-top: 2.5rem;
+        }
+
+    }
+
+}
+
+@include sz(min860) {
+
+    .products {
+
+        &-block {
+
+            .col-4 {
+                flex-basis: 25%;
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min1366) {
+
+    .products {
+
+        &-block {
+
+            .bx {
+                flex-basis: 36%;
+
+                &:first-child {
+                    flex-basis: 64%;
+                }
+
+            }
+
+        }
+
+        &-form {
+            display: block;
+        }
+
+        &-btn {
+            display: none;
+        }
+
+    }
+
+}
+
+@include sz(min1440) {
+
+    .products {
+
+        &-block {
+
+            .bx {
+                flex-basis: 33%;
+    
+                &:first-child {
+                    flex-basis: 67%;
+                }
+    
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min1640) {
+
+    .products {
+
+        &-form {
+            padding-left: 4.5rem;
+            padding-right: 4.5rem;
         }
 
     }

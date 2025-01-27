@@ -1,20 +1,109 @@
 @import "mixin";
 
+@include sz(min393) {
+
+	.header {
+
+		&-basket {
+			display: block;
+		}
+
+		&-phone {
+			display: inline-block;
+		}
+
+	}
+
+}
+
 @include sz(min480) {
 
-	// ==content
+	.m-menu {
+
+		&-wrap, &-subnav {
+			max-width: 393px;
+		}
+
+	}
 
 }
 
 @include sz(min576) {
 
-	// ==content
+	.page {
+
+		&-btn {
+			font-size: 0.875rem;
+		}
+
+	}
+
+	.form {
+
+		&-subscribe {
+
+			&_gr {
+				flex-basis: 35%;
+
+				&:first-child {
+					flex-basis: 65%;
+				}
+
+			}
+
+		}
+
+	}
+
+	.footer {
+
+		&-mid {
+
+			.page-btn {
+				min-width: 289px;
+				max-width: 289px;
+			}
+
+		}
+
+	}
 
 }
 
 @include sz(min680) {
 
-	
+	.cart {
+
+		&-products, &-more {
+			min-height: 227px;
+		}
+
+		&-products {
+
+			a {
+				flex-direction: column;
+			}
+
+			.img {
+				max-width: fit-content;
+			}
+
+		}
+
+		&-more {
+
+			a {
+				text-align: center;
+				place-items: center;
+			}
+
+			.link {
+				margin-top: 0;
+			}
+
+		}
+
+	}
 
 }
 
@@ -26,31 +115,375 @@
 			max-width: fit-content;
 		}
 
+		.lang, .mail {
+			display: block;
+		}
+		
+		&-basket {
+
+			a {
+				border-left: 1px solid #E5E6EF;
+				padding-left: 1.0625rem;
+				padding-right: 0.9375rem;
+				padding-top: 4px;
+				padding-bottom: 4px;
+			}
+
+		}
+
+		&-phone {
+			margin-left: 1rem;
+			order: 0;
+			margin-right: 0;
+		}
+
+	}
+
+	.form {
+
+		&-subscribe {
+
+			&_gr {
+				flex-basis: 27%;
+			
+				&:first-child {
+					flex-basis: 73%;
+				}
+			
+			}
+
+		}
+
+	}
+
+	.footer {
+
+		&-mid {
+			padding-bottom: 3rem;
+
+			.bx {
+
+				&:first-child {
+					flex-basis: fit-content;
+					padding-bottom: 0;
+					border-bottom: none;
+				}
+
+				&:last-child {
+					flex-basis: 45%;
+					padding-top: 0;
+				}
+
+			}
+
+		}
+
+		&-bottom {
+			padding-top: 1.5rem;
+			padding-bottom: 4.75rem;
+
+			.bx {
+				flex-basis: fit-content;
+			}
+
+		}
+
 	}
 
 }
 
 @include sz(min860) {
 
-	// ==content
+	.form {
+
+		&-subscribe {
+
+			&_fl {
+				margin-left: -0.75rem;
+				margin-right: -0.75rem;
+			}
+
+			&_gr {
+				padding-left: 0.75rem;
+				padding-right: 0.75rem;
+			}
+
+		}
+
+	}
+
+	.footer {
+
+		&-mid {
+
+			.phone {
+
+				a {
+					font-size: 1.875rem;
+				}
+
+			}
+
+			.name {
+				margin-bottom: 1.5rem;
+				font-size: 1rem;
+			}
+
+		}
+
+	}
 
 }
 
 @include sz(min992) {
 
-	// ==content
+	.cart {
+
+		&-products {
+
+			.desc {
+				font-size: 1rem;
+			}
+
+		}
+
+		&-more {
+
+			.numb {
+				font-size: 3.75rem;
+			}
+
+			.group {
+				font-size: 0.9375rem;
+			}
+
+		}
+
+	}
 
 }
 
 @include sz(min1100) {
 
-	// ==content
+	.footer {
 
+		&-mid {
+
+			.bx {
+
+				&:last-child {
+					flex-basis: 60%;
+				}
+
+			}
+
+			.box {
+				flex-basis: fit-content;
+				column-count: 1;
+
+				&:first-child {
+					display: inline-block;
+				}
+
+			}
+
+			.hide {
+				display: none;
+			}
+
+		}
+
+		&-bottom {
+
+			.copyright {
+				margin-right: 1.0625rem;
+				display: inline-block;
+				vertical-align: middle;
+				margin-bottom: 0;
+				font-size: 0.875rem;
+			}
+
+		}
+
+	}
 }
 
 @include sz(min1200) {
 
-	// ==content
+	.footer {
+
+		&-top {
+			padding-top: 4.0625rem;
+			padding-bottom: 4.0625rem;
+
+			.bx {
+				flex-basis: inherit;
+
+				&:last-child {
+					flex-basis: 67%;
+				}
+
+			}
+
+		}
+
+		&-mid {
+			padding-top: 3.5rem;
+		}
+
+	}
+
+	.modal {
+
+		&-wrap {
+			@include transform(translateX(0));
+		}
+
+		&-kp {
+
+			&_wrap {
+				max-width: 708px;
+				height: auto;
+				right: inherit;
+				position: relative;
+				top: inherit;
+				@include bRadius(10px);
+			}
+
+			&_top {
+				padding-left: 7.1875rem;
+				padding-right: 7.1875rem;
+
+				h3 {
+					font-size: 1.875rem;
+				}
+
+				.desc {
+					font-size: 0.9375rem;
+				}
+
+			}
+
+		}
+
+		&-basket {
+
+			&_top {
+				padding-bottom: 2.5rem;
+				padding-left: 3.125rem;
+				padding-right: 3.125rem;
+
+				.ttl {
+					font-size: 1.625rem;
+				}
+
+			}
+
+			&_wrap {
+
+				.name {
+					font-size: 1.25rem;
+					padding-left: 3.125rem;
+					padding-right: 3.125rem;
+				}
+
+			}
+
+			&_block {
+				padding-top: 1.25rem;
+			}
+
+			&_group {
+				padding-left: 3.125rem;
+				padding-right: 3.125rem;
+			}
+
+			&_btn {
+				padding-top: 2.5rem;
+				padding-left: 3.125rem;
+				padding-right: 3.125rem;
+			}
+
+		}
+
+		&-sent {
+
+			&_wrap {
+				max-width: 708px;
+				padding: 10.25rem 7.25rem;
+				position: relative;
+				top: inherit;
+				height: auto;
+				right: inherit;
+				@include bRadius(10px);
+			}
+
+			&_grid {
+
+				h3 {
+					font-size: 1.875rem;
+				}
+
+				.desc {
+					font-size: 0.9375rem;
+				}
+
+				.page-btn {
+					margin-top: 1.5rem;
+				}
+
+			}
+
+		}
+
+		&-call {
+
+			&_wrap {
+				max-width: 708px;
+				padding: 5.625rem 7.25rem;
+				position: relative;
+				top: inherit;
+				right: inherit;
+				height: auto;
+				@include bRadius(10px);
+			}
+
+			&_grid {
+
+				h3 {
+					font-size: 1.875rem;
+				}
+
+				.desc {
+					font-size: 0.9375rem;
+				}
+
+			}
+
+		}
+
+	}
+
+	.form {
+
+		&-kp {
+
+			&_block {
+				padding-left: 7.1875rem;
+				padding-right: 7.1875rem;
+				padding-bottom: 2.5rem;
+			}
+
+			&_box {
+				padding-left: 7.1875rem;
+				padding-right: 7.1875rem;
+				padding-top: 2.5rem;
+				padding-bottom: 2.5rem;
+			}
+
+		}
+
+	}
 
 }
 
@@ -84,6 +517,38 @@
 
 	}
 
+	.footer {
+
+		&-mid {
+
+			ul {
+
+				&.column-2 {
+					column-count: 2;
+				}
+
+			}
+
+			.box {
+
+				&:first-child {
+					flex-basis: 80%;
+				}
+
+			}
+
+			.bx {
+
+				&:last-child {
+					flex-basis: 67%;
+				}
+
+			}
+
+		}
+
+	}
+
 }
 
 @include sz(min1366) {
@@ -108,6 +573,38 @@
 
 				li {
 					margin-bottom: 1.325rem;
+				}
+
+			}
+
+		}
+
+	}
+
+	.footer {
+
+		&-top {
+
+			.ttl {
+				font-size: 1.875rem;
+			}
+
+			.bx {
+
+				&:last-child {
+					flex-basis: 64%;
+				}
+
+			}
+
+		}
+
+		&-mid {
+
+			.bx {
+
+				&:last-child {
+					flex-basis: 64%;
 				}
 
 			}
@@ -170,6 +667,27 @@
 
 				}
 
+			}
+
+		}
+
+	}
+
+	.footer {
+		padding-bottom: 1.25rem;
+
+		&-box {
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+			@include bRadius(10px);
+			clip-path: polygon(0 0, calc(100% - 100px) 0, 100% 100px, 100% 100%, 0 100%);
+		}
+		&-mid {
+
+			.logo {
+				max-width: fit-content;
 			}
 
 		}
@@ -249,6 +767,27 @@
 
 		.link {
 			margin-right: 5rem;
+		}
+
+	}
+
+	.footer {
+
+		&-box {
+			padding-left: 4.375rem;
+			padding-right: 4.375rem;
+		}
+
+		&-mid {
+
+			ul {
+
+				&.column-2 {
+					column-gap: 4rem;
+				}
+
+			}
+
 		}
 
 	}

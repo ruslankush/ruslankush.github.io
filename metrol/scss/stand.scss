@@ -1,8 +1,6 @@
 @import "mixin";
 
 .stand {
-    // padding-top: 6.25rem;
-    height: 87vh;
 
     .page-wrap {
         max-width: 1890px;
@@ -22,13 +20,47 @@
                 height: 100%;
             }
 
+            &-dots {
+
+                li {
+                    padding: 0;
+                    width: 10px;
+                    height: 10px;
+                    margin: 0 3px;
+
+                    &.slick-active {
+
+                        button {
+                            background-color: #13447C;
+                        }
+
+                    }
+
+                    button {
+                        width: 10px;
+                        height: 10px;
+                        @include bRadius(50%);
+                        @include transition(all, .4s, ease-in, 0s);
+                        background-color: #E5E6EF;
+                        padding: 0;
+
+                        &::before {
+                            content: none;
+                        }
+
+                    }
+
+                }
+
+            }
+
         }
 
         .arrow {
             position: absolute;
             z-index: 1;
             bottom: 1.0625rem;
-            left: 3.6%;
+            left: 0;
 
             &.slick-disabled {
                 box-shadow: none;
@@ -43,7 +75,44 @@
             }
 
             &-next {
-                left: 7%;
+                left: 4.375rem;
+            }
+
+        }
+
+        .item {
+            position: relative;
+
+            .box {
+                padding-top: 1.25rem;
+
+                &-btn {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 1.25rem;
+                    row-gap: 0.625rem;
+
+                    .page-btn {
+                        min-width: 100%;
+                    }
+
+                }
+
+            }
+
+            h1 {
+                max-width: 640px;
+                line-height: 1.2;
+                font-size: clamp(1.4375rem, 4vw, 3.75rem);
+            }
+
+            .info {
+                color: #595959;
+                font-weight: normal;
+                font-size: 0.9375rem;
+                margin-top: 1.25rem;
             }
 
         }
@@ -52,23 +121,12 @@
             position: relative;
             height: 100%;
 
-            h1 {
-                max-width: 640px;
-                line-height: 1.2;
-            }
-
-            .info {
-                color: #595959;
-                font-weight: 500;
-                font-size: 1rem;
-                max-width: 480px;
-                margin-top: 1.25rem;
-            }
-
             .img {
                 position: absolute;
                 top: 50%;
                 right: 0;
+                left: 0;
+                margin: 0 auto;
                 @include transform(translateY(-50%));
                 max-width: 60%;
             }
@@ -76,42 +134,177 @@
             .bg {
                 position: relative;
                 height: 100%;
-                // position: absolute;
-                // top: 0;
-                // left: 0;
-                // width: 100%;
-                // height: 100%;
                 overflow: hidden;
                 @include bRadius(10px);
                 clip-path: polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 25% 100%, 0% 78%, 0% 30%);
+                min-height: 170px;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
 
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    opacity: 0;
+                    visibility: hidden;
                 }
 
             }
 
-            .box {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                padding-top: 6.9375rem;
-                padding-left: 4.375rem;
-                padding-right: 4.375rem;
-                padding-bottom: 3.5625rem;
+        }
 
-                &-btn {
+    }
+
+}
+
+@include sz(min393) {
+
+    .stand {
+
+        &-slider {
+
+            .item {
+
+                .box-btn {
+
+                    .page-btn {
+                        min-width: 49%;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min768) {
+
+    .stand {
+
+        &-slider {
+
+            .item {
+
+                .info {
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+
+            }
+
+            &_bg {
+
+                .img {
+                    right: 0;
+                    left: inherit;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min860) {
+
+    .stand {
+
+        &-slider {
+
+            .item {
+
+                .box {
                     position: absolute;
-                    right: 4.375rem;
-                    bottom: 3.5625rem;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    column-gap: 0.9375rem;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 2.75rem;
+                    padding-right: 2.75rem;
+                    padding-top: 3.125rem;
+                    padding-bottom: 3.125rem;
+
+                    &-btn {
+                        position: absolute;
+                        right: 2.75rem;
+                        bottom: 3.125rem;
+                        column-gap: 0.9375rem;
+                        justify-content: start;
+                        margin-top: 0;
+
+                        .page-btn {
+                            min-width: 212px;
+                        }
+
+                    }
+
+                }
+
+                .info {
+                    max-width: 480px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min1200) {
+
+    .stand {
+        height: 87vh;
+    }
+
+}
+
+@include sz(min1440) {
+
+    .stand {
+
+        &-slider {
+
+            .item {
+                .box {
+                    padding-top: 6.9375rem;
+                    padding-left: 4.375rem;
+                    padding-right: 4.375rem;
+                    padding-bottom: 3.5625rem;
+
+                    &-btn {
+                        right: 4.375rem;
+                        bottom: 3.5625rem;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min1640) {
+
+    .stand {
+
+        &-slider {
+
+            .arrow {
+                left: 3.6%;
+
+                &-next {
+                    left: 7%;
                 }
 
             }
