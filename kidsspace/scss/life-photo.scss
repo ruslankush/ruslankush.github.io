@@ -1,0 +1,49 @@
+@import "mixin";
+
+.life-photo {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+
+    .page-link {
+        margin-top: 0.8125rem;
+    }
+
+    .box {
+        padding-top: 9.385rem;
+    }
+
+    .desc {
+        max-width: 260px;
+        color: #2B2A29;
+        font-weight: 500;
+        font-size: 1.4375rem;
+        margin-bottom: 1.25rem;
+    }
+
+    p {
+        color: #2B2A29;
+        font-weight: 500;
+        font-size: 1.4375rem;
+
+        &:not(:first-child) {
+            margin-top: 1.5rem;
+        }
+
+    }
+
+    .social {
+        margin-top: 15px;
+    }
+
+    .phone {
+        margin-top: 7px;
+
+        a {
+            color: #4997D2;
+            font-weight: bold;
+            font-size: 1.4375rem;
+        }
+
+    }
+
+}

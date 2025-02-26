@@ -1,0 +1,65 @@
+.event {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.event-block {
+  padding-top: 1.875rem;
+}
+.event-slider {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+}
+.event-slider .item {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.event-slider .slick-list {
+  padding: 10px 0;
+}
+.event-slider .arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.event-slider .arrow-prev {
+  left: -0.625rem;
+}
+.event-slider .arrow-next {
+  right: -0.625rem;
+}
+.event-slider .arrow.slick-disabled {
+  opacity: 0;
+  visibility: hidden;
+}
+.event-slider .slick-dots li {
+  width: 18px;
+  height: 3px;
+  margin: 0 3px;
+}
+.event-slider .slick-dots li.slick-active button {
+  background-color: #2B2A29;
+}
+.event-slider .slick-dots li button {
+  width: 18px;
+  height: 3px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  background-color: #F5F5F5;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  padding: 0;
+  opacity: 1;
+}
+.event-slider .slick-dots li button::before {
+  content: none;
+}/*# sourceMappingURL=event.css.map */

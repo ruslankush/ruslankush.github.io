@@ -1,0 +1,25 @@
+.job {
+  padding-top: 3.125rem;
+  padding-bottom: 6.25rem;
+}
+.job .bx {
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+.job .bx:first-child {
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+.job .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+}
+.job .page-btn {
+  margin-top: 1.5rem;
+  max-width: 353px;
+}/*# sourceMappingURL=job.css.map */

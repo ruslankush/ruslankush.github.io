@@ -1,0 +1,42 @@
+@import "mixin";
+
+.our-price {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+
+    &_block {
+        padding-top: 2.5rem;
+
+        .d-flex {
+            margin-left: -0.625rem;
+            margin-right: -0.625rem;
+            row-gap: 1.25rem;
+        }
+
+        .bx {
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            flex: 0 0 calc(100% / 3);
+            max-width: calc(100% / 3);
+        }
+
+    }
+
+    &_group {
+        position: relative;
+        background-color: #F5F5F5;
+        min-height: 85px;
+        padding: 1.25rem 1.75rem 1.625rem;
+        color: #2B2A29;
+        font-weight: 500;
+        font-size: 0.9375rem;
+
+        span {
+            display: block;
+            color: #ED4A41;
+            margin-top: 6px;
+        }
+
+    }
+
+}

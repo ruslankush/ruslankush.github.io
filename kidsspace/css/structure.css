@@ -1,0 +1,89 @@
+.structure {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.structure .desc {
+  color: #939393;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 0.8125rem;
+}
+.structure-box {
+  position: relative;
+}
+.structure-el {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.structure-el li {
+  display: inline-block;
+  position: absolute;
+  margin: -20px 0 0 -20px;
+  left: var(--left-el);
+  top: var(--top-el);
+}
+.structure-el li:hover a .icon {
+  border-color: #ED4A41;
+}
+.structure-el li:hover .box-info {
+  opacity: 1;
+  visibility: visible;
+}
+.structure-el li a {
+  text-decoration: none;
+  display: inline-block;
+}
+.structure-el li a .icon {
+  position: relative;
+  background-color: #fff;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 2px solid #fff;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  line-height: 0;
+  box-sizing: content-box;
+}
+.structure-el li .box-info {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1019607843);
+  bottom: 3.125rem;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  padding: 7px 7px 15px;
+  text-align: center;
+  font-weight: 500;
+  color: #2B2A29;
+  font-size: 0.9375rem;
+  width: 322px;
+  z-index: 1;
+  right: 50%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.structure-el li .box-info .image {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.625rem;
+}/*# sourceMappingURL=structure.css.map */

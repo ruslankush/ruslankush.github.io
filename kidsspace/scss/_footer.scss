@@ -1,0 +1,139 @@
+.footer {
+	padding-bottom: 5rem;
+
+	&-box {
+		position: relative;
+		background-color: #fff;
+		box-shadow: 0px 0px 40px 0px #0000001A;
+		// @include bRadius(1.875rem);
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+
+	&-top {
+		padding-top: 2.5rem;
+		padding-bottom: 1.75rem;
+
+		.page-btn {
+			max-width: 214px;
+			height: 49px;
+			min-width: 214px;
+		}
+
+		.bx {
+
+			&-gr {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				column-gap: 1.125rem;
+				margin-bottom: 1.6875rem;
+			}
+
+		}
+
+		.social {
+
+			a {
+				width: 2.625rem;
+				height: 2.625rem;
+			}
+
+		}
+
+		.phone {
+			margin-bottom: 1.6875rem;
+
+			a {
+				font-weight: bold;
+				color: #2B2A29;
+				font-size: 1.25rem;
+				padding-left: 2.5rem;
+
+				.icon {
+					position: absolute;
+					left: 0;
+					width: 1.9375rem;
+					height: 1.9375rem;
+					@include bRadius(50%);
+					background-color: #4997D2;
+					display: grid;
+					place-items: center;
+					line-height: 0;
+					top: 50%;
+					@include transform(translateY(-50%));
+
+					svg {
+						fill: #fff;
+					}
+
+				}
+
+			}
+
+		}
+
+		.address {
+			position: relative;
+			color: #2B2A29;
+			font-weight: 500;
+			font-size: 0.8125rem;
+			padding-left: 2.5rem;
+
+			&-point {
+				position: absolute;
+				display: grid;
+				place-items: center;
+				width: 1.9375rem;
+				height: 1.9375rem;
+				left: 0;
+				@include bRadius(50%);
+				background-color: #ED4A41;
+				top: 50%;
+				@include transform(translateY(-50%));
+
+				svg {
+					fill: #fff;
+				}
+
+			}
+
+			b {
+				font-weight: 500;
+			}
+
+			span {
+				display: block;
+				font-weight: normal;
+			}
+
+		}
+
+	}
+
+	&-bottom {
+		padding-top: 1.325rem;
+		padding-bottom: 2.1875rem;
+		border-top: 1px solid #E4E4E4;
+
+		.coopyright {
+			color: #2B2A29;
+			font-weight: 500;
+			font-size: 0.875rem;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 0.8125rem;
+		}
+
+		.politic {
+			text-decoration: none;
+			display: inline-block;
+			vertical-align: middle;
+			color: #2B2A29;
+			font-weight: normal;
+			font-size: 0.875rem;
+		}
+
+	}
+
+}

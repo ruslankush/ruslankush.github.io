@@ -1,0 +1,18 @@
+.action {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.action-block {
+  padding-top: 3.75rem;
+}
+.action-block .d-flex {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+  row-gap: 2.5rem;
+}
+.action-block .bx {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}/*# sourceMappingURL=action.css.map */

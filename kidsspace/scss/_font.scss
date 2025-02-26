@@ -1,0 +1,86 @@
+$body-font-path: "../font/" !default;
+$font-size: 16px !default;
+$white:    #fff !default;
+$black:    #000 !default;
+
+@function body-font-url($url) {
+
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+
+    @else {
+        @return url($body-font-path + $url);
+    }
+    
+}
+
+@font-face {
+    font-family: 'PT Rouble Sans';
+    src: body-font-url('PTRoubleSans.eot');
+    src: body-font-url('PTRoubleSans.eot?#iefix') format('embedded-opentype'),
+        body-font-url('PTRoubleSans.woff2') format('woff2'),
+        body-font-url('PTRoubleSans.woff') format('woff'),
+        body-font-url('PTRoubleSans.ttf') format('truetype'),
+        body-font-url('PTRoubleSans.svg#PTRoubleSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: body-font-url('Geometria-Medium.eot');
+	src: local('Geometria Medium'), local('Geometria-Medium'),
+		body-font-url('Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+		body-font-url('Geometria-Medium.woff') format('woff'),
+		body-font-url('Geometria-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: body-font-url('Geometria.eot');
+	src: local('Geometria'),
+		body-font-url('Geometria.eot?#iefix') format('embedded-opentype'),
+		body-font-url('Geometria.woff') format('woff'),
+		body-font-url('Geometria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: body-font-url('Geometria-Bold.eot');
+	src: local('Geometria Bold'), local('Geometria-Bold'),
+		body-font-url('Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+		body-font-url('Geometria-Bold.woff') format('woff'),
+		body-font-url('Geometria-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: body-font-url('Geometria-Light.eot');
+	src: local('Geometria Light'), local('Geometria-Light'),
+		body-font-url('Geometria-Light.eot?#iefix') format('embedded-opentype'),
+		body-font-url('Geometria-Light.woff') format('woff'),
+		body-font-url('Geometria-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Geometria', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	line-height: 1.25;
+	color: $black;
+	font-size: $font-size;
+    font-display: swap;
+}

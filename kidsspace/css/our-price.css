@@ -1,0 +1,32 @@
+.our-price {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.our-price_block {
+  padding-top: 2.5rem;
+}
+.our-price_block .d-flex {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+  row-gap: 1.25rem;
+}
+.our-price_block .bx {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+.our-price_group {
+  position: relative;
+  background-color: #F5F5F5;
+  min-height: 85px;
+  padding: 1.25rem 1.75rem 1.625rem;
+  color: #2B2A29;
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+.our-price_group span {
+  display: block;
+  color: #ED4A41;
+  margin-top: 6px;
+}/*# sourceMappingURL=our-price.css.map */

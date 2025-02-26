@@ -1,0 +1,100 @@
+@import "mixin";
+
+.structure {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+
+    .desc {
+        color: #939393;
+        font-weight: normal;
+        font-size: 1rem;
+        margin-top: 0.8125rem;
+    }
+
+    &-box {
+        position: relative;
+    }
+
+    &-el {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            position: absolute;
+            margin: -20px 0 0 -20px;
+            left: var(--left-el);
+            top: var(--top-el);
+
+            &:hover {
+
+                a {
+
+                    .icon {
+                        border-color: #ED4A41;
+                    }
+
+                }
+
+                .box-info {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+
+                .icon {
+                    position: relative;
+                    background-color: #fff;
+                    width: 2.25rem;
+                    height: 2.25rem;
+                    border: 2px solid #fff;
+                    @include transition(all, .4s, ease-in, 0s);
+                    @include bRadius(50%);
+                    overflow: hidden;
+                    display: grid;
+                    place-items: center;
+                    line-height: 0;
+                    box-sizing: content-box;
+                }
+
+            }
+
+            .box-info {
+                position: absolute;
+                background-color: #fff;
+                box-shadow: 0px 0px 40px 0px #0000001A;
+                // @include bRadius(1.25rem);
+                bottom: 3.125rem;
+                @include transition(all, .4s, ease-in, 0s);
+                padding: 7px 7px 15px;
+                text-align: center;
+                font-weight: 500;
+                color: #2B2A29;
+                font-size: 0.9375rem;
+                width: 322px;
+                z-index: 1;
+                right: 50%;
+                @include transform(translateX(50%));
+                opacity: 0;
+                visibility: hidden;
+
+                .image {
+                    position: relative;
+                    // @include bRadius(1.25rem);
+                    overflow: hidden;
+                    margin-bottom: 0.625rem;
+                }
+
+            }
+
+        }
+
+    }
+
+}

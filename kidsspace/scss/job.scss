@@ -1,0 +1,29 @@
+@import "mixin";
+
+.job {
+    padding-top: 3.125rem;
+    padding-bottom: 6.25rem;
+
+    .bx {
+        flex: 0 0 48%;
+        max-width: 48%;
+
+        &:first-child {
+            flex: 0 0 35%;
+            max-width: 35%;
+        }
+
+    }
+
+    .image {
+        position: relative;
+        overflow: hidden;
+        @include bRadius(1.25rem);
+    }
+
+    .page-btn {
+        margin-top: 1.5rem;
+        max-width: 353px;
+    }
+
+}

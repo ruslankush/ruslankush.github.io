@@ -1,0 +1,22 @@
+.rules {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.rules-top h2 {
+  position: relative;
+  padding-left: 6.25rem;
+  max-width: 450px;
+}
+.rules-top h2 .icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.rules-block {
+  padding-top: 3.125rem;
+}/*# sourceMappingURL=rules.css.map */

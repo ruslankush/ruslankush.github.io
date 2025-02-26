@@ -1,0 +1,20 @@
+.phone {
+
+    a {
+        outline: none;
+        border: none;
+        text-decoration: none;
+        display: inline-block;
+        color: #000;
+        @include transition(all, .4s, ease-in, 0s);
+        white-space: nowrap;
+        position: relative;
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
+
+    }
+
+}

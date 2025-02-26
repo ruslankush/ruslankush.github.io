@@ -1,0 +1,86 @@
+@import "mixin";
+
+.partner {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+
+    .desc {
+        color: #2B2A29;
+        font-weight: 500;
+        font-size: 1.125rem;
+        margin-top: 0.75rem;
+    }
+
+    &-block {
+        padding-top: 2.5rem;
+    }
+
+    &-slider {
+        margin-left: -0.625rem;
+        margin-right: -0.625rem;
+
+        .item {
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+        }
+
+        .image {
+            
+            img {
+                margin: 0 auto;
+            }
+
+        }
+
+        .slick-dots {
+
+            li {
+                width: 18px;
+                height: 3px;
+                margin: 0 3px;
+
+                &.slick-active {
+
+                    button {
+                        background-color: #2B2A29;
+                    }
+
+                }
+
+                button {
+                    width: 18px;
+                    height: 3px;
+                    @include bRadius(100px);
+                    background-color: #F5F5F5;
+                    @include transition(all, .4s, ease-in, 0s);
+                    padding: 0;
+                    opacity: 1;
+
+                    &::before {
+                        content: none;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    &-btn {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2.5rem;
+        column-gap: 1.125rem;
+        
+        .page-btn {
+            max-width: 283px;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,52 @@
+.set {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.set-block {
+  padding-top: 1.875rem;
+}
+.set-block .d-flex {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+  row-gap: 1.25rem;
+}
+.set-block .bx {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+.set-box {
+  position: relative;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 180px;
+  padding: 2.5rem;
+  height: 100%;
+  justify-content: space-between;
+}
+.set-box_group {
+  flex: 0 0 74%;
+  max-width: 74%;
+}
+.set-box_group b {
+  display: block;
+  color: #2B2A29;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  margin-bottom: 0.625rem;
+}
+.set-box_group p {
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: #2B2A29;
+}
+.set-box .icon {
+  flex: 0 0 25%;
+  max-width: 25%;
+  align-self: center;
+}
+.set-box .icon img {
+  margin: 0 auto;
+}/*# sourceMappingURL=set.css.map */

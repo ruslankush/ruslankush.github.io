@@ -1,0 +1,17 @@
+.form {
+	
+	&-gr {
+		overflow: hidden;
+		position: relative;
+
+		input {
+			width: 100%;
+			outline: none;
+			line-height: 1.3;
+			padding: 5px 10px;
+			box-sizing: border-box;
+		}
+
+	}
+
+}

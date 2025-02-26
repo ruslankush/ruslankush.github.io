@@ -1,0 +1,36 @@
+.life-photo {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.life-photo .page-link {
+  margin-top: 0.8125rem;
+}
+.life-photo .box {
+  padding-top: 9.385rem;
+}
+.life-photo .desc {
+  max-width: 260px;
+  color: #2B2A29;
+  font-weight: 500;
+  font-size: 1.4375rem;
+  margin-bottom: 1.25rem;
+}
+.life-photo p {
+  color: #2B2A29;
+  font-weight: 500;
+  font-size: 1.4375rem;
+}
+.life-photo p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+.life-photo .social {
+  margin-top: 15px;
+}
+.life-photo .phone {
+  margin-top: 7px;
+}
+.life-photo .phone a {
+  color: #4997D2;
+  font-weight: bold;
+  font-size: 1.4375rem;
+}/*# sourceMappingURL=life-photo.css.map */

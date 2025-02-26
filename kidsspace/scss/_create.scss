@@ -1,0 +1,28 @@
+.create {
+
+	a {
+		outline: none;
+		border: none;
+		text-decoration: none;
+		display: inline-block;
+		white-space: nowrap;
+		@include transition(all, .4s, ease-in, 0s);
+		font-weight: normal;
+		color: #2B2A29;
+		font-size: 0.875rem;
+
+		i {
+			font-style: normal;
+			color: #ED4A41;
+			text-decoration: underline;
+			text-decoration-skip-ink: none;
+		}
+
+		&:focus {
+			outline: none;
+			border: none;
+		}
+
+	}
+
+}

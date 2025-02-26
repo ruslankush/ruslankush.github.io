@@ -1,0 +1,64 @@
+.partner {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.partner .desc {
+  color: #2B2A29;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-top: 0.75rem;
+}
+.partner-block {
+  padding-top: 2.5rem;
+}
+.partner-slider {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+}
+.partner-slider .item {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.partner-slider .image img {
+  margin: 0 auto;
+}
+.partner-slider .slick-dots li {
+  width: 18px;
+  height: 3px;
+  margin: 0 3px;
+}
+.partner-slider .slick-dots li.slick-active button {
+  background-color: #2B2A29;
+}
+.partner-slider .slick-dots li button {
+  width: 18px;
+  height: 3px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  background-color: #F5F5F5;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  padding: 0;
+  opacity: 1;
+}
+.partner-slider .slick-dots li button::before {
+  content: none;
+}
+.partner-btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2.5rem;
+  -moz-column-gap: 1.125rem;
+       column-gap: 1.125rem;
+}
+.partner-btn .page-btn {
+  max-width: 283px;
+}/*# sourceMappingURL=partner.css.map */

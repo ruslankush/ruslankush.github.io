@@ -1,0 +1,25 @@
+@import "mixin";
+
+.action {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+
+    &-block {
+        padding-top: 3.75rem;
+
+        .d-flex {
+            margin-left: -0.625rem;
+            margin-right: -0.625rem;
+            row-gap: 2.5rem;
+        }
+
+        .bx {
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            flex: 0 0 calc(100% / 3);
+            max-width: calc(100% / 3);
+        }
+
+    }
+
+}

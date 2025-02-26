@@ -1,0 +1,29 @@
+@import "mixin";
+
+.rules {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+
+    &-top {
+
+        h2 {
+            position: relative;
+            padding-left: 6.25rem;
+            max-width: 450px;
+
+            .icon {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                @include transform(translateY(-50%));
+            }
+
+        }
+
+    }
+
+    &-block {
+        padding-top: 3.125rem;
+    }
+
+}
