@@ -730,6 +730,135 @@
 
     }
 
+    &-order {
+        padding-top: 3.125rem;
+        position: relative;
+        padding-bottom: 3.125rem;
+
+        &::before, &::after {
+            @include pseudo();
+            top: 50%;
+            @include transform(translateY(-50%));
+            height: 1.5px;
+            width: calc(19% - 0.75rem);
+            background-color: #C5904F;
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+
+        &_box {
+            max-width: 1156px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            padding-top: 5rem;
+            padding-bottom: 3.75rem;
+
+            .image {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                overflow: hidden;
+                @include bRadius(10px);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
+
+            .box {
+                text-align: center;
+                position: relative;
+            }
+
+            h2 {
+                color: #C5904F;
+                font-weight: normal;
+                font-size: 2.625rem;
+                font-family: 'Greta Dis Nar Pro Reg', sans-serif;
+                line-height: 1;
+
+                i {
+                    font-style: italic;
+                }
+
+            }
+
+            .desc {
+                font-weight: normal;
+                color: #EAEAEA;
+                font-size: 0.875rem;
+                margin-top: 0.75rem;
+            }
+
+        }
+
+        &_form {
+            max-width: 624px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 1.875rem;
+
+            .desc {
+                font-weight: normal;
+                font-size: 0.625rem;
+                max-width: 480px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+
+    }
+
+    &-sertificate {
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
+
+        h2 {
+            color: #1B1A1B;
+            font-weight: normal;
+            font-size: 2.625rem;
+            font-family: 'Greta Dis Nar Pro Reg', sans-serif;
+            line-height: 1;
+            text-align: center;
+
+            i {
+                font-style: italic;
+            }
+
+        }
+
+        &_block {
+            padding-top: 1.5rem;
+
+            .d-flex {
+                margin-left: -0.75rem;
+                margin-right: -0.75rem;
+            }
+
+            .bx {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+
+        }
+
+    }
+
 }
 
 .jaw {
