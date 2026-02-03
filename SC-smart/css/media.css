@@ -1,0 +1,11 @@
+@media (hover: hover) {
+  .header nav ul li a:hover {
+    color: #C5904F;
+  }
+  .header nav ul li a:hover svg {
+    fill: #C5904F;
+  }
+  .header-menu:hover {
+    background: linear-gradient(90deg, #C5904F 0%, #C5904F 100%);
+  }
+}/*# sourceMappingURL=media.css.map */

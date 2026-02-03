@@ -1,0 +1,114 @@
+@import "mixin";
+
+@include sz(min480) {
+
+	// ==content
+
+}
+
+@include sz(min576) {
+
+	// ==content
+
+}
+
+@include sz(min680) {
+
+	// ==content
+
+}
+
+@include sz(min768) {
+
+	// == content
+
+}
+
+@include sz(min860) {
+
+	// ==content
+
+}
+
+@include sz(min992) {
+
+	// ==content
+
+}
+
+@include sz(min1100) {
+
+	// ==content
+
+}
+
+@include sz(min1200) {
+
+	// ==content
+
+}
+
+@include sz(min1280) {
+
+	// ==content
+
+}
+
+@include sz(min1366) {
+
+	// ==content
+
+}
+
+@include sz(min1440) {
+
+	// ==content
+
+}
+
+@include sz(min1568) {
+
+	
+
+}
+
+@media (hover: hover) {
+
+	.header {
+
+		nav {
+
+			ul {
+
+				li {
+
+					a {
+
+						&:hover {
+							color: #C5904F;
+
+							svg {
+								fill: #C5904F;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		&-menu {
+
+			&:hover {
+				background: linear-gradient(90deg, #C5904F 0%, #C5904F 100%);
+			}
+
+		}
+
+	}
+
+}

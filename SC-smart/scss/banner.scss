@@ -1,0 +1,98 @@
+@import "mixin";
+
+.banner {
+    position: relative;
+
+    &-box {
+        position: relative;
+        overflow: hidden;
+
+        .box {
+            padding-top: 3.375rem;
+            position: relative;
+
+            &-img {
+
+                img {
+                    margin: 0 auto;
+                }
+
+            }
+
+            &-fl {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                position: absolute;
+                inset: 0;
+                align-items: center;
+                padding-left: 5rem;
+                padding-right: 5rem;
+
+                &_gr {
+                    color: #C5904F;
+                    font-size: 2.625rem;
+                    text-align: center;
+                    letter-spacing: -0.2px;
+                    font-family: 'Greta Dis Nar Pro Reg', sans-serif;
+                    font-weight: normal;
+
+                    i {
+                        font-family: 'Greta Dis Nar Pro Reg', sans-serif;
+                        font-style: italic;
+                    }
+
+                }
+
+            }
+
+            &-form {
+                max-width: 624px;
+                position: absolute;
+                bottom: 0;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                padding-bottom: 1.325rem;
+
+                form {
+                    margin-bottom: 0.6875rem;
+                }
+
+                .desc {
+                    text-align: center;
+                    font-weight: normal;
+                    font-size: 0.625rem;
+                    color: rgba(255, 255, 255, 0.6);
+                }
+
+            }
+
+        }
+
+        .name {
+            text-align: center;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 0.75rem;
+            letter-spacing: 0.4rem;
+        }
+
+        .img {
+            position: absolute;
+            @include bRadius(10px);
+            inset: 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+    }
+
+}

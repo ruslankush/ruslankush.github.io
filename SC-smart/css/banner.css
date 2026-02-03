@@ -1,0 +1,78 @@
+.banner {
+  position: relative;
+}
+.banner-box {
+  position: relative;
+  overflow: hidden;
+}
+.banner-box .box {
+  padding-top: 3.375rem;
+  position: relative;
+}
+.banner-box .box-img img {
+  margin: 0 auto;
+}
+.banner-box .box-fl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.banner-box .box-fl_gr {
+  color: #C5904F;
+  font-size: 2.625rem;
+  text-align: center;
+  letter-spacing: -0.2px;
+  font-family: "Greta Dis Nar Pro Reg", sans-serif;
+  font-weight: normal;
+}
+.banner-box .box-fl_gr i {
+  font-family: "Greta Dis Nar Pro Reg", sans-serif;
+  font-style: italic;
+}
+.banner-box .box-form {
+  max-width: 624px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding-bottom: 1.325rem;
+}
+.banner-box .box-form form {
+  margin-bottom: 0.6875rem;
+}
+.banner-box .box-form .desc {
+  text-align: center;
+  font-weight: normal;
+  font-size: 0.625rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.banner-box .name {
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.75rem;
+  letter-spacing: 0.4rem;
+}
+.banner-box .img {
+  position: absolute;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  inset: 0;
+  overflow: hidden;
+}
+.banner-box .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=banner.css.map */

@@ -1,0 +1,181 @@
+$body-font-path: "../font/";
+$font-size: 16px !default;
+$white:    #fff !default;
+$black:    #000 !default;
+
+@function body-font-url($url) {
+
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+
+    @else {
+        @return url($body-font-path + $url);
+    }
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: body-font-url('Inter-Regular.eot');
+    src: local('Inter Regular'), local('Inter-Regular'),
+        body-font-url('Inter-Regular.eot?#iefix') format('embedded-opentype'),
+        body-font-url('Inter-Regular.woff2') format('woff2'),
+        body-font-url('Inter-Regular.woff') format('woff'),
+        body-font-url('Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: body-font-url('Inter-SemiBold.eot');
+    src: local('Inter Semi Bold'), local('Inter-SemiBold'),
+        body-font-url('Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+        body-font-url('Inter-SemiBold.woff2') format('woff2'),
+        body-font-url('Inter-SemiBold.woff') format('woff'),
+        body-font-url('Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: body-font-url('Inter-Bold.eot');
+    src: local('Inter Bold'), local('Inter-Bold'),
+        body-font-url('Inter-Bold.eot?#iefix') format('embedded-opentype'),
+        body-font-url('Inter-Bold.woff2') format('woff2'),
+        body-font-url('Inter-Bold.woff') format('woff'),
+        body-font-url('Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: body-font-url('Inter-Medium.eot');
+    src: local('Inter Medium'), local('Inter-Medium'),
+        body-font-url('Inter-Medium.eot?#iefix') format('embedded-opentype'),
+        body-font-url('Inter-Medium.woff2') format('woff2'),
+        body-font-url('Inter-Medium.woff') format('woff'),
+        body-font-url('Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Greta Dis Nar Pro Lig';
+    src: body-font-url('GretaDisNarProLigIta.eot');
+    src: body-font-url('GretaDisNarProLigIta.eot?#iefix') format('embedded-opentype'),
+        body-font-url('GretaDisNarProLigIta.woff2') format('woff2'),
+        body-font-url('GretaDisNarProLigIta.woff') format('woff'),
+        body-font-url('GretaDisNarProLigIta.ttf') format('truetype'),
+        body-font-url('GretaDisNarProLigIta.svg#GretaDisNarProLigIta') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Greta Dis Nar Pro Med';
+    src: body-font-url('GretaDisNarProMedIta.eot');
+    src: body-font-url('GretaDisNarProMedIta.eot?#iefix') format('embedded-opentype'),
+        body-font-url('GretaDisNarProMedIta.woff2') format('woff2'),
+        body-font-url('GretaDisNarProMedIta.woff') format('woff'),
+        body-font-url('GretaDisNarProMedIta.ttf') format('truetype'),
+        body-font-url('GretaDisNarProMedIta.svg#GretaDisNarProMedIta') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Greta Dis Nar Pro Reg';
+    src: body-font-url('GretaDisNarProReg.eot');
+    src: body-font-url('GretaDisNarProReg.eot?#iefix') format('embedded-opentype'),
+        body-font-url('GretaDisNarProReg.woff2') format('woff2'),
+        body-font-url('GretaDisNarProReg.woff') format('woff'),
+        body-font-url('GretaDisNarProReg.ttf') format('truetype'),
+        body-font-url('GretaDisNarProReg.svg#GretaDisNarProReg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Greta Dis Nar Pro Bol';
+    src: body-font-url('GretaDisNarProBol.eot');
+    src: body-font-url('GretaDisNarProBol.eot?#iefix') format('embedded-opentype'),
+        body-font-url('GretaDisNarProBol.woff2') format('woff2'),
+        body-font-url('GretaDisNarProBol.woff') format('woff'),
+        body-font-url('GretaDisNarProBol.ttf') format('truetype'),
+        body-font-url('GretaDisNarProBol.svg#GretaDisNarProBol') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Greta Dis Nar Pro Med';
+    src: body-font-url('GretaDisNarProMed.eot');
+    src: body-font-url('GretaDisNarProMed.eot?#iefix') format('embedded-opentype'),
+        body-font-url('GretaDisNarProMed.woff2') format('woff2'),
+        body-font-url('GretaDisNarProMed.woff') format('woff'),
+        body-font-url('GretaDisNarProMed.ttf') format('truetype'),
+        body-font-url('GretaDisNarProMed.svg#GretaDisNarProMed') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Greta Dis Nar Pro Reg';
+    src: body-font-url('GretaDisNarProRegIta.eot');
+    src: body-font-url('GretaDisNarProRegIta.eot?#iefix') format('embedded-opentype'),
+        body-font-url('GretaDisNarProRegIta.woff2') format('woff2'),
+        body-font-url('GretaDisNarProRegIta.woff') format('woff'),
+        body-font-url('GretaDisNarProRegIta.ttf') format('truetype'),
+        body-font-url('GretaDisNarProRegIta.svg#GretaDisNarProRegIta') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Greta Gra Dis Pro Lig';
+    src: body-font-url('GretaDisNarProLig.eot');
+    src: body-font-url('GretaDisNarProLig.eot?#iefix') format('embedded-opentype'),
+        body-font-url('GretaDisNarProLig.woff2') format('woff2'),
+        body-font-url('GretaDisNarProLig.woff') format('woff'),
+        body-font-url('GretaDisNarProLig.ttf') format('truetype'),
+        body-font-url('GretaDisNarProLig.svg#GretaDisNarProLig') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Greta Dis Nar Pro Bol';
+    src: body-font-url('GretaDisNarProBolItal.eot');
+    src: body-font-url('GretaDisNarProBolItal.eot?#iefix') format('embedded-opentype'),
+        body-font-url('GretaDisNarProBolItal.woff2') format('woff2'),
+        body-font-url('GretaDisNarProBolItal.woff') format('woff'),
+        body-font-url('GretaDisNarProBolItal.ttf') format('truetype'),
+        body-font-url('GretaDisNarProBolItal.svg#GretaDisNarProBolItal') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+html, body {
+    height: 100%;
+    background-color: #F6F6F6;
+}
+
+body {
+	line-height: 1.25;
+	color: $black;
+	font-size: $font-size;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+} 
