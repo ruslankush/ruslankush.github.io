@@ -95,6 +95,47 @@
         text-align: center;
         padding-bottom: 3.125rem;
 
+        &_box {
+            position: relative;
+            padding-top: 6.25rem;
+            padding-bottom: 6.25rem;
+
+            &::before, &::after {
+                @include pseudo();
+                left: 0;
+                width: 100%;
+                filter: blur(8px);
+                -webkit-filter: blur(8px);
+                background: linear-gradient(-180deg, rgba(246, 246, 246, 0) 0%, #F6F6F6 100%);
+                z-index: 1;
+                height: 4.0625rem;
+            }
+
+            &::before {
+                top: -3.125rem;
+            }
+
+            &::after {
+                bottom: -0.875rem;
+            }
+
+            .img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
+
+        }
+
         .d-flex {
             margin-left: -0.9375rem;
             margin-right: -0.9375rem;
@@ -103,8 +144,8 @@
         .bx {
             padding-left: 0.9375rem;
             padding-right: 0.9375rem;
-            flex: 0 0 40%;
-            max-width: 40%;
+            flex: 0 0 42%;
+            max-width: 42%;
             position: relative;
 
             &::before, &::after {
@@ -113,10 +154,25 @@
                 @include transform(translatey(-50%));
             }
 
+            &::after {
+                content: url(../img/line3.png);
+                left: 70%;
+            }
+
+            &::before {
+                content: url(../img/line4.png);
+                right: 70%;
+            }
+
 
             &:first-child, &:last-child {
                 flex: 0 0 22%;
                 max-width: 22%;
+
+                &::before, &::after {
+                    content: none;
+                }
+
             }
 
         }
@@ -140,7 +196,7 @@
             color: #C5904F;
             font-weight: normal;
             font-size: 3.875rem;
-            line-height: 1;
+            line-height: 0.8;
             font-family: 'Greta Dis Nar Pro Reg', sans-serif;
             font-weight: normal;
 
@@ -172,10 +228,12 @@
             font-weight: 500;
             font-size: 1.125rem;
             text-transform: uppercase;
+            margin-bottom: 7px;
         }
 
         &_block {
             padding-top: 1rem;
+            padding-bottom: 0.875rem;
 
             .d-flex {
                 margin-left: -8px;
@@ -207,6 +265,15 @@
             padding-bottom: 9rem;
             border: 1.2px solid;
             border-image-source: radial-gradient(51.7% 15410.97% at 50% 50%, rgba(222, 169, 104, 0.25) 0%, rgba(222, 169, 104, 0.25) 55.44%, rgba(255, 255, 255, 0) 77.4%);
+
+            
+            .line {
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                right: 0;
+            }
+
         }
 
         h2 {
@@ -853,6 +920,46 @@
                 padding-right: 0.75rem;
                 flex: 0 0 20%;
                 max-width: 20%;
+            }
+
+        }
+
+    }
+
+    &-entry {
+        padding-top: 1.875rem;
+        padding-bottom: 6.25rem;
+        min-height: calc(100vh - 207px);
+
+        .page-wrap {
+            height: 100%;
+        }
+
+        .ttl {
+            text-align: center;
+            color: #101E2B;
+            font-weight: normal;
+            font-size: 1.75rem;
+            font-family: 'Greta Dis Nar Pro Reg', sans-serif;
+            margin-bottom: 1.325rem;
+        }
+
+        &_wrap {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0px 4px 12px 0px #0000000D;
+            @include bRadius(1.5rem);
+            padding: 2.125rem;
+
+            .desc {
+                text-align: center;
+                font-weight: 500;
+                color: rgba(27, 26, 27, 0.5);
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
             }
 
         }

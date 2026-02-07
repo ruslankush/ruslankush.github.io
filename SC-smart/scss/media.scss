@@ -95,6 +95,34 @@
 
 					}
 
+					&.dropdown {
+
+						&:hover {
+							z-index: 1;
+
+							> a {
+								z-index: 1;
+								color: #C5904F;
+
+								i {
+									@include transform(translateY(-50%) rotateX(180deg));
+								}
+
+								svg {
+									fill: #C5904F;
+								}
+
+							}
+
+							> div {
+								opacity: 1;
+								visibility: visible;
+							}
+
+						}
+
+					}
+
 				}
 
 			}

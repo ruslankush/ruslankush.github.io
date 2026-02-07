@@ -1,11 +1,25 @@
 .header {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
+	z-index: 1;
+	position: relative;
 	
 	.bx {
 		display: flex;
 		align-items: center;
 		position: relative;
+	}
+
+	&-line {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+
+		img {
+			margin: 0 auto;
+		}
+
 	}
 
 	.logo {

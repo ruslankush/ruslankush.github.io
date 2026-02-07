@@ -1,0 +1,47 @@
+.breadcrumbs {
+    padding-top: 2.75rem;
+
+    ul {
+        padding-left: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+
+        li {
+            position: relative;
+            padding-right: 1.125rem;
+
+            &::after {
+                @include pseudo($content: "/");
+                top: 50%;
+                @include transform(translateY(-50%));
+                right: 6px;
+                color: #1B1A1B;
+                font-weight: 500;
+                font-size: 0.875rem;
+            }
+
+            &:last-child {
+                padding-right: 0;
+                pointer-events: none;
+                user-select: none;
+
+                &::after {
+                    content: none;
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                color: #1B1A1B;
+                font-weight: 500;
+                font-size: 0.875rem;
+            }
+
+        }
+
+    }
+
+}

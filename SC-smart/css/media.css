@@ -5,6 +5,27 @@
   .header nav ul li a:hover svg {
     fill: #C5904F;
   }
+  .header nav ul li.dropdown:hover {
+    z-index: 1;
+  }
+  .header nav ul li.dropdown:hover > a {
+    z-index: 1;
+    color: #C5904F;
+  }
+  .header nav ul li.dropdown:hover > a i {
+    transform: translateY(-50%) rotateX(180deg);
+    -webkit-transform: translateY(-50%) rotateX(180deg);
+    -moz-transform: translateY(-50%) rotateX(180deg);
+    -ms-transform: translateY(-50%) rotateX(180deg);
+    -o-transform: translateY(-50%) rotateX(180deg);
+  }
+  .header nav ul li.dropdown:hover > a svg {
+    fill: #C5904F;
+  }
+  .header nav ul li.dropdown:hover > div {
+    opacity: 1;
+    visibility: visible;
+  }
   .header-menu:hover {
     background: linear-gradient(90deg, #C5904F 0%, #C5904F 100%);
   }

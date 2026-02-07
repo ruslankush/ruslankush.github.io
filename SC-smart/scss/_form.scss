@@ -84,4 +84,182 @@ form {
 
 	}
 
+	&-entry {
+
+		&_gr {
+			
+			&:not(:first-child) {
+				margin-top: 0.625rem;
+			}
+
+			input {
+				height: 54px;
+				border: 1px solid rgba(202, 202, 202, 0.4);
+				@include bRadius(10px);
+				padding: 14px 22px;
+				font-weight: 500;
+				font-size: 1rem;
+				color: rgba(27, 26, 27, 0.5);
+
+				&::placeholder {
+					color: rgba(27, 26, 27, 0.5);
+				}
+
+			}
+
+		}
+
+		&_btn {
+			padding-top: 2rem;
+
+			.page-btn {
+				height: 54px;
+				max-width: 100%;
+			}
+
+		}
+
+	}
+
+	&-reg {
+
+		&_gr {
+			
+			&:not(:first-child) {
+				margin-top: 0.625rem;
+			}
+
+			input {
+				height: 54px;
+				border: 1px solid rgba(202, 202, 202, 0.4);
+				@include bRadius(10px);
+				padding: 14px 22px;
+				font-weight: 500;
+				font-size: 1rem;
+				color: rgba(27, 26, 27, 0.5);
+
+				&::placeholder {
+					color: rgba(27, 26, 27, 0.5);
+				}
+
+			}
+
+		}
+
+		&_btn {
+			padding-top: 2rem;
+
+			.page-btn {
+				height: 54px;
+				max-width: 100%;
+			}
+
+		}
+
+		&_check {
+			position: relative;
+			margin-top: 1.5rem;
+
+			input[type="checkbox"] {
+				position: absolute;
+				left: 0;
+				opacity: 0;
+
+				&:checked {
+
+					~ label {
+
+						span {
+
+							&::before {
+								opacity: 1;
+							}
+
+						}
+						
+					}
+
+				}
+
+			}
+
+			label {
+				position: relative;
+				color: rgba(27, 26, 27, 0.5);
+				font-weight: normal;
+				font-size: 1rem;
+				padding-left: 3rem;
+				display: block;
+
+				a {
+					text-decoration: underline;
+					text-decoration-skip-ink: none;
+					color: rgba(27, 26, 27, 0.5);
+				}
+
+				span {
+					position: absolute;
+					display: inline-block;
+					left: 0;
+					width: 2rem;
+					height: 2rem;
+					@include bRadius(10px);
+					border: 1px solid rgba(202, 202, 202, 0.4);
+					top: 0;
+					cursor: pointer;
+
+					&::before {
+						@include pseudo();
+						width: 0.75rem;
+						height: 0.75rem;
+						@include bRadius(50%);
+						left: 50%;
+						top: 50%;
+						@include transform(translateY(-50%) translateX(-50%));
+						@include transition(all, .4s, ease-in, 0s);
+						background-color: #C5904F;
+						opacity: 0;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&-mail {
+
+		&_gr {
+
+			input {
+				height: 54px;
+				border: 1px solid rgba(202, 202, 202, 0.4);
+				@include bRadius(10px);
+				padding: 14px 22px;
+				font-weight: 500;
+				font-size: 1rem;
+				color: rgba(27, 26, 27, 0.5);
+
+				&::placeholder {
+					color: rgba(27, 26, 27, 0.5);
+				}
+
+			}
+
+		}
+
+		&_btn {
+			padding-top: 2rem;
+
+			.page-btn {
+				height: 54px;
+				max-width: 100%;
+			}
+
+		}
+
+	}
+
 }

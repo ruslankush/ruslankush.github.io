@@ -37,6 +37,27 @@ $(function() {
         }
     });
 
+	$('.js-tab').each(function() {
+
+		$(this).lenght;
+
+		var tId = $(this).data('tab');
+		var dVal = $(this).data('val');
+
+		$(this).on('click', function(e) {
+
+			e.preventDefault();
+
+			$(this).parent().addClass('active').siblings().removeClass('active');
+
+			$('.tab-wrap').find('#' + tId).addClass('active').siblings().removeClass('active')
+
+			$('.main-entry .ttl').text(dVal);
+
+		})
+
+	})
+
 });
 
 
