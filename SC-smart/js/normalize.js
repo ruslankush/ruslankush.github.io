@@ -50,9 +50,9 @@ $(function() {
 
 			$(this).parent().addClass('active').siblings().removeClass('active');
 
-			$('.tab-wrap').find('#' + tId).addClass('active').siblings().removeClass('active')
+			$('.js-tab_wrap').find('#' + tId).addClass('active').siblings().removeClass('active')
 
-			$('.main-entry .ttl').text(dVal);
+			$('.js-ttl').text(dVal);
 
 		})
 

@@ -1,0 +1,357 @@
+.personal {
+  padding-bottom: 1.875rem;
+}
+.personal-top {
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-image: url(../img/ban2.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 2.125rem;
+  padding-bottom: 2.125rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  color: #EAEAEA;
+}
+.personal-top .d-flex {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+}
+.personal-top .bx {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.personal-top .bx:last-child {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+}
+.personal-top .ttl {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: "Greta Dis Nar Pro Reg", sans-serif;
+}
+.personal-top_link ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+}
+.personal-top_link ul li.active a {
+  border-color: #EAEAEA;
+}
+.personal-top_link ul a {
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  padding-left: 0.75rem;
+  padding-right: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #EAEAEA;
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid transparent;
+  padding-top: 0.8125em;
+  padding-bottom: 0.8125rem;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+}
+.personal-top_link ul a i {
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.personal-top_link ul a svg {
+  fill: #EAEAEA;
+}
+.personal-top .bonus {
+  position: relative;
+  text-decoration: none;
+  background: linear-gradient(90deg, #C5904F 0%, #DEA968 100%);
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  height: 46px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  min-width: 248px;
+  justify-content: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.personal-top .bonus i {
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.personal-top .bonus svg {
+  fill: #fff;
+}
+.personal-top .exit {
+  text-decoration: none;
+  color: #EAEAEA;
+  font-weight: 500;
+  font-size: 1rem;
+  display: inline-block;
+  line-height: 1;
+}
+.personal-top .exit i {
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+  line-height: 1;
+}
+.personal-top .exit svg {
+  fill: #EAEAEA;
+}
+.personal-wrap {
+  padding-top: 0.75rem;
+}
+.personal-wrap_fl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.personal-wrap_fl .bx {
+  padding-left: 5px;
+  padding-right: 5px;
+  flex: 0 0 28%;
+  max-width: 28%;
+}
+.personal-wrap_fl .bx:first-child {
+  flex: 0 0 72%;
+  max-width: 72%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1.25rem;
+}
+.personal-wrap_fl .txt {
+  max-width: 568px;
+  color: #929292;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+.personal-wrap_item {
+  display: none;
+}
+.personal-wrap_item.active {
+  display: block;
+}
+.personal-group {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.0509803922);
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2.125rem;
+}
+.personal-group_head ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+.personal-group_head ul li {
+  position: relative;
+  padding-right: 2.375rem;
+}
+.personal-group_head ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #A7A7A7;
+  right: 1rem;
+}
+.personal-group_head ul li:last-child {
+  padding-right: 0;
+}
+.personal-group_head ul li:last-child::after {
+  content: none;
+}
+.personal-group_head ul li.active a {
+  color: #C5904F;
+}
+.personal-group_head ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #A7A7A7;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  font-weight: normal;
+  font-size: 1.75rem;
+  font-family: "Greta Dis Nar Pro Reg", sans-serif;
+}
+.personal-group_wrap {
+  padding-top: 1.625rem;
+}
+.personal-group_item {
+  display: none;
+}
+.personal-group_item.active {
+  display: block;
+}
+.personal-group_item .page-ruller {
+  place-items: flex-start;
+}
+.personal-box {
+  position: relative;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 1.5rem;
+}
+.personal-box:not(:first-child) {
+  margin-top: 0.75rem;
+}
+.personal-box_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1.4px solid #D9D9D9;
+}
+.personal-box_top .numb-order, .personal-box_top .pos {
+  color: rgba(27, 26, 27, 0.5);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.personal-box_top .sum {
+  color: #1B1A1B;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: right;
+}
+.personal-box_top .pos {
+  text-align: right;
+}
+.personal-box_order {
+  color: #1B1A1B;
+  font-weight: 500;
+  font-size: 1.325rem;
+}
+.personal-box_mid {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+.personal-box_mid .item {
+  padding-left: 3px;
+  padding-right: 3px;
+  flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
+.personal-box_mid .img {
+  position: relative;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  overflow: hidden;
+}
+.personal-box_mid .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.personal-box_bottom {
+  padding-top: 1.5rem;
+  display: flex;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.personal-box_bottom .date, .personal-box_bottom .adress {
+  color: #1B1A1B;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.personal-box_bottom .adress {
+  color: rgba(27, 26, 27, 0.5);
+}
+.personal-form {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 2.125rem;
+}
+.personal-form .ttl {
+  color: #C5904F;
+  font-weight: normal;
+  font-size: 1.75rem;
+  font-family: "Greta Dis Nar Pro Reg", sans-serif;
+  margin-bottom: 1.625rem;
+}
+.personal-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  row-gap: 2rem;
+}
+.personal-set .item {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  flex: 0 0 20%;
+  max-width: 20%;
+}/*# sourceMappingURL=personal.css.map */
