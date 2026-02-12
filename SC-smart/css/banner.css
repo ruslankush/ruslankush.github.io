@@ -29,6 +29,7 @@
   letter-spacing: -0.2px;
   font-family: "Greta Dis Nar Pro Reg", sans-serif;
   font-weight: normal;
+  line-height: 1;
 }
 .banner-box .box-fl_gr i {
   font-family: "Greta Dis Nar Pro Reg", sans-serif;
@@ -59,6 +60,7 @@
   color: #fff;
   font-size: 0.75rem;
   letter-spacing: 0.4rem;
+  opacity: 0.6;
 }
 .banner-box .img {
   position: absolute;

@@ -275,6 +275,7 @@
 
             .page-ruller {
                 place-items: flex-start;
+                padding-top: 2.8125rem;
             }
 
         }
@@ -402,6 +403,43 @@
             max-width: 20%;
         }
 
+    }
+
+    &-empty {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 3.125rem;
+
+        &_bx {
+
+            &:last-child {
+                flex: 1;
+                padding-left: 2.5rem;
+            }
+
+            .name {
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 1.2;
+                color: #1B1A1B;
+                margin-bottom: 6px;
+            }
+
+            p {
+                color: rgba(27, 26, 27, 0.5);
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;      
+            }
+
+            .page-btn {
+                height: 54px;
+            }
+
+
+        }
+        
     }
 
 }

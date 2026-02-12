@@ -1620,6 +1620,16 @@ body {
   padding-top: 1.875rem;
   padding-bottom: 6.25rem;
   min-height: calc(100vh - 207px);
+  position: relative;
+}
+.main-entry .elips {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.main-entry .elips img {
+  margin: 0 auto;
 }
 .main-entry .page-wrap {
   height: 100%;
@@ -1645,6 +1655,7 @@ body {
   -ms-border-radius: 1.5rem;
   -o-border-radius: 1.5rem;
   padding: 2.125rem;
+  z-index: 1;
 }
 .main-entry_wrap .desc {
   text-align: center;

@@ -930,6 +930,19 @@
         padding-top: 1.875rem;
         padding-bottom: 6.25rem;
         min-height: calc(100vh - 207px);
+        position: relative;
+
+        .elips {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            img {
+                margin: 0 auto;
+            }
+
+        }
 
         .page-wrap {
             height: 100%;
@@ -953,6 +966,7 @@
             box-shadow: 0px 4px 12px 0px #0000000D;
             @include bRadius(1.5rem);
             padding: 2.125rem;
+            z-index: 1;
 
             .desc {
                 text-align: center;
