@@ -1,0 +1,106 @@
+@import "mixin";
+
+.top {
+    position: relative;
+    padding-bottom: 3.125rem;
+
+    &-box {
+        position: relative;
+        padding-top: 1rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        overflow: hidden;
+
+        &_sh {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            img {
+                margin: 0 auto;
+            }
+
+        }
+
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            @include bRadius(10px);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        .breadcrumbs {
+            z-index: 1;
+            position: relative;
+
+            ul {
+
+                li {
+
+                    a {
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    &::after {
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    &:last-child {
+
+                        a {
+                            color: #fff;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .box {
+            max-width: 547px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            position: relative;
+            padding-top: 2.5rem;
+            padding-bottom: 9.125rem;
+
+            &-gr {
+                text-align: center;
+                font-weight: normal;
+                font-size: 2.875rem;
+                text-align: center;
+                line-height: 0.8;
+                font-family: 'Greta Dis Nar Pro Reg', sans-serif;
+                color: #C5904F;
+
+                span {
+                    color: #fff;
+                    display: block;
+                }
+
+            }
+
+        }
+
+    }
+
+    .main-form {
+        margin-top: -6.25rem;
+    }
+
+}

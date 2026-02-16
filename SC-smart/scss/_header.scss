@@ -1,13 +1,38 @@
 .header {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	z-index: 1;
+	z-index: 2;
 	position: relative;
 	
 	.bx {
 		display: flex;
 		align-items: center;
 		position: relative;
+	}
+
+	&.active {
+
+		.header {
+
+			&-menu {
+				z-index: 2;
+				background: linear-gradient(90deg, #C5904F 0%, #C5904F 100%);
+				color: #fff;
+
+
+				&_box {
+					opacity: 1;
+					visibility: visible;
+				}
+
+			}
+
+			&-search {
+				z-index: 2;
+			}
+
+		}
+
 	}
 
 	&-line {
@@ -67,6 +92,7 @@
 			@include transition(opacity, .4s, ease-in, 0s);
 			opacity: 0;
 			visibility: hidden;
+			z-index: 1;
 		}
 
 		&_wrap {
@@ -152,11 +178,12 @@
 	&-search {
 		margin-left: 6px;
 		z-index: 1;
-		// width: 476px;
+		width: 470px;
 	}
 
 	nav {
-		margin-right: 3.75rem;
+		// margin-right: 3.75rem;
+		margin-right: 2.75rem;
 
 		> ul {
 			display: flex;
@@ -174,7 +201,7 @@
 				&.dropdown {
 					position: relative;
 
-					a {
+					> a {
 						padding-right: 1rem;
 
 						i {
@@ -224,6 +251,7 @@
 					font-size: 1rem;
 					position: relative;
 					@include transition(color, .4s, linear, 0s);
+					line-height: 1.05;
 
 					svg {
 						fill: #0F0F0F;
@@ -281,17 +309,21 @@
 		position: absolute;
 		background-color: #fff;
 		border: 1px solid #c1c1c1;
-		top: -1.25rem;
+		top: 1.875rem;
 		left: -2rem;
-		padding-left: 2rem;
-		padding-top: 3.75rem;
-		padding-right: 2rem;
-		padding-bottom: 2rem;
+		padding-left: 1.25rem;
+		padding-top: 1.25rem;
+		padding-right: 1.25rem;
+		padding-bottom: 1.25rem;
 		@include bRadius(10px);
 		@include transition(all, .4s, ease-in, 0s);
 		opacity: 0;
 		visibility: hidden;
-		min-width: 447px;
+		min-width: 220px;
+
+		&_list {
+			min-width: 447px;
+		}
 
 		ul {
 
@@ -306,6 +338,7 @@
 
 				a {
 					opacity: 0.5;
+					letter-spacing: -2%;
 				}
 
 			}
