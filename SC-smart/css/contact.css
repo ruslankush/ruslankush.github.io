@@ -1,0 +1,122 @@
+.contact {
+  padding-top: 3.125rem;
+  padding-bottom: 4.375rem;
+}
+.contact-box {
+  width: 100%;
+  max-width: 1206px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.1875rem;
+}
+.contact-box h2 {
+  margin-bottom: 1.325rem;
+}
+.contact-box .d-flex {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+}
+.contact-box .bx {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  flex: 0 0 61%;
+  max-width: 61%;
+}
+.contact-box .bx:first-child {
+  flex: 0 0 39%;
+  max-width: 39%;
+  padding-top: 5rem;
+}
+.contact-box .bx-gr {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact-box .bx-wrap {
+  position: relative;
+}
+.contact-box .bx-label {
+  position: absolute;
+  right: 0;
+  top: 5rem;
+  padding-left: 10px;
+}
+.contact-box .bx-label::before {
+  content: url(../img/line-sm.png);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.contact-box .bx-label .name {
+  font-weight: normal;
+  color: #C5904F;
+  line-height: 0.9;
+  font-size: 1.625rem;
+  font-family: "Greta Dis Nar Pro Reg", sans-serif;
+}
+.contact-box .bx-label .post {
+  color: rgba(27, 26, 27, 0.5);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.05;
+}
+.contact-box .page-btn {
+  max-width: 240px;
+}
+.contact-box .phone {
+  text-decoration: none;
+  display: inline-block;
+  color: #1B1A1B;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.05;
+}
+.contact-box .work-time {
+  color: rgba(113, 113, 113, 0.5);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.contact-box .adres {
+  font-weight: 500;
+  color: #1B1A1B;
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.contact-box .email {
+  text-decoration: none;
+  display: inline-block;
+  color: #1B1A1B;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+.contact-map {
+  width: 100%;
+  max-width: 1136px;
+  position: relative;
+  height: 528px;
+  background-color: #D9D9D9;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-map .map {
+  position: absolute;
+  inset: 0;
+}/*# sourceMappingURL=contact.css.map */

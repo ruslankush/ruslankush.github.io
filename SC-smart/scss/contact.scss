@@ -1,0 +1,136 @@
+@import "mixin";
+
+.contact {
+    padding-top: 3.125rem;
+    padding-bottom: 4.375rem;
+
+    &-box {
+        width: 100%;
+        max-width: 1206px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2.1875rem;
+
+        h2 {
+            margin-bottom: 1.325rem;
+        }
+
+        .d-flex {
+            margin-left: -0.625rem;
+            margin-right: -0.625rem;
+        }
+
+        .bx {
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            flex: 0 0 61%;
+            max-width: 61%;
+
+            &:first-child {
+                flex: 0 0 39%;
+                max-width: 39%;
+                padding-top: 5rem;
+            }
+
+            &-gr {
+                display: flex;
+                align-items: center;
+                column-gap: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            &-wrap {
+                position: relative;
+            }
+
+            &-label {
+                position: absolute;
+                right: 0;
+                top: 5rem;
+                padding-left: 10px;
+
+                &::before {
+                    @include pseudo($content: url(../img/line-sm.png));
+                    left: 0;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                }
+
+                .name {
+                    font-weight: normal;
+                    color: #C5904F;
+                    line-height: 0.9;
+                    font-size: 1.625rem;
+                    font-family: 'Greta Dis Nar Pro Reg', sans-serif;
+                }
+
+                .post {
+                    color: rgba(27, 26, 27, 0.5);
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.05;
+                }
+
+            }
+
+        }
+
+        .page-btn {
+            max-width: 240px;
+        }
+
+        .phone {
+            text-decoration: none;
+            display: inline-block;
+            color: #1B1A1B;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1.05;
+        }
+
+        .work-time {
+			color: rgba(113, 113, 113, 0.5);
+			font-weight: 500;
+			font-size: 0.875rem;
+			line-height: 1;
+			margin-bottom: 6px;
+		}
+
+		.adres {
+			font-weight: 500;
+			color: #1B1A1B;
+			font-size: 0.875rem;
+			line-height: 1;
+			margin-bottom: 6px;
+		}
+
+		.email {
+			text-decoration: none;
+			display: inline-block;
+			color: #1B1A1B;
+			font-weight: 500;
+			font-size: 0.875rem;
+			line-height: 1;
+		}
+
+    }
+
+    &-map {
+        width: 100%;
+        max-width: 1136px;
+        position: relative;
+        height: 528px;
+        background-color: #D9D9D9;
+        overflow: hidden;
+        @include bRadius(10px);
+        margin-left: auto;
+        margin-right: auto;
+
+        .map {
+            position: absolute;
+            inset: 0;
+        }
+
+    }
+
+}

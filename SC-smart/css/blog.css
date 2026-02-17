@@ -1,0 +1,21 @@
+.blog {
+  padding-top: 1rem;
+  padding-bottom: 8.75rem;
+}
+.blog h1 {
+  color: #C5904F;
+}
+.blog-block {
+  padding-top: 2.5rem;
+}
+.blog-block .d-flex {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  row-gap: 3rem;
+}
+.blog-block .bx {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}/*# sourceMappingURL=blog.css.map */

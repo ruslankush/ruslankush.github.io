@@ -9,6 +9,10 @@
   padding-right: 1.25rem;
   overflow: hidden;
 }
+.top-box h1 {
+  color: #C5904F;
+  text-align: center;
+}
 .top-box_sh {
   position: absolute;
   bottom: 0;

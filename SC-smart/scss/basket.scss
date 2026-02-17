@@ -1,0 +1,193 @@
+@import "mixin";
+
+.basket {
+    padding-bottom: 4.375rem;
+
+    .d-flex {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    .bx {
+        padding-left: 6px;
+        padding-right: 6px;
+        flex: 0 0 26%;
+        max-width: 26%;
+
+        &:first-child {
+            flex: 0 0 74%;
+            max-width: 74%;
+        }
+
+    }
+
+    &-box {
+        position: relative;
+        background-color: #fff;
+        @include bRadius(10px);
+        box-shadow: 0px 4px 12px 0px #0000000D;
+        height: 100%;
+        padding-top: 2.125rem;
+        padding-left: 2.125rem;
+        padding-right: 2.125rem;
+        padding-bottom: 2.125rem;
+
+        .ttl {
+            color: #C5904F;
+            font-weight: normal;
+            font-size: 1.75rem;
+            font-family: 'Greta Dis Nar Pro Reg', sans-serif;
+            line-height: 0.8;
+            margin-bottom: 0.75rem;
+        }
+
+        &_gr {
+            background-color: #F7F7F7;
+            position: relative;
+            @include bRadius(10px);
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+
+            &:not(:first-child) {
+                margin-top: 6px;
+            }
+
+            .img {
+                position: relative;
+                overflow: hidden;
+                @include bRadius(6px);
+            }
+
+            .box {
+
+                &-gr {
+                    display: flex;
+                    column-gap: 1rem;
+                }
+
+                &-fl {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: end;
+                }
+
+                &-top {
+                    display: flex;
+                    column-gap: 2.8125rem;
+
+                    .price {
+                        color: #1B1A1B;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.05;
+
+                        span {
+                            display: block;
+                            font-size: 0.875rem;
+                            color: rgba(27, 26, 27, 0.5);
+                            margin-top: 6px;
+                        }
+
+                    }
+
+                }
+
+                .name {
+                    color: #1B1A1B;
+                    line-height: 1.05;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    margin-bottom: 6px;
+                }
+
+                .gr-total {
+                    color: rgba(27, 26, 27, 0.5);
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.05;
+                }
+
+                .del {
+                    text-decoration: none;
+                    display: inline-block;
+                    color: rgba(27, 26, 27, 0.5);
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+
+                
+
+            }
+
+        }
+
+        &_fl {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 2rem;
+        }
+
+        .group {
+
+            &-price {
+                color: #1B1A1B;
+                font-weight: 500;
+                font-size: 2.25rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.05;
+                    color: rgba(27, 26, 27, 0.5);
+
+                    &:not(:first-child) {
+                        margin-top: 8px;
+                    }
+
+                }
+
+            }
+
+            &-btn {
+                border-bottom: 1px solid rgba(27, 26, 27, 0.2);
+
+                .page-btn {
+                    max-width: 100%;
+                    margin-bottom: 0.75rem;
+                    height: 56px;
+                }
+
+            }
+
+            .desc {
+                margin-top: 0.75rem;
+                color: rgba(27, 26, 27, 0.4);
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.05rem;
+                letter-spacing: -0.2px;
+                max-width: 254px;
+            }
+
+        }
+
+    }
+
+}

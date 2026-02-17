@@ -820,9 +820,12 @@
 
             .desc {
                 font-weight: normal;
-                color: #EAEAEA;
+                // color: #EAEAEA;
+                color: #fff;
+                opacity: 0.6;
                 font-size: 0.875rem;
                 margin-top: 0.75rem;
+                line-height: 1.05;
             }
 
         }
@@ -1430,6 +1433,49 @@
 
     &.slick-disabled {
         pointer-events: none;
+    }
+
+}
+
+.amount {
+    max-width: 108px;
+    display: flex;
+    align-items: center;
+    height: 34px;
+    @include bRadius(4px);
+    overflow: hidden;
+
+    &_minus, &_plus, &_number {
+        flex: 0 0 calc(100% / 3);
+        max-width: calc(100% / 3);
+        height: 100%;
+    }
+
+    &_minus, &_plus {
+        background-color: #C5904F;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.25rem;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+    }
+
+    &_number {
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+            border:none;
+            height: 100%;
+            text-align: center;
+            color: #1B1A1B;
+            font-weight: 500;
+            font-size: 1.25rem;
+            font-family: 'Inter', sans-serif;
+        }
+
     }
 
 }

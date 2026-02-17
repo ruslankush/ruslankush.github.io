@@ -1,0 +1,29 @@
+@import "mixin";
+
+.blog {
+    padding-top: 1rem;
+    padding-bottom: 8.75rem;
+
+    h1 {
+        color: #C5904F;
+    }
+
+    &-block {
+        padding-top: 2.5rem;
+
+        .d-flex {
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            row-gap: 3rem;
+        }
+
+        .bx {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            flex: 0 0 calc(100% / 3);
+            max-width: calc(100% / 3);
+        }
+
+    }
+
+}

@@ -1,0 +1,103 @@
+@import "mixin";
+
+.blog-open {
+    padding-top: 2.5rem;
+    padding-bottom: 4.375rem;
+
+    &_top {
+        display: flex;
+        align-items: center;
+        column-gap: 1.875rem;
+
+        .breadcrumbs {
+
+            ul {
+
+                li {
+
+                    &::after {
+                        opacity: 0.4;
+                    }
+
+                    a {
+                        opacity: 0.4;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .date {
+            min-width: 102px;
+            display: grid;
+            place-items: center;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
+            @include bRadius(8px);
+            background-color: #EAEAEA;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.05;
+            color: #7B7979;
+        }
+
+    }
+
+    &_box {
+        padding-top: 1.875rem;
+        width: 100%;
+        max-width: 1141px;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1 {
+            color: #C5904F;
+            max-width: 399px;
+            margin-bottom: 1.875rem;
+        }
+
+        .txt {
+            color: #1B1A1B;
+            font-weight: normal;
+            font-size: 0.875rem;
+            line-height: 1.2;
+
+            &:not(:last-child) {
+                margin-bottom: 2.875rem;
+            }
+
+            p {
+                margin: 0 0 0.9375rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+            }
+
+        }
+
+        .image {
+            position: relative;
+            @include bRadius(10px);
+            overflow: hidden;
+            min-height: 455px;
+            background-color: #D9D9D9;
+            margin-bottom: 4.375rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+    }
+
+}
