@@ -1262,14 +1262,15 @@ body {
   flex: 0 0 37%;
   max-width: 37%;
   align-self: center;
+  padding-top: 4.375rem;
 }
 .main-prof .bx-wrap {
   position: relative;
 }
 .main-prof .bx-label {
   position: absolute;
-  right: 0;
-  top: 5rem;
+  right: 4.375rem;
+  top: 8rem;
   padding-left: 10px;
 }
 .main-prof .bx-label::before {
