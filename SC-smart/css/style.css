@@ -2660,6 +2660,10 @@ form input, form textarea {
 }
 .cart-format .image {
   height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
 }
 .cart-format .image img {
   width: 100%;
