@@ -129,6 +129,11 @@ a:focus {
   color: #fff;
   background: linear-gradient(90deg, #C5904F 0%, #DEA968 100%);
 }
+.page-btn_curr.hidden {
+  background: #D9D9D9;
+  color: #929292;
+  pointer-events: none;
+}
 .page-btn_gr {
   color: #fff;
   background-color: #1B1A1B;
@@ -330,6 +335,8 @@ body {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .create a {
@@ -383,6 +390,7 @@ body {
 }
 .header .logo {
   margin-right: 1.5625rem;
+  max-width: 159px;
 }
 .header-menu {
   text-decoration: none;
@@ -1159,10 +1167,10 @@ body {
 }
 .main-option_block .image {
   background-size: contain;
-  width: 126%;
-  margin-left: -14%;
-  margin-top: -12%;
-  height: 126%;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -2406,6 +2414,157 @@ form input, form textarea {
   max-width: 100%;
   height: 54px;
 }
+.form-bask_fl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.form-bask_bx {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 64%;
+  max-width: 64%;
+}
+.form-bask_bx:first-child {
+  flex: 0 0 36%;
+  max-width: 36%;
+}
+.form-bask_name {
+  color: #1B1A1B;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.05;
+  margin-bottom: 9px;
+}
+.form-bask_gr {
+  position: relative;
+}
+.form-bask_gr:not(:first-child) {
+  margin-top: 0.625rem;
+}
+.form-bask_gr input, .form-bask_gr textarea {
+  height: 54px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.05;
+  color: #1B1A1B;
+  font-family: "Inter", sans-serif;
+}
+.form-bask_gr input::-moz-placeholder, .form-bask_gr textarea::-moz-placeholder {
+  color: rgba(27, 26, 27, 0.5);
+}
+.form-bask_gr input::placeholder, .form-bask_gr textarea::placeholder {
+  color: rgba(27, 26, 27, 0.5);
+}
+.form-bask_gr textarea {
+  resize: none;
+  height: 86px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.form-bask_box {
+  padding-top: 1.0625rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.form-bask_item {
+  padding-left: 5px;
+  padding-right: 5px;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+.form-bask_item label {
+  display: block;
+  color: rgba(27, 26, 27, 0.5);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.05;
+  margin-bottom: 5px;
+}
+.form-bask_item .form-bask_gr {
+  margin-top: 0;
+}
+.form-bask_item .checked {
+  position: relative;
+  margin-top: 1.25rem;
+}
+.form-bask_item .checked input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.form-bask_item .checked input[type=checkbox]:checked ~ label span::before {
+  opacity: 1;
+}
+.form-bask_item .checked label {
+  position: relative;
+  font-weight: 500;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.05;
+  color: rgba(27, 26, 27, 0.5);
+  padding-left: 2rem;
+}
+.form-bask_item .checked label span {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border: 1px solid rgba(202, 202, 202, 0.4);
+}
+.form-bask_item .checked label span::before {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  background-color: #C5904F;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  opacity: 0;
+}
+.form-bask_item .checked label i {
+  font-style: normal;
+  display: block;
+  color: #C5904F;
+}
+.form-bask_bottom {
+  padding-top: 1.5rem;
+}
 
 .phone a {
   outline: none;
@@ -2437,6 +2596,10 @@ form input, form textarea {
 }
 .cart-set .image {
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .cart-set .image img {
   width: 100%;

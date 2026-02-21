@@ -178,4 +178,6 @@ body {
 	font-size: $font-size;
     font-family: 'Inter', sans-serif;
     font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 } 

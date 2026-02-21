@@ -58,13 +58,31 @@ $(function() {
 
 	});
 
-	$('.header-menu').on('click', function(e) {
+	var timer; 
 
-		e.preventDefault();
+  $('.header-menu').on('mouseenter', function() {
+    clearTimeout(timer); 
+    $('.header').addClass('active');
+  });
 
-		$('.header').toggleClass('active');
+  $('.header-menu').on('mouseleave', function() {
+    var $this = $(this);
+    timer = setTimeout(function() {
+      $('.header').removeClass('active');
+    }, 300);
+  });
 
-	});
+  $('.header-menu_box').on('mouseenter', function() {
+    clearTimeout(timer); 
+	$('.header').addClass('active');
+  });
+
+  $('.header-menu_box').on('mouseleave', function() {
+    var $this = $(this);
+    timer = setTimeout(function() {
+      $('.header').removeClass('active');
+    }, 300);
+  });
 
 	$('.js-main-container_slider').slick({
 		slidesToShow: 1,
@@ -108,6 +126,31 @@ $(function() {
 		$(this).attr('style', 'background-image: url(./'+ banImg +')');
 
 	});
+
+	var iPlus;
+    var iMinus;
+
+    var bPlus  = $(".group-amount_plus");
+    var bMinus = $(".group-amount_minus");
+
+    var iPlus = bPlus.click(function(e) {
+		e.preventDefault();
+        var $n = $(this)
+            .parent().parent(".group-amount")
+            .find("input");
+        $n.val(Number($n.val())+1 );
+    });
+
+    var iMinus = bMinus.click(function(e) {
+		e.preventDefault();
+            var $n = $(this)
+            .parent().parent(".group-amount")
+            .find("input");
+        var amount = Number($n.val());
+        if (amount > 0) {
+            $n.val(amount-1);
+        }
+    });
 
 });
 

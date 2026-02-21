@@ -8,12 +8,12 @@
 .basket .bx {
   padding-left: 6px;
   padding-right: 6px;
-  flex: 0 0 26%;
-  max-width: 26%;
+  flex: 0 0 28%;
+  max-width: 28%;
 }
 .basket .bx:first-child {
-  flex: 0 0 74%;
-  max-width: 74%;
+  flex: 0 0 72%;
+  max-width: 72%;
 }
 .basket-box {
   position: relative;
@@ -24,7 +24,6 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.0509803922);
-  height: 100%;
   padding-top: 2.125rem;
   padding-left: 2.125rem;
   padding-right: 2.125rem;
@@ -118,7 +117,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
 }
 .basket-box .group-price {
   color: #1B1A1B;
@@ -127,12 +126,18 @@
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-.basket-box .group ul {
+.basket-box .group > ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-.basket-box .group ul li {
+.basket-box .group > ul.list {
+  margin-bottom: 8px;
+}
+.basket-box .group > ul.list li {
+  color: #1B1A1B;
+}
+.basket-box .group > ul li {
   display: flex;
   justify-content: space-between;
   font-weight: 500;
@@ -140,7 +145,7 @@
   line-height: 1.05;
   color: rgba(27, 26, 27, 0.5);
 }
-.basket-box .group ul li:not(:first-child) {
+.basket-box .group > ul li:not(:first-child) {
   margin-top: 8px;
 }
 .basket-box .group-btn {
@@ -159,4 +164,370 @@
   line-height: 1.05rem;
   letter-spacing: -0.2px;
   max-width: 254px;
+}
+.basket-box .group-bonus {
+  position: relative;
+  background-color: rgba(222, 169, 104, 0.1);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  display: flex;
+  align-items: center;
+  color: #C5904F;
+  font-weight: 500;
+  font-size: 1rem;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+.basket-box .group-bonus span {
+  display: flex;
+  align-items: center;
+}
+.basket-box .group-bonus .icon {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+}
+.basket-box .group-bonus i {
+  font-style: normal;
+}
+.basket-box .group-bonus svg {
+  fill: #C5904F;
+}
+.basket-box .group-tab {
+  position: relative;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1.625rem;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.basket-box .group-tab_head ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1.4px solid #E6E6E6;
+}
+.basket-box .group-tab_head ul li {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 6px;
+  padding-right: 6px;
+  position: relative;
+}
+.basket-box .group-tab_head ul li.active::after {
+  opacity: 1;
+}
+.basket-box .group-tab_head ul li.active a {
+  color: #C5904F;
+}
+.basket-box .group-tab_head ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.4px;
+  width: 100%;
+  height: 1.4px;
+  background-color: #C5904F;
+  left: 0;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  opacity: 0;
+}
+.basket-box .group-tab_head ul li a {
+  text-decoration: none;
+  display: block;
+  color: rgba(27, 26, 27, 0.5);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.05;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.basket-box .group-tab_item {
+  padding-left: 1.5625rem;
+  padding-right: 1.5265rem;
+  display: none;
+}
+.basket-box .group-tab_item.active {
+  display: block;
+}
+.basket-box .group-tab_item .bonus {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.05;
+  color: #929292;
+}
+.basket-box .group-tab_item .bonus i {
+  font-style: normal;
+  display: inline;
+  vertical-align: middle;
+}
+.basket-box .group-tab_item .bonus svg {
+  fill: #929292;
+}
+.basket-box .group-amount {
+  position: relative;
+  margin-top: 0.875rem;
+}
+.basket-box .group-amount_inp {
+  position: relative;
+  height: 48px;
+}
+.basket-box .group-amount_inp input {
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  color: #1B1A1B;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.05;
+  height: 100%;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding-left: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 5rem;
+}
+.basket-box .group-amount_btn {
+  display: flex;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  right: 6px;
+}
+.basket-box .group-amount_minus, .basket-box .group-amount_plus {
+  position: relative;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  width: 2.125rem;
+  height: 2.125rem;
+  line-height: 1.2;
+  color: #1B1A1B;
+  font-weight: 500;
+  font-size: 1.25rem;
+  background-color: #D9D9D9;
+}
+.basket-box .group-promo {
+  padding-top: 1.5rem;
+}
+.basket-box .group-promo_inp {
+  height: 48px;
+  margin-bottom: 0.625rem;
+}
+.basket-box .group-promo_inp input {
+  outline: none;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  color: #929292;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.05;
+}
+.basket-box .group-promo_inp input::-moz-placeholder {
+  color: #929292;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.basket-box .group-promo_inp input::placeholder {
+  color: #929292;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.basket-box .group-promo .page-btn {
+  max-width: 100%;
+  height: 48px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.basket-box .group-radio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3px;
+  margin-right: -3px;
+  margin-bottom: 6px;
+}
+.basket-box .group-radio .radio {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 3px;
+  padding-right: 3px;
+  position: relative;
+}
+.basket-box .group-radio .radio input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.basket-box .group-radio .radio input[type=radio]:checked ~ label {
+  border-color: #C5904F;
+  color: #C5904F;
+}
+.basket-box .group-radio .radio input[type=radio]:checked ~ label .icon svg {
+  fill: #C5904F;
+}
+.basket-box .group-radio .radio label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #F7F7F7;
+  min-height: 103px;
+  text-align: center;
+  color: rgba(27, 26, 27, 0.5);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.05;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  cursor: pointer;
+}
+.basket-box .group-radio .radio label .icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+}
+.basket-box .group-radio .radio label .icon svg {
+  fill: rgba(27, 26, 27, 0.5);
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+}
+.basket-box .group .page-btn {
+  max-width: 100%;
+  height: 56px;
+}
+.basket-delivery {
+  padding-top: 2.5rem;
+}
+.basket-delivery .ttl {
+  margin-left: 2.5rem;
+  color: #C5904F;
+  font-size: 1.75rem;
+  font-weight: normal;
+  line-height: 0.8;
+  font-family: "Greta Dis Nar Pro Reg";
+  margin-bottom: 1.25rem;
+}
+.basket-method_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(27, 26, 27, 0.2);
+}
+.basket-method_top .name {
+  font-weight: 500;
+  font-size: 1.25rem;
+  position: relative;
+  color: #1b1a1b;
+  line-height: 1.2;
+  padding-left: 2.125rem;
+  max-width: 300px;
+}
+.basket-method_top .name::before {
+  content: url(../img/icon/box-vector-icon.svg);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.basket-method_top .item {
+  flex: 0 0 63%;
+  max-width: 63%;
+}
+.basket-method_top .group-radio .radio input[type=radio]:checked ~ label .icon svg {
+  fill: #1B1A1B;
+}
+.basket-method_top .group-radio .radio-bx:first-child {
+  padding-right: 2px;
+}
+.basket-method_top .group-radio .radio label {
+  min-height: 80px;
+  flex-direction: row;
+  align-items: end;
+  text-align: left;
+  justify-content: space-between;
+}
+.basket-method_top .group-radio .radio label .icon {
+  margin-bottom: 0.625rem;
+}
+.basket-method_top .group-radio .radio label .info {
+  color: rgba(27, 26, 27, 0.3);
+}
+.basket-method_bottom {
+  padding-top: 1.5rem;
 }/*# sourceMappingURL=basket.css.map */
