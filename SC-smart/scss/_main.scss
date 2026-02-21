@@ -17,6 +17,7 @@
                 list-style-type: none;
                 display: flex;
                 column-gap: 6px;
+                overflow-y: hidden;
 
                 li {
                     height: inherit;

@@ -922,6 +922,7 @@ body {
   display: flex;
   -moz-column-gap: 6px;
        column-gap: 6px;
+  overflow-y: hidden;
 }
 .main-set_filter ul li {
   height: inherit;
