@@ -767,6 +767,7 @@
             height: 1.5px;
             width: calc(19% - 0.75rem);
             background-color: #C5904F;
+            z-index: -1;
         }
 
         &::before {
