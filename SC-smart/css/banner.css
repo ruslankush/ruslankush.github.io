@@ -9,6 +9,10 @@
   padding-top: 3.375rem;
   position: relative;
 }
+.banner-box .box-img {
+  margin-left: -10%;
+  margin-right: -10%;
+}
 .banner-box .box-img img {
   margin: 0 auto;
 }
@@ -77,4 +81,11 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .banner-box .box-img {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=banner.css.map */

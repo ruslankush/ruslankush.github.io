@@ -51,9 +51,14 @@
 				<div class="page-wrap">
 					<div class="d-flex flex-wrap align-items-center justify-content-between">
 						<div class="bx">
-							<a href="#" class="logo">
-								<img src="img/logo.svg" alt="" class="mw-100 d-block">
-							</a>
+							<div class="bx-box">
+                                <a href="#" class="header-burger">
+                                    <img src="img/icon/burger-icon.svg" alt="" class="mw-100 d-block">
+                                </a>
+                                <a href="#" class="logo">
+                                    <img src="img/logo.svg" alt="" class="mw-100 d-block">
+                                </a>
+                            </div>
 							<a href="#" class="header-menu">
 								<i>
 									<svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,20 +68,6 @@
 								</i>
 								Все меню
 							</a>
-							<div class="header-search">
-								<form action="" class="form-search">
-									<div class="form-search_gr">
-										<input type="search" placeholder="Найти блюдо">
-										<i>
-											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M13.8938 13.8677L17.5 17.5M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</i>
-									</div>
-									<!-- /.form-search_gr -->
-								</form>
-							</div>
-							<!-- /.header-search -->
 
 							<div class="header-menu_box">
 								<div class="header-menu_wrap">
@@ -135,6 +126,29 @@
 								<!-- /.header-menu_wrap -->
 							</div>
 							<!-- /.header-menu_box -->
+							<div class="header-search">
+								<form action="" class="form-search">
+									<div class="form-search_gr">
+										<input type="search" placeholder="Найти блюдо">
+										<i>
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.8938 13.8677L17.5 17.5M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</i>
+									</div>
+									<!-- /.form-search_gr -->
+								</form>
+							</div>
+							<!-- /.header-search -->
+							
+							<div class="bx-search">
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.8938 13.8677L17.5 17.5M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+							
 						</div>
 						<div class="bx">
 							<nav>
@@ -253,7 +267,7 @@
 			
 			<main class="main flex-fill">			
                 
-                <div class="top">
+                <div class="top hide">
                     <div class="page-wrap">
                         <div class="top-box">
                             <div class="breadcrumbs pt-0">
@@ -322,6 +336,10 @@
                                         Доверьте организацию вашего праздника
                                     </h2>
 
+									<h2 class="hide">
+										Всегда будем рядом!
+									</h2>
+
                                     <div class="bx-gr">
                                         <a href="#" class="page-btn page-btn_curr">
                                             <span>
@@ -341,6 +359,14 @@
                                     <a href="#" class="email">
                                         nonamanomap@gmail.com
                                     </a>
+
+									<div class="bx-btn">
+										<a href="#" class="page-btn page-btn_curr">
+                                            <span>
+                                                Заказать обратный звонок
+                                            </span>
+                                        </a>
+									</div>
                                 </div>
                                 <div class="bx">
                                     <div class="bx-wrap">
@@ -370,6 +396,55 @@
                     </div>
                 </div>
                 <!-- /.contact -->
+
+				<div class="main-order hide pt-0">
+					<div class="page-wrap">
+						<div class="main-order_box">
+							<div class="image">
+								<img src="img/img14.png" alt="" class="mw-100 d-block">
+							</div>
+
+							<div class="box">
+								<h2>
+									Заказать <i>профессиональный</i> <br>кейтеринг
+								</h2>
+
+								<div class="desc">
+									Оставьте заявку ваши даннные и наш менеджер свяжется с вами
+								</div>
+
+								<div class="main-order_form">
+									<form action="" class="form-box">
+										<div class="form-box_gr">
+											<input type="text" placeholder="Имя">
+										</div>
+										<!-- /.form-box_gr -->
+										<div class="form-box_gr">
+											<input type="text" placeholder="+7">
+										</div>
+										<!-- /.form-box_gr -->
+										<div class="form-box_gr">
+											<button class="page-btn page-btn_curr" type="submit">
+												<span>
+													Отправить
+												</span>
+											</button>
+										</div>
+										<!-- /.form-box_gr -->
+									</form>
+									<!-- /.form-box -->
+
+									<div class="desc">
+										Я ознакомился с условиями использования предоставляемых мной сведений и выражаю согласие на обработку моих персональных данных
+									</div>
+								</div>
+								<!-- /.main-order_form -->
+							</div>
+						</div>
+						<!-- /.main-order_box -->
+					</div>
+				</div>
+				<!-- /.main-order -->
 
 			</main>
 			<!-- /.main -->

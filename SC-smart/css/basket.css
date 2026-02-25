@@ -154,7 +154,7 @@
 .basket-box .group-btn .page-btn {
   max-width: 100%;
   margin-bottom: 0.75rem;
-  height: 56px;
+  min-height: 56px;
 }
 .basket-box .group .desc {
   margin-top: 0.75rem;
@@ -391,7 +391,7 @@
 }
 .basket-box .group-promo .page-btn {
   max-width: 100%;
-  height: 48px;
+  min-height: 48px;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -468,7 +468,7 @@
 }
 .basket-box .group .page-btn {
   max-width: 100%;
-  height: 56px;
+  min-height: 56px;
 }
 .basket-delivery {
   padding-top: 2.5rem;

@@ -2,6 +2,9 @@
   position: relative;
   padding-bottom: 3.125rem;
 }
+.top.hide {
+  display: none;
+}
 .top-box {
   position: relative;
   padding-top: 1rem;
@@ -78,4 +81,10 @@
 }
 .top .main-form {
   margin-top: -6.25rem;
+}
+
+@media (min-width: 860px) {
+  .top.hide {
+    display: block;
+  }
 }/*# sourceMappingURL=top.css.map */

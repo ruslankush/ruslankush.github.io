@@ -1,16 +1,19 @@
 .contact {
-  padding-top: 3.125rem;
-  padding-bottom: 4.375rem;
+  padding-top: 1.875rem;
+  padding-bottom: 0.75rem;
 }
 .contact-box {
   width: 100%;
   max-width: 1206px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2.1875rem;
 }
 .contact-box h2 {
   margin-bottom: 1.325rem;
+  display: none;
+}
+.contact-box h2.hide {
+  display: block;
 }
 .contact-box .d-flex {
   margin-left: -0.625rem;
@@ -19,13 +22,11 @@
 .contact-box .bx {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
-  flex: 0 0 61%;
-  max-width: 61%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
-.contact-box .bx:first-child {
-  flex: 0 0 39%;
-  max-width: 39%;
-  padding-top: 5rem;
+.contact-box .bx:last-child {
+  display: none;
 }
 .contact-box .bx-gr {
   display: flex;
@@ -33,6 +34,9 @@
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
   margin-bottom: 1rem;
+}
+.contact-box .bx-gr .page-btn {
+  display: none;
 }
 .contact-box .bx-wrap {
   position: relative;
@@ -68,8 +72,12 @@
   font-size: 1rem;
   line-height: 1.05;
 }
+.contact-box .bx-btn {
+  margin-top: 2.5rem;
+}
 .contact-box .page-btn {
-  max-width: 240px;
+  max-width: 314px;
+  min-height: 62px;
 }
 .contact-box .phone {
   text-decoration: none;
@@ -105,7 +113,7 @@
   width: 100%;
   max-width: 1136px;
   position: relative;
-  height: 528px;
+  height: 430px;
   background-color: #D9D9D9;
   overflow: hidden;
   border-radius: 10px;
@@ -115,8 +123,69 @@
   -o-border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4.375rem;
 }
 .contact-map .map {
   position: absolute;
   inset: 0;
+}
+
+@media (min-width: 576px) {
+  .contact-box .bx-gr .page-btn {
+    display: grid;
+  }
+  .contact-box .bx-btn {
+    display: none;
+  }
+  .contact-box .page-btn {
+    max-width: 240px;
+    min-height: 46px;
+  }
+}
+@media (min-width: 860px) {
+  .contact {
+    padding-top: 3.125rem;
+  }
+  .contact-box h2 {
+    display: block;
+  }
+  .contact-box h2.hide {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .contact-box .bx {
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+  .contact-box .bx:first-child {
+    flex: 0 0 45%;
+    max-width: 45%;
+    padding-top: 5rem;
+  }
+  .contact-box .bx:last-child {
+    display: block;
+  }
+  .contact-map {
+    height: 528px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1100px) {
+  .contact {
+    padding-bottom: 4.375rem;
+  }
+  .contact-box {
+    padding-left: 2.1875rem;
+  }
+}
+@media (min-width: 1280px) {
+  .contact-box .bx {
+    flex: 0 0 61%;
+    max-width: 61%;
+  }
+  .contact-box .bx:first-child {
+    flex: 0 0 39%;
+    max-width: 39%;
+  }
 }/*# sourceMappingURL=contact.css.map */

@@ -1,27 +1,129 @@
 @import "mixin";
 
 .blog {
-    padding-top: 1rem;
-    padding-bottom: 8.75rem;
+    padding-bottom: 2.5rem;
 
     h1 {
         color: #C5904F;
     }
 
+    &-top {
+        position: relative;
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
+        padding-left: 1.5625rem;
+        padding-right: 1.5625rem;
+        z-index: 1;
+
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            @include bRadius(10px);
+            overflow: hidden;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+    }
+
     &-block {
-        padding-top: 2.5rem;
+        padding-top: 1.875rem;
 
         .d-flex {
-            margin-left: -0.75rem;
-            margin-right: -0.75rem;
-            row-gap: 3rem;
+            margin-left: -0.625rem;
+            margin-right: -0.625rem;
+            row-gap: 1.875rem;
         }
 
         .bx {
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-            flex: 0 0 calc(100% / 3);
-            max-width: calc(100% / 3);
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+    }
+
+}
+
+@include sz(min680) {
+
+    .blog {
+        padding-top: 1rem;
+
+        &-top {
+            padding-top: 0;
+            padding-left: 0;
+            padding-bottom: 0;
+            padding-right: 0;
+
+            .image {
+                display: none;
+            }
+
+        }
+
+        &-block {
+
+            .d-flex {
+                row-gap: 3rem;
+            }
+
+            .bx {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min992) {
+
+    .blog {
+        padding-bottom: 8.75rem;
+
+        &-block {
+            padding-top: 2.5rem;
+
+            .bx {
+                flex: 0 0 calc(100% / 3);
+                max-width: calc(100% / 3);
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min1200) {
+
+    .blog {
+
+        &-block {
+
+            .d-flex {
+                margin-left: -0.75rem;
+                margin-right: -0.75rem;
+            }
+
+            .bx {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+
         }
 
     }

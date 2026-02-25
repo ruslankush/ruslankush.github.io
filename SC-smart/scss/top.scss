@@ -4,6 +4,10 @@
     position: relative;
     padding-bottom: 3.125rem;
 
+    &.hide {
+        display: none;
+    }
+
     &-box {
         position: relative;
         padding-top: 1rem;
@@ -106,6 +110,18 @@
 
     .main-form {
         margin-top: -6.25rem;
+    }
+
+}
+
+@include sz(min860) {
+
+    .top {
+
+        &.hide {
+            display: block;
+        }
+
     }
 
 }

@@ -1,18 +1,24 @@
 @import "mixin";
 
 .contact {
-    padding-top: 3.125rem;
-    padding-bottom: 4.375rem;
+    padding-top: 1.875rem;
+    padding-bottom: 0.75rem;
 
     &-box {
         width: 100%;
         max-width: 1206px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 2.1875rem;
+        
 
         h2 {
             margin-bottom: 1.325rem;
+            display: none;
+
+            &.hide {
+                display: block;
+            }
+
         }
 
         .d-flex {
@@ -23,13 +29,11 @@
         .bx {
             padding-left: 0.625rem;
             padding-right: 0.625rem;
-            flex: 0 0 61%;
-            max-width: 61%;
+            flex: 0 0 100%;
+            max-width: 100%;
 
-            &:first-child {
-                flex: 0 0 39%;
-                max-width: 39%;
-                padding-top: 5rem;
+            &:last-child {
+                display: none;
             }
 
             &-gr {
@@ -37,6 +41,11 @@
                 align-items: center;
                 column-gap: 1.5rem;
                 margin-bottom: 1rem;
+
+                .page-btn {
+                    display: none;
+                }
+
             }
 
             &-wrap {
@@ -73,10 +82,15 @@
 
             }
 
+            &-btn {
+                margin-top: 2.5rem;
+            }
+
         }
 
         .page-btn {
-            max-width: 240px;
+            max-width: 314px;
+            min-height: 62px;
         }
 
         .phone {
@@ -119,16 +133,140 @@
         width: 100%;
         max-width: 1136px;
         position: relative;
-        height: 528px;
+        height: 430px;
         background-color: #D9D9D9;
         overflow: hidden;
         @include bRadius(10px);
         margin-left: auto;
         margin-right: auto;
+        margin-top: 4.375rem;
 
         .map {
             position: absolute;
             inset: 0;
+        }
+
+    }
+
+}
+
+@include sz(min576) {
+
+    .contact {
+
+        &-box {
+
+            .bx {
+
+                &-gr {
+
+                    .page-btn {
+                        display: grid;
+                    }
+
+                }
+
+                &-btn {
+                    display: none;
+                }
+
+            }
+
+            .page-btn {
+                max-width: 240px;
+                min-height: 46px;
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min860) {
+
+    .contact {
+        padding-top: 3.125rem;
+
+        &-box {
+
+            h2 {
+                display: block;
+
+                &.hide {
+                    display: none;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min992) {
+
+    .contact {
+
+        &-box {
+
+            .bx {
+                flex: 0 0 55%;
+                max-width: 55%;
+
+                &:first-child {
+                    flex: 0 0 45%;
+                    max-width: 45%;
+                    padding-top: 5rem;
+                }
+
+                &:last-child {
+                    display: block;
+                }
+
+            }
+
+        }
+        
+        &-map {
+            height: 528px;
+            margin-top: 0;
+        }
+
+    }
+
+}
+
+@include sz(min1100) {
+
+    .contact {
+        padding-bottom: 4.375rem;
+
+        &-box {
+            padding-left: 2.1875rem;
+        }
+
+    }
+
+}
+
+@include sz(min1280) {
+
+    .contact {
+
+        &-box {
+
+            .bx {
+                flex: 0 0 61%;
+                max-width: 61%;
+
+                &:first-child {
+                    flex: 0 0 39%;
+                    max-width: 39%;
+                }
+            }
+
         }
 
     }

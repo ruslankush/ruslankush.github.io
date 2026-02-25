@@ -180,7 +180,7 @@
                 .page-btn {
                     max-width: 100%;
                     margin-bottom: 0.75rem;
-                    height: 56px;
+                    min-height: 56px;
                 }
 
             }
@@ -424,7 +424,7 @@
 
                 .page-btn {
                     max-width: 100%;
-                    height: 48px;
+                    min-height: 48px;
                     @include bRadius(6px);
                 }
 
@@ -510,7 +510,7 @@
 
             .page-btn {
                 max-width: 100%;
-                height: 56px;
+                min-height: 56px;
             }
 
         }

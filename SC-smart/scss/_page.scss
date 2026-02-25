@@ -106,7 +106,7 @@ a {
 		color: #1B1A1B;
 		font-weight: normal;
 		font-family: 'Greta Dis Nar Pro Reg', sans-serif;
-		font-size: 2.875rem;
+		font-size: clamp(2.625rem, 4vw, 2.875rem);
 		line-height: 0.9;
 	}
 
@@ -117,7 +117,7 @@ a {
 		@include bRadius(10px);
 		text-align: center;
 		display: grid;
-		height: 46px;
+		min-height: 46px;
 		place-items: center;
 		@include transition(all, .4s, ease-in, 0s);
 		text-decoration: none;
