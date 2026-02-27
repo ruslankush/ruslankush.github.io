@@ -4,16 +4,13 @@
 .basket .d-flex {
   margin-left: -6px;
   margin-right: -6px;
+  row-gap: 0.75rem;
 }
 .basket .bx {
   padding-left: 6px;
   padding-right: 6px;
-  flex: 0 0 28%;
-  max-width: 28%;
-}
-.basket .bx:first-child {
-  flex: 0 0 72%;
-  max-width: 72%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 .basket-box {
   position: relative;
@@ -25,8 +22,8 @@
   -o-border-radius: 10px;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.0509803922);
   padding-top: 2.125rem;
-  padding-left: 2.125rem;
-  padding-right: 2.125rem;
+  padding-left: 1.625rem;
+  padding-right: 1.625rem;
   padding-bottom: 2.125rem;
 }
 .basket-box .ttl {
@@ -51,6 +48,8 @@
   padding-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  row-gap: 1.5rem;
 }
 .basket-box_gr:not(:first-child) {
   margin-top: 6px;
@@ -63,23 +62,29 @@
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+  width: 100%;
+  max-width: 107px;
 }
-.basket-box_gr .box-gr {
-  display: flex;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+.basket-box_gr .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.basket-box_gr .box-gr .gr {
+  padding-top: 0.625rem;
 }
 .basket-box_gr .box-fl {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: end;
 }
 .basket-box_gr .box-top {
   display: flex;
-  -moz-column-gap: 2.8125rem;
-       column-gap: 2.8125rem;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 0.625rem;
 }
 .basket-box_gr .box-top .price {
   color: #1B1A1B;
@@ -89,15 +94,18 @@
 }
 .basket-box_gr .box-top .price span {
   display: block;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: rgba(27, 26, 27, 0.5);
   margin-top: 6px;
+}
+.basket-box_gr .box-top .amount {
+  max-width: 100%;
 }
 .basket-box_gr .box .name {
   color: #1B1A1B;
   line-height: 1.05;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.875rem;
   margin-bottom: 6px;
 }
 .basket-box_gr .box .gr-total {
@@ -108,7 +116,7 @@
 }
 .basket-box_gr .box .del {
   text-decoration: none;
-  display: inline-block;
+  display: none;
   color: rgba(27, 26, 27, 0.5);
   font-weight: 500;
   font-size: 1rem;
@@ -268,8 +276,8 @@
   width: 100%;
 }
 .basket-box .group-tab_item {
-  padding-left: 1.5625rem;
-  padding-right: 1.5265rem;
+  padding-left: 1.325rem;
+  padding-right: 1.325rem;
   display: none;
 }
 .basket-box .group-tab_item.active {
@@ -285,7 +293,7 @@
 }
 .basket-box .group-tab_item .bonus i {
   font-style: normal;
-  display: inline;
+  display: inline-block;
   vertical-align: middle;
 }
 .basket-box .group-tab_item .bonus svg {
@@ -451,6 +459,7 @@
   -ms-transition: all 0.4s ease-in 0s;
   -o-transition: all 0.4s ease-in 0s;
   cursor: pointer;
+  letter-spacing: -0.2px;
 }
 .basket-box .group-radio .radio label .icon {
   display: block;
@@ -488,6 +497,8 @@
   justify-content: space-between;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(27, 26, 27, 0.2);
+  flex-direction: column;
+  row-gap: 1rem;
 }
 .basket-method_top .name {
   font-weight: 500;
@@ -495,8 +506,8 @@
   position: relative;
   color: #1b1a1b;
   line-height: 1.2;
-  padding-left: 2.125rem;
   max-width: 300px;
+  padding-top: 1.875rem;
 }
 .basket-method_top .name::before {
   content: url(../img/icon/box-vector-icon.svg);
@@ -505,9 +516,12 @@
   left: 0;
   top: 0;
 }
-.basket-method_top .item {
-  flex: 0 0 63%;
-  max-width: 63%;
+.basket-method_top .group-radio {
+  row-gap: 0.625rem;
+}
+.basket-method_top .group-radio .radio {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 .basket-method_top .group-radio .radio input[type=radio]:checked ~ label .icon svg {
   fill: #1B1A1B;
@@ -521,6 +535,7 @@
   align-items: end;
   text-align: left;
   justify-content: space-between;
+  font-size: 0.8125rem;
 }
 .basket-method_top .group-radio .radio label .icon {
   margin-bottom: 0.625rem;
@@ -530,4 +545,111 @@
 }
 .basket-method_bottom {
   padding-top: 1.5rem;
+}
+
+@media (min-width: 390px) {
+  .basket-box_gr .box-gr {
+    display: flex;
+  }
+  .basket-box_gr .box-gr .gr {
+    padding-left: 1rem;
+    padding-top: 0;
+    flex: 1;
+  }
+  .basket-box_gr .box-top {
+    flex-direction: row;
+  }
+  .basket-box_gr .box-top .amount {
+    max-width: 108px;
+  }
+}
+@media (min-width: 576px) {
+  .basket-box_gr .box-top {
+    -moz-column-gap: 3.75rem;
+         column-gap: 3.75rem;
+    justify-content: start;
+  }
+}
+@media (min-width: 860px) {
+  .basket .bx {
+    flex: 0 0 39%;
+    max-width: 39%;
+  }
+  .basket .bx:first-child {
+    flex: 0 0 61%;
+    max-width: 61%;
+  }
+  .basket-box_gr .box .name {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .basket .bx {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  .basket .bx:first-child {
+    flex: 0 0 67%;
+    max-width: 67%;
+  }
+  .basket-method_top .name {
+    padding-left: 2.125rem;
+    padding-top: 0;
+  }
+  .basket-method_top .group-radio .radio {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .basket-box .group-tab_item {
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+  }
+}
+@media (min-width: 1100px) {
+  .basket-box_gr {
+    flex-direction: row;
+  }
+  .basket-box_gr .box-fl {
+    align-items: end;
+  }
+  .basket-box_gr .box .del {
+    display: inline-block;
+  }
+  .basket-box_gr .box-top {
+    -moz-column-gap: 2.8125rem;
+         column-gap: 2.8125rem;
+  }
+  .basket-box_gr .box-top .price span {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 1200px) {
+  .basket .bx {
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
+  .basket .bx:first-child {
+    flex: 0 0 72%;
+    max-width: 72%;
+  }
+}
+@media (min-width: 1280px) {
+  .basket-box {
+    padding-left: 2.125rem;
+    padding-right: 2.125rem;
+  }
+}
+@media (min-width: 1366px) {
+  .basket-method_top {
+    flex-direction: row;
+  }
+  .basket-method_top .item {
+    flex: 1;
+    padding-left: 1.25rem;
+  }
+}
+@media (min-width: 1440px) {
+  .basket-method_top .group-radio .radio label {
+    font-size: 0.875rem;
+  }
 }/*# sourceMappingURL=basket.css.map */

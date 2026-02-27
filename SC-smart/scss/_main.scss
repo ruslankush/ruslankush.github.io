@@ -375,23 +375,33 @@
                 min-width: 196px;
             }
 
+            .bx {
+
+                &:last-child {
+                    display: none;
+                }
+
+            }
+
         }
 
         &_block {
             padding-top: 1.5rem;
+        }
 
-            .d-flex {
-                margin-left: -0.75rem;
-                margin-right: -0.75rem;
+        &_slider {
+            margin-left: -4px;
+            margin-right: -4px;
+
+            .item {
+                padding-left: 4px;
+                padding-right: 4px;
             }
 
-            .bx {
-                padding-left: 0.75rem;
-                padding-right: 0.75rem;
-                flex: 0 0 20%;
-                max-width: 20%;
-            }
+        }
 
+        &_bottom {
+            padding-top: 1.5rem;
         }
 
     }
@@ -399,10 +409,14 @@
     &-prof {
         padding-top: 3.125rem;
         padding-bottom: 5rem;
+        overflow: hidden;
+
+        &.b-in {
+            padding-bottom: 0;
+        }
 
         h2 {
             font-size: 2.625rem;
-            line-height: 1;
 
             i {
                 font-style: italic;
@@ -428,10 +442,6 @@
 
         }
 
-        .page-wrap {
-            padding-left: 8.75rem;
-        }
-
         .d-flex {
             margin-left: -0.625rem;
             margin-right: -0.625rem;
@@ -440,15 +450,8 @@
         .bx {
             padding-left: 0.625rem;
             padding-right: 0.625rem;
-            flex: 0 0 63%;
-            max-width: 63%;
-
-            &:first-child {
-                flex: 0 0 37%;
-                max-width: 37%;
-                align-self: center;
-                padding-top: 4.375rem;
-            }
+            flex: 0 0 100%;
+            max-width: 100%;
 
             &-wrap {
                 position: relative;
@@ -456,16 +459,9 @@
 
             &-label {
                 position: absolute;
-                right: 4.375rem;
+                left: 0;
                 top: 8rem;
-                padding-left: 10px;
-
-                &::before {
-                    @include pseudo($content: url(../img/line-sm.png));
-                    left: 0;
-                    top: 50%;
-                    @include transform(translateY(-50%));
-                }
+                max-width: 100px;
 
                 .name {
                     font-weight: normal;
@@ -477,7 +473,7 @@
 
                 .post {
                     font-weight: 500;
-                    font-size: 1rem;
+                    font-size: 0.875rem;
                     color: rgba(27, 26, 27, 0.5);
                     letter-spacing: -0.3px;
                     line-height: 1;
@@ -489,6 +485,8 @@
 
         .image {
             position: relative;
+            @include transform(translateX(40%));
+            margin-left: -40%;
 
             img {
                 margin: 0 auto;
@@ -498,6 +496,7 @@
 
         &_bottom {
             padding-top: 1.625rem;  
+            display: none;
 
             .name {
                 color: #C5904F;
@@ -547,16 +546,21 @@
         padding-top: 5rem;
         padding-bottom: 1.875rem;
 
+        &.t-in {
+            padding-top: 0;
+        }
+
         .d-flex {
             margin-left: -8px;
             margin-right: -8px;
+            row-gap: 0.75rem;
         }
 
         .bx {
             padding-left: 8px;
             padding-right: 8px;
-            flex: 0 0 50%;
-            max-width: 50%;
+            flex: 0 0 100%;
+            max-width: 100%;
         }
 
     }
@@ -581,6 +585,19 @@
                 min-width: 196px;
             }
 
+            .bx {
+
+                &:last-child {
+                    display: none;
+                }
+
+            }
+
+        }
+
+        .page-btn {
+            min-height: 62px;
+            max-width: 100%;
         }
 
         &_block {
@@ -600,15 +617,29 @@
 
         }
 
+        &_slider {
+            margin-left: -4px;
+            margin-right: -4px;
+
+            .item {
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+
+        }
+
+        &_bottom {
+            padding-top: 1.5rem;
+        }
+
     }
 
     &-org {
         padding-top: 4.375rem;
         padding-bottom: 3.125rem;
+        overflow: hidden;
 
         h2 {
-            font-size: 2.625rem;
-            line-height: 1;
 
             i {
                 font-style: italic;
@@ -616,17 +647,13 @@
 
         }
 
-        .page-wrap {
-            padding-right: 8.5rem;
-        }
-
         .d-flex {
             margin-left: -0.625rem;
             margin-right: -0.625rem;
+            row-gap: 4.375rem;
         }
 
         .txt {
-            margin-top: 1.875rem;
             color: #1B1A1B;
             font-weight: normal;
             font-size: 0.875rem;
@@ -645,12 +672,11 @@
         .bx {
             padding-left: 0.625rem;
             padding-right: 0.625rem;
-            flex: 0 0 37%;
-            max-width: 37%;
+            flex: 0 0 100%;
+            max-width: 100%;
 
-            &:first-child {
-                flex: 0 0 63%;
-                max-width: 63%;
+            h2 {
+                display: none;
             }
 
             &:last-child {
@@ -659,22 +685,15 @@
 
             &-wrap {
                 position: relative;
+                height: 100%;
             }
 
             &-label {
                 position: absolute;
-                top: 8rem;
-                left: 0;
-                text-align: right;
-                max-width: 273px;
-                padding-right: 0.625rem;
-
-                &::before {
-                    @include pseudo($content: url(../img/line-sm.png));
-                    right: 0;
-                    top: 50%;
-                    @include transform(translateY(-50%));
-                }
+                top: 3.125rem;
+                text-align: left;
+                max-width: 100px;
+                right: 0;
 
                 .name {
                     font-weight: normal;
@@ -686,7 +705,7 @@
 
                 .post {
                     font-weight: 500;
-                    font-size: 1rem;
+                    font-size: 0.875rem;
                     color: rgba(27, 26, 27, 0.5);
                     letter-spacing: -0.3px;
                     line-height: 1;
@@ -698,16 +717,27 @@
 
         .image {
             position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: contain;
+            @include transform(translateX(-39%));
+            margin-right: -60%;
 
             img {
                 margin: 0 auto;
+                opacity: 0;
+                visibility: hidden;
             }
 
         }
 
         &_bottom {
             padding-top: 2.5rem;
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
             max-width: 1130px;

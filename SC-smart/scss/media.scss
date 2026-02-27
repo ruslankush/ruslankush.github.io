@@ -1,5 +1,30 @@
 @import "mixin";
 
+@include sz(min390) {
+
+	.main {
+
+		&-org {
+
+			&_top {
+				padding-left: 30%;
+				margin-bottom: -4.375rem;
+			}
+
+			.bx {
+
+				&-label {
+					top: 6.25rem
+				}
+
+			}
+			
+		}
+
+	}
+
+}
+
 @include sz(min480) {
 
 	.main {
@@ -155,6 +180,94 @@
 
 		}
 
+		&-org {
+
+			&_top {
+				padding-left: 0;
+				margin-bottom: 0;
+			}
+
+			.bx {
+
+				&-label {
+					max-width: 273px;
+					top: 8rem;
+					padding-left: 0.625rem;
+					max-width: 273px;
+
+					&::before {
+						@include pseudo($content: url(../img/line-sm.png));
+						left: 0;
+						top: 50%;
+						@include transform(translateY(-50%));
+					}
+
+					.post {
+						font-size: 1rem;
+					}
+
+				}
+
+			}
+
+			.image {
+				@include transform(translateX(-30%));
+				margin-right: -30%;
+			}
+
+		}
+
+		&-case {
+
+			.page-btn {
+				max-width: 196px;
+			}
+
+		}
+
+		&-prof {
+
+			.bx {
+
+				&-label {
+					padding-right: 0.625rem;
+					max-width: 273px;
+
+					&::before {
+						@include pseudo($content: url(../img/line-sm.png));
+						right: 0;
+						top: 50%;
+						@include transform(translateY(-50%));
+					}
+
+				}
+
+			}
+
+			.image {
+				@include transform(translateX(35%));
+            	margin-left: -35%;
+			}
+
+		}
+
+	}
+
+	.form {
+
+		&-bask {
+
+			&_bottom {
+				display: block;
+			}
+
+			&_item {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+
+		}
+
 	}
 
 }
@@ -231,6 +344,24 @@
 					padding-right: 0.75rem;
 				}
 
+			}
+
+		}
+
+		&-org {
+
+			.image {
+				@include transform(translateX(0));
+				margin-right: 0;
+			}
+
+		}
+
+		&-prof {
+
+			.image {
+				@include transform(translateX(0));
+				margin-left: 0;
 			}
 
 		}
@@ -335,6 +466,172 @@
 
 		}
 
+		&-org {
+
+			&_top {
+				display: none;
+			}
+
+			.bx {
+
+				h2 {
+					display: block;
+				}
+
+				&-label {
+					left: 0;
+					padding-right: 0.625rem;
+					padding-left: 0;
+					right: inherit;
+					padding-left: 0;
+					text-align: right;
+
+					&::before {
+						right: 0;
+						left: inherit;
+					}
+
+				}
+
+			}
+
+			.txt {
+				margin-top: 1.875rem;
+			}
+
+		}
+
+		&-case {
+
+			&_top {
+
+				.bx {
+
+					&:last-child {
+						display: block;
+					}
+
+				}
+
+			}
+
+			&_slider {
+				margin-left: -8px;
+				margin-right: -8px;
+
+				.item {
+					padding-left: 8px;
+					padding-right: 8px;
+				}
+
+			}
+
+			.page-btn {
+				min-height: 46px;
+			}
+
+			&_bottom {
+				display: none;
+			}
+
+		}
+
+		&-smart {
+
+			&.t-in {
+				padding-top: 5rem;
+			}
+
+		}
+
+		&-prof {
+
+			&.b-in {
+				padding-bottom: 5rem;
+			}
+
+			.image {
+				left: -10%;
+			}
+
+			.bx {
+
+				&-label {
+					left: inherit;
+					right: 0;
+					padding-left: 0.625rem;
+					padding-right: 0;
+
+					&::before {
+						left: 0;
+						right: inherit;
+					}
+
+					.post {
+						font-size: 1rem;
+					}
+
+				}
+
+			}
+
+		}
+
+		&-hit {
+
+			&_top {
+
+				.bx {
+
+					&:last-child {
+						display: block;
+					}
+
+				}
+
+			}
+
+			&_bottom {
+				display: none;
+			}
+
+		}
+
+	}
+
+	.cart {
+
+		&-set {
+
+			.image {
+				height: 100%;
+			}
+
+			&_heft {
+				display: none;
+			}
+
+			&_gr {
+
+				.heft {
+					display: inline-block;
+				}
+
+				.name {
+					padding-right: 10px;
+					color: #fff;
+					text-align: left;
+				}
+
+			}
+
+			&_box {
+				height: inherit;
+				background-color: transparent;
+			}
+
+		}
+
 	}
 
 }
@@ -378,6 +675,15 @@
 
 			&_btn {
 				display: none;
+			}
+
+		}
+
+		&-smart {
+
+			.bx {
+				flex: 0 0 50%;
+				max-width: 50%;
 			}
 
 		}
@@ -457,6 +763,59 @@
 
 			&_block {
 				padding-top: 3.125rem;
+			}
+
+		}
+
+		&-org {
+
+			.bx {
+				flex: 0 0 45%;
+				max-width: 45%;
+
+				&:first-child {
+					flex: 0 0 55%;
+					max-width: 55%;
+				}
+			}
+
+			.image {
+				right: -20%;
+			}
+
+		}
+
+		&-prof {
+
+			.bx {
+				flex: 0 0 55%;
+				max-width: 55%;
+
+				&:first-child {
+					flex: 0 0 45%;
+					max-width: 45%;
+					align-self: center;
+					padding-top: 4.375rem;
+				}
+			}
+
+		}
+
+	}
+
+	.form {
+
+		&-bask {
+
+			&_bx {
+				flex: 0 0 64%;
+				max-width: 64%;
+
+				&:first-child {
+					flex: 0 0 36%;
+					max-width: 36%;
+				}
+
 			}
 
 		}
@@ -562,6 +921,51 @@
 
 	}
 
+	.cart {
+
+		&-smart {
+
+			&_box {
+				row-gap: 7.75rem;
+				padding-left: 1.875rem;
+				padding-right: 1.5rem;
+				padding-bottom: 1.5rem;
+
+				.txt {
+					padding-right: 0.9375rem;
+				}
+
+				.link {
+					display: inline-block;
+				}
+
+			}
+
+		}
+
+		&-set {
+
+			&_gr {
+				font-size: 1rem;
+
+				.heft {
+					font-size: 1rem;
+				}
+
+			}
+
+			&_fl {
+
+				.price {
+					font-size: 1.25rem;
+				}
+
+			}
+
+		}
+
+	}
+
 }
 
 @include sz(min1200) {
@@ -600,6 +1004,64 @@
 					max-width: 20%;
 				}
 
+			}
+
+		}
+
+		&-org {
+
+			.bx {
+				flex: 0 0 37%;
+				max-width: 37%;
+
+				&:first-child {
+					flex: 0 0 63%;
+					max-width: 63%;
+				}
+			}
+
+			.image {
+				right: -10%;
+			}
+
+			&_bottom {
+				display: flex;
+			}
+
+		}
+
+		&-prof {
+
+			.bx {
+				flex: 0 0 63%;
+				max-width: 63%;
+
+				&:first-child {
+					flex: 0 0 37%;
+					max-width: 37%;
+				}
+
+				&-label {
+					right: 4.375rem;
+				}
+
+			}
+
+			.image {
+				left: 0;
+			}
+
+		}
+
+	}
+
+	.form {
+
+		&-bask {
+
+			&_item {
+				flex: 0 0 calc(100% / 3);
+				max-width: calc(100% / 3);
 			}
 
 		}
@@ -733,6 +1195,38 @@
 
 		}
 
+		&-org {
+
+			.image {
+				right: 0; 
+			}
+
+		}
+
+		&-prof {
+
+			&_bottom {
+				display: block;
+			}
+
+		}
+
+	}
+
+	.cart {
+
+		&-smart {
+
+			&_box {
+
+				.txt {
+					padding-right: 5.125rem;
+				}
+
+			}
+
+		}
+
 	}
 
 }
@@ -765,6 +1259,21 @@
 
 				}
 				
+			}
+
+		}
+
+		&-hit {
+
+			&_slider {
+				margin-left: -0.75rem;
+				margin-right: -0.75rem;
+
+				.item {
+					padding-left: 0.75rem;
+					padding-right: 0.75rem;
+				}
+
 			}
 
 		}
@@ -843,6 +1352,22 @@
 					max-width: fit-content;
 				}
 
+			}
+
+		}
+
+		&-org {
+
+			.page-wrap {
+				padding-right: 8.5rem;
+			}
+
+		}
+
+		&-prof {
+
+			.page-wrap {
+				padding-left: 8.75rem;
 			}
 
 		}

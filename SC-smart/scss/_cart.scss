@@ -7,7 +7,7 @@
         @include bRadius(10px);
 
         .image {
-            height: 100%;
+            height: 50%;
             position: absolute;
             top: 0;
             left: 0;
@@ -27,30 +27,37 @@
             left: 0;
             width: 100%;
             padding-bottom: 0.75rem;
+            height: 50%;
+            background-color: #fff;
         }
 
         &_gr {
             padding-left: 0.9375rem;
             padding-right: 0.9375rem;
             font-weight: 500;
-            font-size: 1rem;
+            font-size: 0.75rem;
             display: flex;
             justify-content: space-between;
             align-items: end;
             margin-bottom: 1.125rem;
 
             .name {
-                color: #fff;
+                color: #1B1A1B;
                 text-decoration: none;
                 display: inline-block;
                 flex: 1;
-                padding-right: 10px;
+                text-align: center;
             }
 
             .heft {
-                color: rgba(255, 255, 255, 0.5);
+                display: none;
             }
 
+        }
+
+        .heft {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.875rem;
         }
 
         &_fl {
@@ -63,13 +70,21 @@
             .price {
                 color: #C5904F;
                 font-weight: 500;
-                font-size: 1.25rem;
+                font-size: 1rem;
                 flex: 1;
                 padding-right: 0.625rem;
             }
 
             
 
+        }
+
+        &_heft {
+            padding-top: 0.625rem;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            position: relative;
+            z-index: 1;
         }
 
     }
@@ -164,10 +179,25 @@
         position: relative;
         overflow: hidden;
         @include bRadius(10px);
+        height: 100%;
+
+        a {
+            text-decoration: none;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
 
         .image {
             width: 100%;
             height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
 
             img {
                 width: 100%;
@@ -178,18 +208,16 @@
         }
 
         &_box {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
+            position: relative;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding-left: 1.875rem;
-            padding-right: 1.5rem;
+            padding-left: 0.9375rem;
+            padding-right: 0.9375rem;
             padding-top: 1.325rem;
-            padding-bottom: 1.5rem;
+            padding-bottom: 1.325rem;
+            row-gap: 4.375rem;
 
             .name {
                 color: #C5904F;
@@ -202,7 +230,6 @@
                 font-weight: normal;
                 font-size: 0.875rem;
                 flex: 1;
-                padding-right: 5.125rem;
 
                 p {
                     margin: 0 0 1rem;
@@ -216,8 +243,7 @@
             }
 
             .link {
-                text-decoration: none;
-                display: inline-block;
+                display: none;
                 color: #fff;
                 font-weight: 500;
                 font-size: 1rem;

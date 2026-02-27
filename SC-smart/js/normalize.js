@@ -208,6 +208,70 @@ $(function() {
         }
     });
 
+	$('.js-main-case_slider').slick({
+		slidesToShow: 4,
+		rows: false,
+		dots: false,
+		infinite: false,
+		arrows: false,
+		slidesToScroll: 1,
+
+		responsive: [
+
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2.2,
+				}
+			},
+
+			{
+				breakpoint: 680, 
+				settings: {
+					slidesToShow: 1.2,
+				}
+			}
+
+		]
+
+	});
+
+	$('.js-main-hit_slider').slick({
+		slidesToShow: 5,
+		rows: false,
+		dots: false,
+		infinite: false,
+		arrows: false,
+		slidesToScroll: 1,
+
+		responsive: [
+
+			{
+				breakpoint: 1280,
+				settings: {
+					slidesToShow: 4,
+				}
+			},
+
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3.2,
+				}
+			}
+
+		]
+
+	});
+
+
 });
 
 
