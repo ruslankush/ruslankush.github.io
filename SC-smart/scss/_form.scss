@@ -348,7 +348,7 @@ form {
 			}
 
 			input, textarea {
-				height: 54px;
+				height: 64px;
 				background-color: #F7F7F7;
 				@include bRadius(10px);
 				padding-top: 14px;
@@ -442,12 +442,13 @@ form {
 					span {
 						position: absolute;
 						left: 0;
-						top: 2px;
+						top: 50%;
 						display: inline-block;
 						width: 1.5rem;
 						height: 1.5rem;
 						@include bRadius(6px);
 						border: 1px solid rgba(202, 202, 202, 0.4);
+						@include transform(translateY(-50%));
 
 						&::before {
 							width: 0.75rem;
@@ -466,7 +467,7 @@ form {
 
 					i {
 						font-style: normal;
-						display: block;
+						display: inline;
 						color: #C5904F;
 					}
 

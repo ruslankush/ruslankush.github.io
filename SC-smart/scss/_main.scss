@@ -1,7 +1,6 @@
 .main {
 	
     &-set {
-        padding-top: 1.325rem;
         padding-bottom: 3.125rem;
 
         &_filter {
@@ -9,7 +8,8 @@
             position: relative;
             box-shadow: 0px 4px 12px 0px #0000001A;
             padding: 6px;
-            @include bRadius(10px);
+            margin-left: -15px;
+            margin-right: -15px;
 
             ul {
                 padding: 0;
@@ -75,16 +75,33 @@
             padding-top: 1.325rem;
 
             .d-flex {
-                margin-left: -0.75rem;
-                margin-right: -0.75rem;
-                row-gap: 1.875rem;
+                margin-left: 4px;
+                margin-right: 4px;
+                row-gap: 1.5rem;
             }
 
             .bx {
-                padding-left: 0.75rem;
-                padding-right: 0.75rem;
-                flex: 0 0 20%;
-                max-width: 20%;
+                padding-left: 4px;
+                padding-right: 4px;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+        }
+
+        .page-ruller {
+            display: none;
+        }
+
+        &_btn {
+            padding-top: 3.125rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .page-btn {
+                min-height: 62px;
+                max-width: 100%;
             }
 
         }
@@ -95,11 +112,18 @@
         padding-top: 3.125rem;
         text-align: center;
         padding-bottom: 3.125rem;
+        overflow: hidden;
+
+        &_wrap {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
+            position: relative;
+            z-index: 2;
+        }
 
         &_box {
             position: relative;
-            padding-top: 6.25rem;
-            padding-bottom: 6.25rem;
 
             &::before, &::after {
                 @include pseudo();
@@ -140,42 +164,15 @@
         .d-flex {
             margin-left: -0.9375rem;
             margin-right: -0.9375rem;
+            row-gap: 3.75rem;
         }
 
         .bx {
             padding-left: 0.9375rem;
             padding-right: 0.9375rem;
-            flex: 0 0 42%;
-            max-width: 42%;
+            flex: 0 0 100%;
+            max-width: 100%;
             position: relative;
-
-            &::before, &::after {
-                @include pseudo();
-                top: 50%;
-                @include transform(translatey(-50%));
-            }
-
-            &::after {
-                content: url(../img/line3.png);
-                left: 70%;
-            }
-
-            &::before {
-                content: url(../img/line4.png);
-                right: 70%;
-            }
-
-
-            &:first-child, &:last-child {
-                flex: 0 0 22%;
-                max-width: 22%;
-
-                &::before, &::after {
-                    content: none;
-                }
-
-            }
-
         }
 
         .name {
@@ -196,13 +193,17 @@
         .ttl {
             color: #C5904F;
             font-weight: normal;
-            font-size: 3.875rem;
+            font-size: clamp(2.875rem, 4vw, 3.875rem);
             line-height: 0.8;
             font-family: 'Greta Dis Nar Pro Reg', sans-serif;
             font-weight: normal;
 
             i {
                 font-style: italic;
+            }
+
+            br {
+                display: none;
             }
 
         }
@@ -234,18 +235,27 @@
 
         &_block {
             padding-top: 1rem;
-            padding-bottom: 0.875rem;
 
             .d-flex {
-                margin-left: -8px;
-                margin-right: -8px;
+                margin-left: -4px;
+                margin-right: -4px;
+                row-gap: 8px;
             }
 
             .bx {
-                padding-left: 8px;
-                padding-right: 8px;
-                flex: 0 0 25%;
-                max-width: 25%;
+                padding-left: 4px;
+                padding-right: 4px;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+        }
+
+        .line {
+            display: block;
+
+            &.hide {
+                display: none;
             }
 
         }
@@ -254,16 +264,22 @@
 
     &-option {
         padding-top: 1.25rem;
-        padding-bottom: 3.75rem;
+        padding-bottom: 15rem;
+        position: relative;
+
+        &_wrap {
+            overflow: hidden;
+            position: relative;
+        }
 
         &_box {
             position: relative;
             background-color: #fff;
             @include bRadius(10px);
             padding-top: 6.875rem;
-            padding-left: 7.5rem;
-            padding-right: 7.5rem;
-            padding-bottom: 9rem;
+            padding-left: 1.875rem;
+            padding-right: 3.75rem;
+            padding-bottom: 8.75rem;
             border: 1.2px solid;
             border-image-source: radial-gradient(51.7% 15410.97% at 50% 50%, rgba(222, 169, 104, 0.25) 0%, rgba(222, 169, 104, 0.25) 55.44%, rgba(255, 255, 255, 0) 77.4%);
 
@@ -278,9 +294,7 @@
         }
 
         h2 {
-            text-align: center;
             color: #C5904F;
-            font-size: 2.625rem;
 
             i {
                 font-style: italic;
@@ -299,18 +313,13 @@
             .bx {
                 padding-left: 0.625rem;
                 padding-right: 0.625rem;
-                flex: 0 0 48%;
-                max-width: 48%;
-
-                &:first-child, &:last-child {
-                    flex: 0 0 26%;
-                    max-width: 26%;
-                }
+                flex: 0 0 100%;
+                max-width: 100%;
 
                 &-gr {
 
                     &:not(:first-child) {
-                        margin-top: 3rem;
+                        margin-top: 1.875rem;
                     }
 
                 }
@@ -318,13 +327,17 @@
             }
 
             .image {
+                position: absolute;
                 background-size: contain;
                 width: 100%;
                 margin-left: 0;
                 margin-top: 0;
-                height: 100%;
+                height: fit-content;
                 background-repeat: no-repeat;
                 background-position: center center;
+                max-width: 306px;
+                top: -2.5rem;
+                left: calc(92% - 45px);
 
                 img {
                     margin: 0 auto;
@@ -351,6 +364,22 @@
 
         .main-form {
             margin-top: -6.25rem;
+            display: none;
+        }
+
+        &_img {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: cover;
+
+            img {
+                opacity: 0;
+                visibility: hidden;
+            }
+
         }
 
     }
@@ -461,7 +490,13 @@
                 position: absolute;
                 left: 0;
                 top: 8rem;
-                max-width: 100px;
+                padding-top: 0.75rem;
+
+                &::after {
+                    @include pseudo($content: url(../img/line6.png));
+                    left: -0.9375rem;
+                    top: -0.75rem;
+                }
 
                 .name {
                     font-weight: normal;
@@ -469,6 +504,7 @@
                     color: #C5904F;
                     font-family: 'Greta Dis Nar Pro Reg', sans-serif;
                     line-height: 1;
+                    max-width: 100px;
                 }
 
                 .post {
@@ -477,6 +513,7 @@
                     color: rgba(27, 26, 27, 0.5);
                     letter-spacing: -0.3px;
                     line-height: 1;
+                    max-width: 100px;
                 }
 
             }
@@ -487,6 +524,7 @@
             position: relative;
             @include transform(translateX(40%));
             margin-left: -40%;
+            z-index: 1;
 
             img {
                 margin: 0 auto;
@@ -692,8 +730,15 @@
                 position: absolute;
                 top: 3.125rem;
                 text-align: left;
-                max-width: 100px;
+                // max-width: 100px;
                 right: 0;
+                padding-top: 0.75rem;
+
+                &::after {
+                    @include pseudo($content: url(../img/line6.png));
+                    top: -0.75rem;
+                    right: -0.9375rem;
+                }
 
                 .name {
                     font-weight: normal;
@@ -701,6 +746,7 @@
                     color: #C5904F;
                     font-family: 'Greta Dis Nar Pro Reg', sans-serif;
                     line-height: 1;
+                    max-width: 100px;
                 }
 
                 .post {
@@ -709,6 +755,7 @@
                     color: rgba(27, 26, 27, 0.5);
                     letter-spacing: -0.3px;
                     line-height: 1;
+                    max-width: 100px;
                 }
 
             }
@@ -726,6 +773,7 @@
             background-size: contain;
             @include transform(translateX(-39%));
             margin-right: -60%;
+            z-index: 1;
 
             img {
                 margin: 0 auto;
@@ -954,10 +1002,6 @@
             width: 100%;
             max-width: 400px;
             margin: 0 auto;
-            background-color: #fff;
-            box-shadow: 0px 4px 12px 0px #0000000D;
-            @include bRadius(1.5rem);
-            padding: 2.125rem;
             z-index: 1;
 
             .desc {
@@ -1217,24 +1261,7 @@
                 margin-bottom: 0;
             }
 
-            .img {
-                position: relative;
-                overflow: hidden;
-                @include bRadius(10px);
-                min-height: 419px;
-                background-repeat: no-repeat;
-                background-position: 0 0;
-                background-size: cover;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    opacity: 0;
-                    visibility: hidden;
-                }
-
-            }
+            
 
             .arrow {
                 position: absolute;
@@ -1347,14 +1374,14 @@
     }
 
     &-delivery {
-        padding-bottom: 10rem;
+        padding-bottom: 5.4375rem;
 
         &_map {
             position: relative;
 
             .map {
                 position: relative;
-                min-height: 680px;
+                min-height: 430px;
                 background-color: #D9D9D9;
                 @include bRadius(16px);
             }
@@ -1362,12 +1389,10 @@
         }
 
         &_box {
-            position: absolute;
-            height: calc(100% - 28px);
-            top: 14px;
-            left: 14px;
+            position: relative;
             width: 100%;
-            max-width: 607px;
+            z-index: 1;
+            margin-bottom: 0.75rem;
 
             h1 {
                 color: #C5904F;
@@ -1390,10 +1415,10 @@
             }
 
             .box {
-                padding-top: 4.375rem;
-                padding-right: 3.125rem;
-                padding-bottom: 5rem;
-                padding-left: 4.375rem;
+                padding-top: 2.0625rem;
+                padding-right: 1.75rem;
+                padding-bottom: 3rem;
+                padding-left: 1.25rem;
                 position: relative;
                 height: 100%;
                 display: flex;
@@ -1441,7 +1466,7 @@
 
             .group {
                 margin-top: 5rem;
-                display: flex;
+                display: none;
                 align-items: center;
                 column-gap: 1.5rem;
             }

@@ -1,6 +1,7 @@
 
 @mixin sz($point) {
-	$sz-min390: "(min-width: 390px)";
+	$sz-min375: "(min-width: 375px)";
+    $sz-min390: "(min-width: 390px)";
     $sz-min480: "(min-width: 480px)";
 	$sz-min576: "(min-width: 576px)";
     $sz-min680: "(min-width: 680px)";
@@ -14,7 +15,11 @@
     $sz-min1440: "(min-width: 1440px)";
     $sz-min1568: "(min-width: 1568px)";
 	
-	@if $point == min390 {
+	@if $point == min375 {
+		@media #{$sz-min375} {@content;}
+	}
+
+    @if $point == min390 {
 		@media #{$sz-min390} {@content;}
 	}
 

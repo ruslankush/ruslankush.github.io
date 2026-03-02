@@ -1,88 +1,7 @@
 .personal {
   padding-bottom: 1.875rem;
 }
-.personal-top {
-  position: relative;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  background-image: url(../img/ban2.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
-  overflow: hidden;
-  padding-top: 2.125rem;
-  padding-bottom: 2.125rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  color: #EAEAEA;
-}
-.personal-top .d-flex {
-  margin-left: -0.625rem;
-  margin-right: -0.625rem;
-}
-.personal-top .bx {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
-.personal-top .bx:last-child {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 1.875rem;
-       column-gap: 1.875rem;
-}
-.personal-top .ttl {
-  font-size: 2rem;
-  font-weight: normal;
-  font-family: "Greta Dis Nar Pro Reg", sans-serif;
-}
-.personal-top_link ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  display: flex;
-  -moz-column-gap: 7px;
-       column-gap: 7px;
-}
-.personal-top_link ul li.active a {
-  border-color: #EAEAEA;
-}
-.personal-top_link ul a {
-  text-decoration: none;
-  display: grid;
-  place-items: center;
-  padding-left: 0.75rem;
-  padding-right: 1rem;
-  font-weight: 500;
-  font-size: 1rem;
-  color: #EAEAEA;
-  position: relative;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border: 1px solid transparent;
-  padding-top: 0.8125em;
-  padding-bottom: 0.8125rem;
-  transition: all 0.4s ease-in 0s;
-  -webkit-transition: all 0.4s ease-in 0s;
-  -moz-transition: all 0.4s ease-in 0s;
-  -ms-transition: all 0.4s ease-in 0s;
-  -o-transition: all 0.4s ease-in 0s;
-}
-.personal-top_link ul a i {
-  font-style: normal;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-.personal-top_link ul a svg {
-  fill: #EAEAEA;
-}
-.personal-top .bonus {
+.personal .bonus {
   position: relative;
   text-decoration: none;
   background: linear-gradient(90deg, #C5904F 0%, #DEA968 100%);
@@ -102,14 +21,100 @@
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.personal-top .bonus i {
+.personal .bonus i {
   font-style: normal;
   display: inline-block;
   vertical-align: middle;
   margin-right: 3px;
 }
-.personal-top .bonus svg {
+.personal .bonus svg {
   fill: #fff;
+}
+.personal-top {
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-image: url(../img/ban2.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 2.125rem;
+  padding-bottom: 2.125rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  color: #EAEAEA;
+}
+.personal-top .d-flex {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+  row-gap: 1.125rem;
+}
+.personal-top .bx {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.personal-top .bx:last-child {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+}
+.personal-top .bx:first-child {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.personal-top .ttl {
+  font-size: 1.75rem;
+  font-weight: normal;
+  font-family: "Greta Dis Nar Pro Reg", sans-serif;
+  color: #C5904F;
+}
+.personal-top_link ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+}
+.personal-top_link ul li.active a {
+  border-color: transparent;
+}
+.personal-top_link ul a {
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: #EAEAEA;
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid transparent;
+  transition: all 0.4s ease-in 0s;
+  -webkit-transition: all 0.4s ease-in 0s;
+  -moz-transition: all 0.4s ease-in 0s;
+  -ms-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+}
+.personal-top_link ul a i {
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.personal-top_link ul a svg {
+  fill: #EAEAEA;
+}
+.personal-top .bonus {
+  display: none;
 }
 .personal-top .exit {
   text-decoration: none;
@@ -119,15 +124,17 @@
   display: inline-block;
   line-height: 1;
 }
+.personal-top .exit span {
+  display: none;
+}
 .personal-top .exit i {
   font-style: normal;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 6px;
   line-height: 1;
 }
 .personal-top .exit svg {
-  fill: #EAEAEA;
+  fill: #888888;
 }
 .personal-wrap {
   padding-top: 0.75rem;
@@ -137,16 +144,15 @@
   flex-wrap: wrap;
   margin-left: -5px;
   margin-right: -5px;
+  row-gap: 0.75rem;
 }
 .personal-wrap_fl .bx {
   padding-left: 5px;
   padding-right: 5px;
-  flex: 0 0 28%;
-  max-width: 28%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 .personal-wrap_fl .bx:first-child {
-  flex: 0 0 72%;
-  max-width: 72%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -158,6 +164,7 @@
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 1.2;
+  display: none;
 }
 .personal-wrap_item {
   display: none;
@@ -174,8 +181,8 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.0509803922);
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
   padding-top: 2rem;
   padding-bottom: 2.125rem;
 }
@@ -187,7 +194,7 @@
 }
 .personal-group_head ul li {
   position: relative;
-  padding-right: 2.375rem;
+  padding-right: 2.25rem;
 }
 .personal-group_head ul li::after {
   content: "";
@@ -228,7 +235,7 @@
   -ms-transition: all 0.4s ease-in 0s;
   -o-transition: all 0.4s ease-in 0s;
   font-weight: normal;
-  font-size: 1.75rem;
+  font-size: 1rem;
   font-family: "Greta Dis Nar Pro Reg", sans-serif;
 }
 .personal-group_wrap {
@@ -261,8 +268,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 1rem;
+  padding-bottom: 0.875rem;
   border-bottom: 1.4px solid #D9D9D9;
+  row-gap: 0.625rem;
 }
 .personal-box_top .numb-order, .personal-box_top .pos {
   color: rgba(27, 26, 27, 0.5);
@@ -273,15 +281,20 @@
   color: #1B1A1B;
   font-weight: 500;
   font-size: 1rem;
-  text-align: right;
 }
-.personal-box_top .pos {
-  text-align: right;
+.personal-box_top .item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.personal-box_top .item:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .personal-box_order {
   color: #1B1A1B;
   font-weight: 500;
-  font-size: 1.325rem;
+  font-size: 1.125rem;
 }
 .personal-box_mid {
   padding-top: 1rem;
@@ -289,12 +302,13 @@
   flex-wrap: wrap;
   margin-left: -3px;
   margin-right: -3px;
+  row-gap: 6px;
 }
 .personal-box_mid .item {
   padding-left: 3px;
   padding-right: 3px;
-  flex: 0 0 12.5%;
-  max-width: 12.5%;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
 }
 .personal-box_mid .img {
   position: relative;
@@ -314,13 +328,17 @@
 .personal-box_bottom {
   padding-top: 1.5rem;
   display: flex;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  flex-direction: column;
+  row-gap: 6px;
 }
 .personal-box_bottom .date, .personal-box_bottom .adress {
   color: #1B1A1B;
   font-weight: 500;
   font-size: 0.875rem;
+}
+.personal-box_bottom .date i, .personal-box_bottom .adress i {
+  font-style: normal;
+  display: block;
 }
 .personal-box_bottom .adress {
   color: rgba(27, 26, 27, 0.5);
@@ -334,7 +352,10 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  padding: 2.125rem;
+  padding-top: 2.125rem;
+  padding-bottom: 2.125rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 .personal-form .ttl {
   color: #C5904F;
@@ -346,24 +367,24 @@
 .personal-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-  row-gap: 2rem;
+  margin-left: -4px;
+  margin-right: -4px;
+  row-gap: 1.5rem;
 }
 .personal-set .item {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  flex: 0 0 20%;
-  max-width: 20%;
+  padding-left: 4px;
+  padding-right: 4px;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 .personal-empty {
   display: flex;
   flex-wrap: wrap;
   padding-top: 3.125rem;
 }
-.personal-empty_bx:last-child {
-  flex: 1;
-  padding-left: 2.5rem;
+.personal-empty_bx {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 .personal-empty_bx .name {
   font-weight: 500;
@@ -371,6 +392,9 @@
   line-height: 1.2;
   color: #1B1A1B;
   margin-bottom: 6px;
+}
+.personal-empty_bx .img img {
+  margin: 0 auto;
 }
 .personal-empty_bx p {
   color: rgba(27, 26, 27, 0.5);
@@ -381,4 +405,227 @@
 }
 .personal-empty_bx .page-btn {
   min-height: 54px;
+  max-width: 100%;
+}
+.personal-bonus {
+  margin-top: 6px;
+}
+
+@media (min-width: 390px) {
+  .personal-top {
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+  }
+  .personal-top_link ul {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+  .personal-top_link ul a {
+    font-size: 1rem;
+  }
+  .personal-group {
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+  }
+  .personal-group_head ul li a {
+    font-size: 1.325rem;
+  }
+  .personal-form {
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+  }
+  .personal-set .item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 576px) {
+  .personal-empty_bx .page-btn {
+    max-width: 196px;
+  }
+}
+@media (min-width: 680px) {
+  .personal-top .exit span {
+    display: inline;
+    vertical-align: middle;
+  }
+  .personal-top .exit i {
+    margin-left: 6px;
+  }
+  .personal-top .exit svg {
+    fill: #EAEAEA;
+  }
+  .personal-box_mid .item {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .personal-box_bottom .date i, .personal-box_bottom .adress i {
+    display: inline;
+  }
+  .personal-box_order {
+    font-size: 1.325rem;
+  }
+  .personal-group_head ul li {
+    padding-right: 2.375rem;
+  }
+  .personal-group_head ul li a {
+    font-size: 1.75rem;
+  }
+  .personal-set .item {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+}
+@media (min-width: 768px) {
+  .personal-top .bonus {
+    display: flex;
+  }
+  .personal-top_link ul {
+    -moz-column-gap: 7px;
+         column-gap: 7px;
+  }
+  .personal-top_link ul li.active a {
+    border-color: #EAEAEA;
+  }
+  .personal-top_link ul a {
+    padding-left: 0.75rem;
+    padding-right: 1rem;
+    padding-top: 0.8125em;
+    padding-bottom: 0.8125rem;
+  }
+  .personal-bonus {
+    display: none;
+  }
+}
+@media (min-width: 860px) {
+  .personal-top .ttl {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .personal-wrap_fl .bx {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .personal-wrap_fl .bx:first-child {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .personal-wrap_fl .txt {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .personal-box_top {
+    padding-bottom: 1rem;
+  }
+  .personal-box_top .item {
+    flex: inherit;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .personal-box_top .item:last-child {
+    display: block;
+  }
+  .personal-box_top .pos {
+    text-align: right;
+  }
+  .personal-box_top .sum {
+    text-align: right;
+  }
+  .personal-box_bottom {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+    flex-direction: row;
+  }
+  .personal-box_mid .item {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .personal-wrap_fl .bx {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+  .personal-wrap_fl .bx:first-child {
+    flex: 0 0 65%;
+    max-width: 65%;
+  }
+  .personal-set {
+    row-gap: 2rem;
+  }
+  .personal-set .item {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .personal-empty_bx {
+    flex: inherit;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .personal-empty_bx:last-child {
+    flex: 1;
+    padding-left: 1.25rem;
+  }
+  .personal-empty_bx .img {
+    max-width: 250px;
+  }
+}
+@media (min-width: 1100px) {
+  .personal-top {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .personal-group {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .personal-wrap_fl .bx {
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
+  .personal-wrap_fl .bx:first-child {
+    flex: 0 0 72%;
+    max-width: 72%;
+  }
+  .personal-box_mid .item {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+  }
+  .personal-form {
+    padding-left: 2.125rem;
+    padding-right: 2.125rem;
+  }
+  .personal-empty_bx:last-child {
+    padding-left: 2.5rem;
+  }
+  .personal-empty_bx .img {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
+@media (min-width: 1200px) {
+  .personal-top .bx:first-child {
+    order: 1;
+    flex: inherit;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .personal-top .bx:last-child {
+    order: 1;
+  }
+}
+@media (min-width: 1280px) {
+  .personal-set .item {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 1366px) {
+  .personal-set {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+  .personal-set .item {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }/*# sourceMappingURL=personal.css.map */

@@ -30,10 +30,10 @@
         .ttl {
             color: #C5904F;
             font-weight: normal;
-            font-size: 1.75rem;
+            font-size: 1.325rem;
             font-family: 'Greta Dis Nar Pro Reg', sans-serif;
             line-height: 0.8;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
         }
 
         &_gr {
@@ -644,7 +644,7 @@
 
 }
 
-@include sz(min390) {
+@include sz(min375) {
 
     .basket {
 
@@ -701,6 +701,11 @@
 
                 }
 
+            }
+
+            .ttl {
+                font-size: 1.75rem;
+                margin-bottom: 0.75rem;
             }
 
         }

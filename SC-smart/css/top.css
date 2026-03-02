@@ -1,6 +1,6 @@
 .top {
   position: relative;
-  padding-bottom: 3.125rem;
+  padding-bottom: 0.625rem;
 }
 .top.hide {
   display: none;
@@ -14,7 +14,6 @@
 }
 .top-box h1 {
   color: #C5904F;
-  text-align: center;
 }
 .top-box_sh {
   position: absolute;
@@ -58,15 +57,17 @@
   color: #fff;
 }
 .top-box .box {
-  max-width: 547px;
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
   position: relative;
   padding-top: 2.5rem;
-  padding-bottom: 9.125rem;
+  padding-bottom: 3.125rem;
 }
-.top-box .box-gr {
+.top-box .box-wrap {
+  display: none;
+}
+.top-box .box-wrap_gr {
   text-align: center;
   font-weight: normal;
   font-size: 2.875rem;
@@ -75,16 +76,44 @@
   font-family: "Greta Dis Nar Pro Reg", sans-serif;
   color: #C5904F;
 }
-.top-box .box-gr span {
+.top-box .box-wrap_gr span {
   color: #fff;
   display: block;
 }
 .top .main-form {
   margin-top: -6.25rem;
 }
+.top .main-form.hide {
+  display: none;
+}
 
+@media (min-width: 680px) {
+  .top h1 {
+    text-align: center;
+  }
+  .top-box .box {
+    max-width: 547px;
+  }
+  .top-box .box-wrap {
+    display: block;
+  }
+  .top h1.hide {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .top {
+    padding-bottom: 3.125rem;
+  }
+}
 @media (min-width: 860px) {
   .top.hide {
     display: block;
+  }
+  .top .main-form.hide {
+    display: block;
+  }
+  .top-box .box {
+    padding-bottom: 9.125rem;
   }
 }/*# sourceMappingURL=top.css.map */

@@ -29,10 +29,10 @@
 .basket-box .ttl {
   color: #C5904F;
   font-weight: normal;
-  font-size: 1.75rem;
+  font-size: 1.325rem;
   font-family: "Greta Dis Nar Pro Reg", sans-serif;
   line-height: 0.8;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 .basket-box_gr {
   background-color: #F7F7F7;
@@ -547,7 +547,7 @@
   padding-top: 1.5rem;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 375px) {
   .basket-box_gr .box-gr {
     display: flex;
   }
@@ -568,6 +568,10 @@
     -moz-column-gap: 3.75rem;
          column-gap: 3.75rem;
     justify-content: start;
+  }
+  .basket-box .ttl {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
   }
 }
 @media (min-width: 860px) {

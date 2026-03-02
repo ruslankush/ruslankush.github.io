@@ -2,7 +2,7 @@
 
 .top {
     position: relative;
-    padding-bottom: 3.125rem;
+    padding-bottom: 0.625rem;
 
     &.hide {
         display: none;
@@ -17,7 +17,6 @@
 
         h1 {
             color: #C5904F;
-            text-align: center;
         }
 
         &_sh {
@@ -80,26 +79,30 @@
         }
 
         .box {
-            max-width: 547px;
             margin-left: auto;
             margin-right: auto;
             z-index: 1;
             position: relative;
             padding-top: 2.5rem;
-            padding-bottom: 9.125rem;
+            padding-bottom: 3.125rem;
 
-            &-gr {
-                text-align: center;
-                font-weight: normal;
-                font-size: 2.875rem;
-                text-align: center;
-                line-height: 0.8;
-                font-family: 'Greta Dis Nar Pro Reg', sans-serif;
-                color: #C5904F;
+            &-wrap {
+                display: none;
 
-                span {
-                    color: #fff;
-                    display: block;
+                &_gr {
+                    text-align: center;
+                    font-weight: normal;
+                    font-size: 2.875rem;
+                    text-align: center;
+                    line-height: 0.8;
+                    font-family: 'Greta Dis Nar Pro Reg', sans-serif;
+                    color: #C5904F;
+
+                    span {
+                        color: #fff;
+                        display: block;
+                    }
+
                 }
 
             }
@@ -110,6 +113,48 @@
 
     .main-form {
         margin-top: -6.25rem;
+
+        &.hide {
+            display: none;
+        }
+
+    }
+
+}
+
+@include sz(min680) {
+
+    .top {
+
+        h1 {
+            text-align: center;
+        }
+
+        &-box {
+
+            .box {
+                max-width: 547px;
+
+                &-wrap {
+                    display: block;
+                }
+
+            }
+
+        }
+
+        h1.hide {
+            display: none;
+        }
+
+    }
+
+}
+
+@include sz(min768) {
+
+    .top {
+        padding-bottom: 3.125rem;
     }
 
 }
@@ -120,6 +165,22 @@
 
         &.hide {
             display: block;
+        }
+
+        .main-form {
+
+            &.hide {
+                display: block;
+            }
+
+        }
+
+        &-box {
+
+            .box {
+                padding-bottom: 9.125rem;
+            }
+
         }
 
     }

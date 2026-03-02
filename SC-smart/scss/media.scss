@@ -21,6 +21,19 @@
 			
 		}
 
+		&-set {
+
+			&_block {
+
+				.bx {
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+
+			}
+
+		}
+
 	}
 
 }
@@ -30,6 +43,14 @@
 	.main {
 
 		&-well {
+
+			h1 {
+
+				br {
+					display: none;
+				}
+
+			}
 
 			.box {
 
@@ -193,7 +214,7 @@
 					max-width: 273px;
 					top: 8rem;
 					padding-left: 0.625rem;
-					max-width: 273px;
+					padding-top: 0;
 
 					&::before {
 						@include pseudo($content: url(../img/line-sm.png));
@@ -202,8 +223,17 @@
 						@include transform(translateY(-50%));
 					}
 
+					&::after {
+						content: none;
+					}
+
+					.name {
+						max-width: fit-content;
+					}
+
 					.post {
 						font-size: 1rem;
+						max-width: fit-content
 					}
 
 				}
@@ -232,12 +262,22 @@
 				&-label {
 					padding-right: 0.625rem;
 					max-width: 273px;
+					padding-top: 0;
+					
 
 					&::before {
 						@include pseudo($content: url(../img/line-sm.png));
 						right: 0;
 						top: 50%;
 						@include transform(translateY(-50%));
+					}
+
+					&::after {
+						content: none;
+					}
+
+					.name, .post {
+						max-width: fit-content
 					}
 
 				}
@@ -247,6 +287,42 @@
 			.image {
 				@include transform(translateX(35%));
             	margin-left: -35%;
+			}
+
+		}
+
+		&-option {
+
+			&_block {
+
+				.bx {
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+
+			}
+
+		}
+
+		&-set {
+
+			&_btn {
+
+				.page-btn {
+					max-width: 196px;
+				}
+
+			}
+
+		}
+
+		&-entry {
+
+			&_wrap {
+				background-color: #fff;
+				box-shadow: 0px 4px 12px 0px #0000000D;
+				@include bRadius(1.5rem);
+				padding: 2.125rem;
 			}
 
 		}
@@ -264,6 +340,27 @@
 			&_item {
 				flex: 0 0 50%;
 				max-width: 50%;
+
+				.checked {
+
+					label {
+
+						i {
+							display: block;
+						}
+
+					}
+
+				}
+
+			}
+
+			&_gr {
+
+				input {
+					height: 54px;
+				}
+
 			}
 
 		}
@@ -362,6 +459,57 @@
 			.image {
 				@include transform(translateX(0));
 				margin-left: 0;
+			}
+
+		}
+
+		&-option {
+			padding-bottom: 3.75rem;
+
+			&_box {
+				padding-right: 5rem;
+			}
+
+			&_img {
+				display: none;
+			}
+
+		}
+
+		&-format {
+
+			&_block {
+
+				.bx {
+					flex: 0 0 25%;
+					max-width: 25%;
+				}
+
+			}
+
+		}
+
+		&-set {
+
+			&_block {
+
+				.d-flex {
+					row-gap: 1.875rem;
+				}
+
+				.bx {
+					flex: 0 0 calc(100% / 3);
+                	max-width: calc(100% / 3);
+				}
+
+			}
+
+			.page-ruller {
+				display: grid;
+			}
+
+			&_btn {
+				display: none; 
 			}
 
 		}
@@ -597,14 +745,58 @@
 
 		}
 
+		&-ivent {
+
+			&_box {
+				padding-top: 6.25rem;
+            	padding-bottom: 6.25rem;
+			}
+
+			&_wrap {
+				max-width: fit-content
+			}
+
+			.bx {
+				flex: 0 0 42%;
+				max-width: 42%;
+
+				&:first-child, &:last-child {
+					flex: 0 0 28%;
+					max-width: 28%;
+				}
+
+			}
+
+			.ttl {
+
+				br {
+					display: block;
+				}
+
+			}
+
+		}
+
 	}
 
 	.cart {
 
 		&-set {
+			min-height: 331px;
+
+			&_fl {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
 
 			.image {
 				height: 100%;
+
+				&::before {
+					content: none;
+				}
+
 			}
 
 			&_heft {
@@ -612,6 +804,14 @@
 			}
 
 			&_gr {
+				flex-direction: row;
+				align-items: end;
+				padding-left: 0.9375rem;
+            	padding-right: 0.9375rem;
+
+				.price {
+					display: none;
+				}
 
 				.heft {
 					display: inline-block;
@@ -625,9 +825,45 @@
 
 			}
 
+			&_fl {
+				padding-left: 0.9375rem;
+            	padding-right: 0.625rem;
+
+				.price {
+					display: block;
+				}
+
+				.amount {
+					max-width: 108px;
+
+					&_plus, &_minus {
+						background-color: #C5904F;
+					}
+
+				}
+
+			}
+
 			&_box {
-				height: inherit;
+				height: fit-content;
 				background-color: transparent;
+				padding-bottom: 0.75rem;
+				display: block;
+				padding-top: 0;
+			}
+
+		}
+
+		&-cont {
+
+			a {
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			&_box {
+				opacity: 0;
+				visibility: hidden;
 			}
 
 		}
@@ -684,6 +920,131 @@
 			.bx {
 				flex: 0 0 50%;
 				max-width: 50%;
+			}
+
+		}
+
+		&-option {
+
+			h2 {
+				text-align: center;
+			}
+
+			&_box {
+				padding-right: 1.875rem;
+			}
+
+			&_block {
+
+				.bx {
+					flex: 0 0 30%;
+					max-width: 30%;
+
+					&:first-child {
+						order: -1;
+					}
+
+					&:last-child {
+						flex: 0 0 40%;
+						max-width: 40%;
+						order: -1;
+					}
+
+				}
+
+				.image {
+					max-width: fit-content;
+					width: 110%;
+					margin-left: -5%;
+					position: relative;
+					height: 100%;
+					top: inherit;
+					left: inherit;
+				}
+
+			}
+
+		}
+
+		&-ivent {
+
+			.bx {
+
+				&::before, &::after {
+					@include pseudo();
+					top: 50%;
+					@include transform(translatey(-50%));
+				}
+
+				&::after {
+					content: url(../img/line3.png);
+					left: 70%;
+				}
+
+				&::before {
+					content: url(../img/line4.png);
+					right: 70%;
+				}
+
+				&:first-child, &:last-child {
+
+					&::before, &::after {
+						content: none;
+					}
+
+				}
+
+			}
+
+		}
+
+		&-set {
+			padding-top: 1.325rem;
+
+			&_filter {
+				margin-left: 0;
+				margin-right: 0;
+				 @include bRadius(10px);
+			}
+
+		}
+
+		&-delivery {
+
+			&_box {
+				position: absolute;
+				height: calc(100% - 28px);
+				top: 14px;
+				left: 14px;
+				max-width: 410px;
+				margin-bottom: 0;
+			}
+			
+		}
+
+	}
+
+	.cart {
+
+		&-format {
+
+			&_box {
+				padding-right: 1.5rem;
+
+				.arr {
+					width: 34px;
+					height: 34px;
+					@include bRadius(6px);
+					background-color: #fff;
+					display: grid;
+					place-items: center;
+					align-self: flex-end;
+				}
+
+				.name {
+					font-size: 1.325rem;
+				}
+
 			}
 
 		}
@@ -797,6 +1158,86 @@
 					align-self: center;
 					padding-top: 4.375rem;
 				}
+			}
+
+		}
+
+		&-option {
+
+			&_block {
+
+				.bx {
+					flex: 0 0 26%;
+					max-width: 26%;
+
+					&:last-child {
+						flex: 0 0 48%;
+						max-width: 48%;
+					}
+
+					&-gr {
+
+                    &:not(:first-child) {
+                        margin-top: 3rem;
+                    }
+
+                }
+
+
+				}
+
+				.image {
+					width: 100%;
+					margin-left: 0;
+				}
+
+			}
+
+		}
+
+		&-ivent {
+
+			.bx {
+
+				&:first-child, &:last-child {
+					flex: 0 0 24%;
+					max-width: 24%;
+				}
+
+			}
+
+		}
+
+		&-set {
+
+			&_block {
+
+				.bx {
+					flex: 0 0 25%;
+					max-width: 25%;
+				}
+
+			}
+
+		}
+
+		&-delivery {
+
+			&_box {
+				max-width: 527px;
+
+				.group {
+					display: flex;
+				}
+
+			}
+
+			&_map {
+
+				.map {
+					min-height: 560px;
+				}
+
 			}
 
 		}
@@ -919,6 +1360,59 @@
 			padding-top: 3.125rem;
 		}
 
+		&-option {
+
+			&_box {
+				padding-bottom: 9rem;
+			}
+
+			.mian-form {
+				display: block;
+			}
+
+		}
+
+		&-format {
+
+			&_block {
+				padding-bottom: 0.875rem;
+			}
+
+			.line {
+
+				&.hide {
+					display: block;
+				}
+
+			}
+
+		}
+
+		&-delivery {
+			padding-bottom: 10rem;
+
+			&_box {
+				max-width: 607px;
+
+				.box {
+					padding-top: 4.375rem;
+					padding-bottom: 5rem;
+					padding-right: 3.125rem;
+				}
+
+			}
+
+			&_map {
+
+				.map {
+					min-height: 680px;
+				}
+
+			}
+
+		}
+
+
 	}
 
 	.cart {
@@ -962,6 +1456,11 @@
 
 			}
 
+		}
+
+		&-format {
+			min-height: 419px;
+			height: 100%;
 		}
 
 	}
@@ -1051,6 +1550,18 @@
 				left: 0;
 			}
 
+		}
+
+		&-delivery {
+
+			&_box {
+
+				.box {
+					padding-left: 4.375rem;
+				}
+
+			}
+			
 		}
 
 	}
@@ -1211,6 +1722,50 @@
 
 		}
 
+		&-format {
+
+			&_block {
+
+				.d-flex {
+					margin-left: -8px;
+					margin-right: -8px;
+				}
+
+				.bx {
+					padding-left: 8px;
+					padding-right: 8px;
+				}
+
+			}
+
+		}
+
+		&-ivent {
+
+			.bx {
+
+				&:first-child, &:last-child {
+					flex: 0 0 22%;
+					max-width: 22%;
+				}
+
+			}
+
+		}
+
+		&-set {
+
+			&_block {
+
+				.bx {
+					flex: 0 0 20%;
+					max-width: 20%;
+				}
+
+			}
+
+		}
+
 	}
 
 	.cart {
@@ -1261,6 +1816,20 @@
 				
 			}
 
+			&_block {
+
+				.d-flex {
+					margin-left: -0.75rem;
+					margin-right: -0.75rem;
+				}
+
+				.bx {
+					padding-left: 0.75rem;
+					padding-right: 0.75rem;
+				}
+
+			}
+
 		}
 
 		&-hit {
@@ -1276,6 +1845,15 @@
 
 			}
 
+		}
+
+		&-option {
+
+			&_box {
+				padding-left: 4.375rem;
+				padding-right: 4.375rem;
+			}
+			
 		}
 
 	}
@@ -1368,6 +1946,15 @@
 
 			.page-wrap {
 				padding-left: 8.75rem;
+			}
+
+		}
+
+		&-option {
+
+			&_box {
+				padding-left: 7.5rem;
+            	padding-right: 7.5rem;
 			}
 
 		}
