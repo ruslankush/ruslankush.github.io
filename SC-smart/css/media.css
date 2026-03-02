@@ -102,8 +102,7 @@
     content: none;
   }
   .main-org .bx-label .name {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: 100%;
   }
   .main-org .bx-label .post {
     font-size: 1rem;
@@ -125,6 +124,7 @@
     padding-right: 0.625rem;
     max-width: 273px;
     padding-top: 0;
+    top: 8rem;
   }
   .main-prof .bx-label::before {
     content: url(../img/line-sm.png);
@@ -549,6 +549,12 @@
     left: 14px;
     max-width: 410px;
     margin-bottom: 0;
+  }
+  .main-hit.hide {
+    display: block;
+  }
+  .main-sertificate.hide {
+    display: block;
   }
   .cart-format_box {
     padding-right: 1.5rem;

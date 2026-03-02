@@ -1222,6 +1222,7 @@ body {
 .main-option_block .d-flex {
   margin-left: -0.625rem;
   margin-right: -0.625rem;
+  row-gap: 1.875rem;
 }
 .main-option_block .bx {
   padding-left: 0.625rem;
@@ -1243,8 +1244,8 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   max-width: 306px;
-  top: -2.5rem;
-  left: calc(92% - 45px);
+  top: -1.75rem;
+  left: calc(92% - 55px);
 }
 .main-option_block .image img {
   margin: 0 auto;
@@ -1281,6 +1282,9 @@ body {
 .main-hit {
   padding-top: 3.75rem;
   padding-bottom: 3.125rem;
+}
+.main-hit.hide {
+  display: none;
 }
 .main-hit h2 {
   text-align: center;
@@ -1352,7 +1356,7 @@ body {
 .main-prof .bx-label {
   position: absolute;
   left: 0;
-  top: 8rem;
+  top: 4rem;
   padding-top: 0.75rem;
 }
 .main-prof .bx-label::after {
@@ -1719,6 +1723,9 @@ body {
 .main-sertificate {
   padding-top: 2.875rem;
   padding-bottom: 3.125rem;
+}
+.main-sertificate.hide {
+  display: none;
 }
 .main-sertificate h2 {
   line-height: 1;
