@@ -7,14 +7,14 @@
 		&-org {
 
 			&_top {
-				padding-left: 30%;
-				margin-bottom: -4.375rem;
+				padding-right: 30%;
+				margin-bottom: -6.375rem;
 			}
 
 			.bx {
 
 				&-label {
-					top: 6.25rem
+					top: 25vh;
 				}
 
 			}
@@ -204,7 +204,7 @@
 		&-org {
 
 			&_top {
-				padding-left: 0;
+				padding-right: 0;
 				margin-bottom: 0;
 			}
 
@@ -213,12 +213,13 @@
 				&-label {
 					max-width: 273px;
 					top: 8rem;
-					padding-left: 0.625rem;
+					padding-right: 0.625rem;
 					padding-top: 0;
+					text-align: right;
 
 					&::before {
 						@include pseudo($content: url(../img/line-sm.png));
-						left: 0;
+						right: 0;
 						top: 50%;
 						@include transform(translateY(-50%));
 					}
@@ -233,7 +234,7 @@
 
 					.post {
 						font-size: 1rem;
-						max-width: fit-content
+						max-width: 100%;
 					}
 
 				}
@@ -241,8 +242,8 @@
 			}
 
 			.image {
-				@include transform(translateX(-30%));
-				margin-right: -30%;
+				@include transform(translateX(30%));
+				margin-right: -15%;
 			}
 
 		}
@@ -449,7 +450,8 @@
 
 			.image {
 				@include transform(translateX(0));
-				margin-right: 0;
+				margin-left: 0;
+				z-index: -1;
 			}
 
 		}
@@ -627,12 +629,6 @@
 				}
 
 				&-label {
-					left: 0;
-					padding-right: 0.625rem;
-					padding-left: 0;
-					right: inherit;
-					padding-left: 0;
-					text-align: right;
 
 					&::before {
 						right: 0;

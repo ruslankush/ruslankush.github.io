@@ -734,15 +734,14 @@
             &-label {
                 position: absolute;
                 top: 3.125rem;
-                text-align: left;
                 // max-width: 100px;
-                right: 0;
+                left: 0;
                 padding-top: 0.75rem;
 
                 &::after {
                     @include pseudo($content: url(../img/line6.png));
                     top: -0.75rem;
-                    right: -0.9375rem;
+                    left: -0.9375rem;
                 }
 
                 .name {
@@ -776,8 +775,8 @@
             background-repeat: no-repeat;
             background-position: 0 0;
             background-size: contain;
-            @include transform(translateX(-39%));
-            margin-right: -60%;
+            @include transform(translateX(13%));
+            margin-right: -39%;
             z-index: 1;
 
             img {

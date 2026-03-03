@@ -1,10 +1,10 @@
 @media (min-width: 390px) {
   .main-org_top {
-    padding-left: 30%;
-    margin-bottom: -4.375rem;
+    padding-right: 30%;
+    margin-bottom: -6.375rem;
   }
   .main-org .bx-label {
-    top: 6.25rem;
+    top: 25vh;
   }
   .main-set_block .bx {
     flex: 0 0 50%;
@@ -77,20 +77,21 @@
     min-height: 46px;
   }
   .main-org_top {
-    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 0;
   }
   .main-org .bx-label {
     max-width: 273px;
     top: 8rem;
-    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     padding-top: 0;
+    text-align: right;
   }
   .main-org .bx-label::before {
     content: url(../img/line-sm.png);
     display: block;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -106,16 +107,15 @@
   }
   .main-org .bx-label .post {
     font-size: 1rem;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: 100%;
   }
   .main-org .image {
-    transform: translateX(-30%);
-    -webkit-transform: translateX(-30%);
-    -moz-transform: translateX(-30%);
-    -ms-transform: translateX(-30%);
-    -o-transform: translateX(-30%);
-    margin-right: -30%;
+    transform: translateX(30%);
+    -webkit-transform: translateX(30%);
+    -moz-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    -o-transform: translateX(30%);
+    margin-right: -15%;
   }
   .main-case .page-btn {
     max-width: 196px;
@@ -229,7 +229,8 @@
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
-    margin-right: 0;
+    margin-left: 0;
+    z-index: -1;
   }
   .main-prof .image {
     transform: translateX(0);
@@ -314,14 +315,6 @@
   }
   .main-org .bx h2 {
     display: block;
-  }
-  .main-org .bx-label {
-    left: 0;
-    padding-right: 0.625rem;
-    padding-left: 0;
-    right: inherit;
-    padding-left: 0;
-    text-align: right;
   }
   .main-org .bx-label::before {
     right: 0;

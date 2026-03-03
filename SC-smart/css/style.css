@@ -1543,8 +1543,7 @@ body {
 .main-org .bx-label {
   position: absolute;
   top: 3.125rem;
-  text-align: left;
-  right: 0;
+  left: 0;
   padding-top: 0.75rem;
 }
 .main-org .bx-label::after {
@@ -1552,7 +1551,7 @@ body {
   display: block;
   position: absolute;
   top: -0.75rem;
-  right: -0.9375rem;
+  left: -0.9375rem;
 }
 .main-org .bx-label .name {
   font-weight: normal;
@@ -1579,12 +1578,12 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
-  transform: translateX(-39%);
-  -webkit-transform: translateX(-39%);
-  -moz-transform: translateX(-39%);
-  -ms-transform: translateX(-39%);
-  -o-transform: translateX(-39%);
-  margin-right: -60%;
+  transform: translateX(13%);
+  -webkit-transform: translateX(13%);
+  -moz-transform: translateX(13%);
+  -ms-transform: translateX(13%);
+  -o-transform: translateX(13%);
+  margin-right: -39%;
   z-index: 1;
 }
 .main-org .image img {

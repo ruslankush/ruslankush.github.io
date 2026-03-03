@@ -10,13 +10,23 @@
         .box {
             padding-top: 3.375rem;
             position: relative;
+            min-height: 484px;
 
             &-img {
-                margin-left: -10%;
-                margin-right: -10%;
+                position: absolute;
+                bottom: 0;
 
                 img {
                     margin: 0 auto;
+
+                    &.d-block {
+                        display: none;
+                    }
+
+                    &.d-hide {
+                        display: block;
+                    }
+
                 }
 
             }
@@ -30,6 +40,8 @@
                 padding-right: 1.25rem;
                 flex-direction: column;
                 padding-top: 2.25rem;
+                position: relative;
+                z-index: 1;
 
                 &_gr {
                     color: #C5904F;
@@ -94,6 +106,38 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+
+        }
+
+    }
+
+}
+
+@include sz(min576) {
+
+    .banner {
+
+        &-box {
+
+            .box {
+                min-height: fit-content;
+
+                &-img {
+                    margin-left: -10%;
+                    margin-right: -10%;
+                    position: relative;
+
+                    img.d-block {
+                        display: block;
+                    }
+
+                    img.d-hide {
+                        display: none;
+                    }
+
+                }
+
             }
 
         }

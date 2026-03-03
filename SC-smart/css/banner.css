@@ -8,13 +8,20 @@
 .banner-box .box {
   padding-top: 3.375rem;
   position: relative;
+  min-height: 484px;
 }
 .banner-box .box-img {
-  margin-left: -10%;
-  margin-right: -10%;
+  position: absolute;
+  bottom: 0;
 }
 .banner-box .box-img img {
   margin: 0 auto;
+}
+.banner-box .box-img img.d-block {
+  display: none;
+}
+.banner-box .box-img img.d-hide {
+  display: block;
 }
 .banner-box .box-fl {
   display: flex;
@@ -25,6 +32,8 @@
   padding-right: 1.25rem;
   flex-direction: column;
   padding-top: 2.25rem;
+  position: relative;
+  z-index: 1;
 }
 .banner-box .box-fl_gr {
   color: #C5904F;
@@ -84,6 +93,23 @@
      object-fit: cover;
 }
 
+@media (min-width: 576px) {
+  .banner-box .box {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .banner-box .box-img {
+    margin-left: -10%;
+    margin-right: -10%;
+    position: relative;
+  }
+  .banner-box .box-img img.d-block {
+    display: block;
+  }
+  .banner-box .box-img img.d-hide {
+    display: none;
+  }
+}
 @media (min-width: 860px) {
   .banner-box .img {
     border-radius: 10px;
