@@ -501,6 +501,9 @@
     top: inherit;
     left: inherit;
   }
+  .main-option .main-form {
+    display: block;
+  }
   .main-ivent .bx::before, .main-ivent .bx::after {
     content: "";
     display: block;
@@ -742,9 +745,6 @@
   }
   .main-option_box {
     padding-bottom: 9rem;
-  }
-  .main-option .mian-form {
-    display: block;
   }
   .main-format_block {
     padding-bottom: 0.875rem;
