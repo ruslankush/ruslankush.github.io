@@ -73,6 +73,9 @@
   font-family: "Greta Dis Nar Pro Reg", sans-serif;
   color: #C5904F;
 }
+.personal-top .ttl span {
+  display: block;
+}
 .personal-top_link ul {
   padding: 0;
   margin: 0;
@@ -410,6 +413,9 @@
 .personal-bonus {
   margin-top: 6px;
 }
+.personal-bonus .bonus {
+  justify-content: start;
+}
 
 @media (min-width: 390px) {
   .personal-top {
@@ -445,6 +451,9 @@
   }
 }
 @media (min-width: 680px) {
+  .personal-top .ttl span {
+    display: inline;
+  }
   .personal-top .exit span {
     display: inline;
     vertical-align: middle;

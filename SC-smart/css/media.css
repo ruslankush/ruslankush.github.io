@@ -48,6 +48,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .footer-sh img {
+    margin: 0 auto;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  .footer-sh img.d-block {
+    display: block;
+  }
+  .footer-sh img.d-hide {
+    display: none;
+  }
   .main-order_box .box {
     padding-left: 1.125rem;
     padding-right: 1.125rem;
@@ -67,6 +81,9 @@
   }
   .main-order_form .desc {
     margin-top: 0.75rem;
+  }
+  .main-order_sh {
+    display: none;
   }
   .main-command_block .cart-command .img {
     height: auto;
@@ -109,6 +126,9 @@
     font-size: 1rem;
     max-width: 100%;
   }
+  .main-org .bx-shad {
+    display: none;
+  }
   .main-org .image {
     transform: translateX(30%);
     -webkit-transform: translateX(30%);
@@ -144,6 +164,9 @@
   .main-prof .bx-label .name, .main-prof .bx-label .post {
     max-width: -moz-fit-content;
     max-width: fit-content;
+  }
+  .main-prof .bx-shad {
+    display: none;
   }
   .main-prof .image {
     transform: translateX(35%);
@@ -552,6 +575,9 @@
   .main-sertificate.hide {
     display: block;
   }
+  .cart-case_box .name {
+    font-size: 1.325rem;
+  }
   .cart-format_box {
     padding-right: 1.5rem;
   }
@@ -632,6 +658,9 @@
     max-width: 45%;
     align-self: center;
     padding-top: 4.375rem;
+  }
+  .main-case {
+    padding-top: 3.125rem;
   }
   .main-option_block .bx {
     flex: 0 0 26%;
@@ -790,6 +819,10 @@
   .cart-format {
     min-height: 419px;
     height: 100%;
+  }
+  .page-column {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 @media (min-width: 1200px) {

@@ -11,9 +11,20 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
+		overflow: hidden;
 
 		img {
-			margin: 0 auto;
+			margin-right: -20%;
+			@include transform(translateX(22%));
+
+			&.d-block {
+				display: none;
+			}
+
+			&.d-hide {
+				display: block;
+			}
+
 		}
 
 	}

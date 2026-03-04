@@ -74,6 +74,11 @@
             font-weight: normal;
             font-family: 'Greta Dis Nar Pro Reg', sans-serif;
             color: #C5904F;
+
+            span {
+                display: block;
+            }
+
         }
 
         &_link {
@@ -483,6 +488,11 @@
 
     &-bonus {
         margin-top: 6px;
+
+        .bonus {
+            justify-content: start;
+        }
+
     }
 
 }
@@ -575,6 +585,14 @@
     .personal {
 
         &-top {
+
+            .ttl {
+
+                span {
+                    display: inline;
+                }
+
+            }
 
             .exit {
 

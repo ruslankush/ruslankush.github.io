@@ -123,6 +123,24 @@
 
 		}
 
+		&-sh {
+
+			img {
+				margin: 0 auto;
+				@include transform(translateX(0));
+
+				&.d-block {
+					display: block;
+				}
+
+				&.d-hide {
+					display: none;
+				}
+
+			}
+
+		}
+
 	}
 
 	.main {
@@ -135,7 +153,6 @@
 					padding-left: 1.125rem;
 					padding-right: 1.125rem;
 				}
-
 			}
 
 			&_form {
@@ -167,6 +184,10 @@
 					margin-top: 0.75rem;
 				}
 
+			}
+
+			&_sh {
+				display: none;
 			}
 
 		}
@@ -239,6 +260,10 @@
 
 				}
 
+				&-shad {
+					display: none;
+				}
+
 			}
 
 			.image {
@@ -281,6 +306,10 @@
 						max-width: fit-content
 					}
 
+				}
+
+				&-shad {
+					display: none;
 				}
 
 			}
@@ -1042,6 +1071,18 @@
 
 	.cart {
 
+		&-case {
+
+			&_box {
+
+				.name {
+					font-size: 1.325rem;
+				}
+				
+			}
+
+		}
+
 		&-format {
 
 			&_box {
@@ -1176,6 +1217,10 @@
 				}
 			}
 
+		}
+
+		&-case {
+			padding-top: 3.125rem;
 		}
 
 		&-option {
@@ -1474,6 +1519,11 @@
 			height: 100%;
 		}
 
+	}
+
+	.page-column {
+		display: flex;
+		flex-direction: column-reverse;
 	}
 
 }

@@ -490,6 +490,7 @@
   line-height: 0.8;
   font-family: "Greta Dis Nar Pro Reg";
   margin-bottom: 1.25rem;
+  display: none;
 }
 .basket-method_top {
   display: flex;
@@ -585,6 +586,9 @@
   }
   .basket-box_gr .box .name {
     font-size: 1rem;
+  }
+  .basket-delivery .ttl {
+    display: block;
   }
 }
 @media (min-width: 992px) {

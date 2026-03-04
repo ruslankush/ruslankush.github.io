@@ -541,6 +541,7 @@
             line-height: 0.8;
             font-family: 'Greta Dis Nar Pro Reg';
             margin-bottom: 1.25rem;
+            display: none;
         }
 
     }
@@ -710,6 +711,7 @@
 
         }
 
+        
     }
 
 }
@@ -741,6 +743,14 @@
 
                 }
 
+            }
+
+        }
+
+        &-delivery {
+
+            .ttl {
+                display: block;
             }
 
         }
