@@ -29,6 +29,16 @@
                 margin: 0 auto;
             }
 
+            &.shad {
+                left: inherit;
+                right: -120%;
+
+                img {
+                    margin-bottom: -5%;
+                }
+
+            }
+
         }
 
         .image {
@@ -179,6 +189,15 @@
 
             .box {
                 padding-bottom: 9.125rem;
+            }
+
+            &_sh {
+
+                &.shad {
+                    right: 0;
+                    left: 0;
+                }
+
             }
 
         }

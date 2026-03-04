@@ -24,6 +24,13 @@
 .top-box_sh img {
   margin: 0 auto;
 }
+.top-box_sh.shad {
+  left: inherit;
+  right: -120%;
+}
+.top-box_sh.shad img {
+  margin-bottom: -5%;
+}
 .top-box .image {
   position: absolute;
   top: 0;
@@ -115,5 +122,9 @@
   }
   .top-box .box {
     padding-bottom: 9.125rem;
+  }
+  .top-box_sh.shad {
+    right: 0;
+    left: 0;
   }
 }/*# sourceMappingURL=top.css.map */
