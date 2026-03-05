@@ -675,7 +675,8 @@
   }
   .main-option_block .image {
     width: 100%;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main-ivent .bx:first-child, .main-ivent .bx:last-child {
     flex: 0 0 24%;
