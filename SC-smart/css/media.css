@@ -421,9 +421,6 @@
   .cart-set .image {
     height: 100%;
   }
-  .cart-set .image::before {
-    content: none;
-  }
   .cart-set_heft {
     display: none;
   }

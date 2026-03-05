@@ -20,15 +20,6 @@
                 object-fit: cover;
             }
 
-            &::before {
-                @include pseudo();
-                top: 0;
-                left: 0;
-                width: 100%;
-                background-color: rgba(27, 26, 27, 0.4);
-                height: 100%;
-            }
-
         }
 
         &_box {

@@ -2781,16 +2781,6 @@ form input, form textarea {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.cart-set .image::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(27, 26, 27, 0.4);
-  height: 100%;
-}
 .cart-set_box {
   position: absolute;
   bottom: 0;
